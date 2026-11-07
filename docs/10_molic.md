@@ -97,14 +97,43 @@ Explique em texto o caminho principal e pelo menos os caminhos alternativos/rupt
 
 #### Caminho principal
 
-1. {{ponto de abertura → cena...}}
-2. {{...}}
+Pré-condição (precond): {Arquivo de prova em PDF carregado e validado} <br>
+Objetivo (gco): Informar dados da prova <br>
+Garantia de Sucesso (gcc): Informar dados da prova <br>
+1. Abertura do objetivo: Após a validação do upload na mesma página, o sistema habilita e exibe a cena *Informar dados da prova* logo abaixo da caixa de envio, disponibilizando os parâmetros para configuração.
+2. Exibição dos parâmetros padrão: O sistema apresenta a cena do formulário de configuração com a opção Análise Completa selecionada por padrão, além dos campos para a duração da prova, opção de tempo de leitura padrão (1100 char/min), dificuldade (marcado como "Não") e métricas reais (marcado como "Não").
+3. Preenchimento da duração: O docente insere a duração total estimada da prova (em horas e minutos) dentro do limite permitido de até 6 horas. 
+4. Acionamento da análise: O docente clica para submeter os parâmetros configurados. 
+5. Processamento do sistema: O sistema entra no nó de processamento interno, executando a extração de características estruturais e estatísticas. 
+6. Validação e conclusão: O sistema conclui o processamento com sucesso, e direcionando a conversa para a visualização das analises.
+
+#### Caminho alternativo 1 (Personalização dos parâmetros de análise)
+
+Dado que a prova foi validada (precond: {prova validada}), o docente interage com as opções de expansão na cena Informar dados da prova: 
+- Ao selecionar Tempo de leitura: Personalizado, a interface exibe o campo para digitação daVelocidade de leitura (caracteres/minuto), cujo preenchimento numérico é obrigatório para liberar a submissão. 
+- Ao marcar Dificuldade das questões: Sim, o sistema expande seletores individuais para cada uma das questões detectadas na prova, exigindo a atribuição de um nível (Fácil, Médio ou Difícil) para todas as questões. 
+- Ao marcar Métricas reais dos estudantes: Sim, a interface exibe o campo para a quantidade total de estudantes e gera caixas individuais para o preenchimento de acertos por questão. Após ajustar os parâmetros, o docente aciona u: Iniciar análise, enviando os dados para a caixa preta de processamento.
+
+#### Caminho alternativo 2 (Validação de Entradas)
+
+Durante o preenchimento na cena Informar dados da prova, as validações das regras de negócio ocorrem instantaneamente na própria cena, sem acionar o nó de processamento interno:
+
+- Duração > 6h: Ao inserir um valor superior a 6 horas, a interface exibe imediatamente um alerta visual de validação. O docente ajusta o valor  na própria cena, voltando para o fluxo principal
+
+#### Caminho alternativo 3 (Tratamento de Erro de Sistema / Modelos de IA)
+
+Após preencher todos os parâmetros válidos e clicar em u: Iniciar análise, a conversa avança para o nó de processamento interno.
+
+Caso ocorra uma indisponibilidade nos modelos de Linguagem Natural (BERT / RoBERTa) ou falha de comunicação com o servidor, o sistema emite uma transição por linha tracejada (d: falha ao carregar modelos de IA) para a Cena de Erro de Sistema.
+
+Como todos os dados digitados foram validados e permanecem preservados na tela, o docente seleciona novamente o u: Iniciar análise, sem a necessidade de re-preencher o formulário.
 
 #### Alternativas e rupturas
 
 | Situação | Onde ocorre | Como o usuário percebe | Caminho de recuperação/saída |
-|---|---|---|---|
-| {{dado inválido}} | {{...}} | {{fala/feedback}} | {{...}} |
+| --- | --- | --- | --- |
+| Duração da prova excede 6 horas | Na própria cena do formulário (validação instantânea no campo) | Alerta visual imediato no campo informando que a duração não pode ultrapassar 6h (`d: Duração máxima de 6h excedida`) | O docente ajusta a duração para um valor menor ou igual a 6h na própria cena (`u: Corrigir erro`) |
+| Falha temporária no servidor ou modelos de IA (BERT/RoBERTa) | No nó de processamento interno do sistema (Caixa Preta) | Mensagem na cena de erro de sistema  informando indisponibilidade (`d: falha ao carregar modelos de IA`) | O docente clica novamente no `u: iniciar análise` para novamente ir para o nó de processamento interno do sistema |
 
 ### Checklist específico de modelagem
 
