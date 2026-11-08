@@ -46,13 +46,14 @@ Como alinhado em aula, devido ao projeto de IHC ser do nosso TCC e já termos a 
 
 > Teste o link em janela anônima. O avaliador deve conseguir abrir o protótipo sem solicitar permissão.
 
+<!-- lu e nuno preencherem-->
 ## Cobertura MoLIC → Figma
 
 | MoLIC | Objetivo | Fluxo/telas no Figma | Estados de erro/recuperação | Responsável |
 |---|---|---|---|---|
-| M01 | O01 | `F01 → F02 → F03` | `F02E, F03R` | {{...}} |
-| M02 | O01 | `F01 → F02 → F03` | `F02E, F03R` | {{...}} |
-| M03 | O01 | `F01 → F02 → F03` | `F02E, F03R` | {{...}} |
+| M01 | O01, O02, O03 | `F01 → F02 → F03` | `F02E, F03R` | Luana Bortko Rodrigues |
+| M02 | O01, O02, O03 | `F01 → F02` | `F02E1, F02E2, F02E3, F02E4` | Beatriz Manaia Lourenço Berto |
+| M03 | O01, O02, O03 | `F01 → F02 → F03` | `F02E, F03R` | Nuno Martins Guilhermino da Silva |
 
 ## Catálogo de telas/estados
 
@@ -72,35 +73,42 @@ Como alinhado em aula, devido ao projeto de IHC ser do nosso TCC e já termos a 
 **Signos principais:** Informações do arquivo (nome e tamanho), botão "cancelar" <br> 
 **Origem no MoLIC:** M02/Carregar arquivo <br> 
 
-### F03 — Arquivo com formato inválido
+<!--OU F03?-->
 
-![F03](../assets/11_figma/f03.jpeg)
+### F02E1 — Arquivo com formato inválido
+
+![F02E1](../assets/11_figma/f03.jpeg)
 
 **Objetivo do usuário:** Enviar arquivo em formato válido  <br> 
 **Signos principais:** Erro1: Formato inválido  <br> 
 **Origem no MoLIC:** M02/cena de erro<br> 
 
 
-### F04 — Erro ao extrir questões do PDF
+<!--OU F04?-->
 
-![F04](../assets/11_figma/f04.jpeg)
+### F02E2 — Erro ao extrair questões do PDF
+
+![F02E2](../assets/11_figma/f04.jpeg)
 
 **Objetivo do usuário:** Enviar arquivo no qual questões consigam ser dientificadas <br> 
 **Signos principais:** Erro2: Erro ao preparar a análise <br> 
 **Origem no MoLIC:** M02/cena de erro<br> 
 
+<!--OU F05?-->
 
-### F05 — Tamanho do arquivo excede limite 
+### F02E3 — Tamanho do arquivo excede limite 
 
-![F05](../assets/11_figma/f05.jpeg)
+![F02E3](../assets/11_figma/f05.jpeg)
 
 **Objetivo do usuário:** Enviar um arquivo dentro das limitações específicas para seguir o fluxo feliz de analisar sua avaliação <br> 
 **Signos principais:** Erro3: Arquivo excede tamanho <br> 
 **Origem no MoLIC:** M02/cena de erro<br> 
 
-### F06 — Erro interno
+<!--OU F06?-->
 
-![F06](../assets/11_figma/f06.jpeg)
+### F02E4 — Erro interno
+
+![F0E4](../assets/11_figma/f06.jpeg)
 
 **Objetivo do usuário:** Conseguir prosseguir para a tela de informar os dados de sua prova <br> 
 **Signos principais:** Erro4: Server Error <br> 
@@ -109,7 +117,7 @@ Como alinhado em aula, devido ao projeto de IHC ser do nosso TCC e já termos a 
 > Documente também estados que muitas equipes esquecem: carregamento, vazio, confirmação, sucesso, erro, permissão negada, cancelamento, desfazer/voltar quando aplicável.
 
 
-### F0x —   xxxxxx 
+### F0x — xxxxxx 
 
 ![F0xx](../assets/11_figma/f06.jpeg)
 
@@ -125,14 +133,38 @@ Como alinhado em aula, devido ao projeto de IHC ser do nosso TCC e já termos a 
 
 | Elemento | Regra adotada | Justificativa |
 |---|---|---|
-| Tipografia | {{...}} | {{legibilidade/contexto}} |
-| Cores | {{...}} | {{hierarquia/contraste/semântica}} |
-| Componentes | {{...}} | {{consistência}} |
-| Feedback | {{...}} | {{status}} |
+| Tipografia | Fonte principal Inter (Google Fonts, pesos 400, 600, 700 e 800), usada no cabeçalho e nos logotipos. O corpo da página usa a pilha do sistema (-apple-system, Segoe UI, Roboto, sans-serif). Títulos de seção em 1.2rem, subtítulos e textos auxiliares em 0.9rem, rótulos e campos em 1rem. | A Inter é legível em telas e tem bom contraste em tamanhos pequenos. A pilha do sistema evita carregar fonte extra no corpo. Tamanhos em rem respeitam a configuração de texto do navegador.|
+| Cores | azul primário `#0070C0`, verde de sucesso `#10B981`, amarelo de alerta `#F59E0B`, vermelho de erro `#EF4444`, cinzas `#1F2937`, `#6B7280` e `#F3F4F6`. Texto principal `#333`, secundário `#666`. Azul `#0070C0` para ações e ícones informativos; vermelho `#e74c3c` para o asterisco de campo obrigatório. | Escolhemos a paleta a partir do logo: azul `#0070C0` (fundo do cabeçalho) e verde `#10B981` (destaque de "prov"). Hierarquia: azul para ações principais e ícones informativos; texto `#333` para títulos e corpo; `#666` para apoio. Semântica fixa: verde = sucesso, amarelo = alerta, vermelho = erro. Texto escuro sobre branco garante contraste de 12,6:1 (`#333`) e 5,7:1 (`#666`), acima de 4,5:1. Para gráficos da análise buscamos permanecer dentro da paleta de cores, com excessão de algun gráficos para priorizar sua legibilidade.|
+| Componentes | Cards brancos: os gráficos, as seções de análise e os formulários ficam em blocos com fundo branco sobre o fundo azul-claro da página. Botões de ação: "Filtro" tem borda e texto em azul `#0070C0`, fundo branco e hover em `#f0f7ff`; aparece no cabeçalho dos gráficos. "Exportar" usa o mesmo azul, inverte para fundo azul com texto branco no hover e fica com 50% de opacidade quando desabilitado; aparece no cabeçalho das páginas de resultados e de ENEM. Botões de ação ("Tentar novamente", "Analisar"...) são degrade de azul e verde. Ícone informativo: é um círculo com "!" em preto, usado ao lado dos rótulos dos campos e dos títulos dos gráficos. Ao passar o mouse, mostra um tooltip preto. | Os cards separam os blocos do fundo, os botões de ação ficam no cabeçalho, os filtros ficam posicionados sempre no canto direito bem como o "Exportar" e o ícone informativo aparecendo ao lado dos títulos. |
+| Feedback | | Feedback | Usamos cor e texto juntos, nunca só a cor. Erro: vermelho, com fundo rosado `#fff5f5`, borda vermelha e texto vermelho escuro `#c0392b`, contraste de 5,1:1 (formato inválido, arquivo acima de 10 MB, falha de rede). Atenção: amarelo-âmbar, com fundo amarelo claro `#fff3cd`, borda âmbar `#ffc107` e texto marrom-oliva `#856404`, contraste de 5,0:1 (duração acima de 6h, dados faltando para a correlação). Sucesso: não há mensagem de sucesso no MVP, quando é sucesso apenas continua/habilita o fluxo feliz, o verde `#10B981` é usado na marca e nos gráficos, não como status. Os blocos têm título em negrito e, nos avisos, borda à esquerda. | Mantém o feedback compreensível sem depender só da cor, para usuários com daltonismo ou baixa visão. Os pares de texto escolhidos passam do mínimo de 4,5:1 do WCAG. |
 
+
+<!--ONDE NA AULA FLO DE WCAG????
+Define como tornar a web mais acessivel para pessoas com deficiência
+
+principios: 
+
+1-perceptivel
+2-operável
+3-compreensivel
+4-robusto
+os critérios tem 3 níveis: A (mínimo), AA (padrão exigido pela maioria das leis e políticas) e AAA (máximo, nem sempre viável para todo o conteúdo).
+ -->
 ## Verificação de acessibilidade básica
 
-Para produto Web, considere critérios pertinentes da WCAG vigente (por exemplo, contraste, foco, tamanho de alvo, texto alternativo e navegação por teclado quando aplicáveis). Para outras plataformas, use as recomendações adequadas ao contexto.
+<!--Para produto Web, considere critérios pertinentes da WCAG vigente (por exemplo, contraste, foco, tamanho de alvo, texto alternativo e navegação por teclado quando aplicáveis). Para outras plataformas, use as recomendações adequadas ao contexto.-->
+
+Para o protótipo web do desemprov, foram avaliados os seguintes critérios baseados nas diretrizes WCAG (nível AA):
+
+- Contraste de Cores: A paleta de cores do sistema (fundo branco com textos em cinza escuro #333 e preto) foi validada para garantir que a leitura seja confortável. Os botões de ação (como "Escolher arquivo", "Tentar novamente", "Entendido") possuem contraste adequado entre o texto branco e o fundo colorido (azul/verde). Nos estados de erro (telas F02E1, F02E2, F02E3, F02E4), a cor vermelha não é usada sozinha; ela é acompanhada de títulos em negrito e texto explicativo, garantindo a compreensão para usuários com daltonismo.<br>
+- Redimensionamento de Texto e Responsividade (Reflow): A interface foi construída para ser responsiva. É possível aplicar zoom elevado (acima de 200%) e a página continua legível, sem sobreposição de elementos ou perda de conteúdo. Os cards se ajustam à tela e as barras de rolagem horizontal são evitadas, garantindo que usuários com baixa visão possam ampliar os textos e gráficos sem quebrar o layout.<br>
+- Tamanho do Alvo (Target Size): Os botões de ação primários e secundários (ex: "Escolher arquivo", "Entendido", "Filtro") possuem áreas de clique generosas, facilitando o toque em dispositivos móveis e o clique com usuários com limitações motoras.<br>
+<!-- COMPLETAR COM TELAS LU E NUNO -->
+- Navegação por Teclado e Foco: Os formulários (tela F02/F0xxxxxx - Informe os dados de sua prova) utilizam campos padrão de input (radio buttons, selects, inputs de texto), que recebem foco visível ao navegar com a tecla Tab. A área de drag-and-drop (arrastar e soltar) possui o botão "Escolher arquivo" como alternativa acessível para quem não consegue usar o mouse.Além dos campos em sua maioria já virem com valore default, facilitando a redução de movimentos desnecessários.<br>
+- Texto Alternativo e Semântica: Ícones puramente visuais (como a seta de upload e o "X" de fechar/cancelar) contém rótulos ARIA (aria-label) para que leitores de tela os identifiquem (ex: "Ícone de upload", "Cancelar arquivo").<br>
+- Identificação de Erros (Feedback): Os erros de upload (formato inválido, tamanho excedido, PDF sem questões ou falha de rede) são apresentados de forma clara, informando exatamente o que aconteceu e oferecendo uma ação de recuperação imediata (botão "Tentar novamente" ou "Entendido").<br>
+- MODIFICAR: FALA DE INFO ICONE DESCRICOES QUE EXPLICAM GRAFICOS.... Gráficos e Resultados: Os gráficos da tela de resultados (Pizza, Barras, Dispersão) precisam de alternativas textuais (ex: tabelas ocultas visualmente ou descrições via aria-describedby), pois leitores de tela não leem gráficos visuais nativamente.<br>
+
 
 ## Checklist
 

@@ -3,8 +3,23 @@
 **Data:** {{dd/mm/aaaa}}  <br> 
 **Status:** ⬜ não iniciada  <br> 
 **Responsabilidade:** 1 avaliação completa por integrante, sobre todas as telas/estados relevantes do projeto.<br> 
-<!-- 
+<!--
+criado p busc aproblema de usabilidade
+
+1-criar fluxograma pra se tiver q desenha flux ode valaicao heruistica esses sao os passos, quantas vezes repete cad aum...
+
+PASSO A PASSO DA HERUSTICA: FLUXOGRAMA Q CRIAREMOS 9anotacao topico 13)
+
+
+
 Metodo baseado em inspecao, que mfaz inspeco somos nos especialistas 
+
+todo metodo de avalaicao é baseado em 
+-prearacao
+-coleta de dados
+-interpretacao
+-consolidacao
+-relato dos resultados
 
 Teste de usabilidade nao tem usuario, é so especialista, pego heuristicas (regras parecidas com diretrizes) e do ranking dd atrnedimento ou n (ranking de violacao), indico quem violou  
 

@@ -3,7 +3,18 @@
 **Data:** {{dd/mm/aaaa}}  
 **Status:** ⬜ não iniciada  
 **Responsabilidade:** solução consolidada por equipe. O número de participantes finais observados deve ser igual ao número de integrantes, conforme o modelo da disciplina; recomenda-se que cada integrante seja responsável por conduzir/analisar ao menos um participante.
-<!-- Prototipo uso p avaliacao herusitica e teste de obs de usuario 
+<!--
+anotacao topico 12 e 14....
+todo metodo de avalaicao é baseado em 
+-prearacao
+-coleta de dados
+-interpretacao
+-consolidacao
+-relato dos resultados
+
+PREPARACAO PARA AVALIACAO: tem q ter perfies e numero de pariticpantes (10 usuarios eh produtivo p avalaicao p evitar falhas, n precisa passar de 10 pq ai tem recorrencia dos erros, tem so dado de peso dos erros p ve rmaior impacto..)
+
+ Prototipo uso p avaliacao herusitica e teste de obs de usuario 
 
 Faremos colocando pessoas de fora da equipe, colegas da turma, professores(preferencialmente), orientadors, familiares....  
  -->

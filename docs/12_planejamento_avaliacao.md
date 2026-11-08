@@ -1,7 +1,9 @@
 # Entrega 12 — Planejamento da avaliação de usabilidade (DECIDE)
 
-**Data:** {{dd/mm/aaaa}}  <br> 
-**Status:** ⬜ não iniciada  <br> 
+<!-- LER ANOTACAO TOPICO 12 PRINCIPALMENTE O NAO GRIFADO E VER ANOTACAO AULA -->
+
+**Data:** 08/11/2026  <br> 
+**Status:** 🟨 Em andamento   <br> 
 **Responsabilidade:** 1 solução por equipe<br> 
 
 <!--Entrega eh p entender tecnicas de planejamento, qnd fa zplanejamento resp perg e sabe se vai faze teste de avaliaco heuristica, ou comunicabilidade ou observacao do usuario, ensina a planejar -->
@@ -31,22 +33,35 @@ Se o protótipo utiliza dados ou resultados simulados, documente isso no plano.
 
 O da disciplina eh identifcia problemas  de iteracao e interface 
 
- 
 
 Metodo: pega isnturentos ex braisntorm ,questionario, entrevista, observacao, investigacaocontextual.... tecnicas p levanta requistios e posso reutiliza p testa software 
 
 heristica segue roteiro desse de planejamento slide 35 do totpico 11 se relato dos resultados....
+ 
+ PRECISAMOS TESTAR COM PROFESSORES AQUI???? coletar dados sobre experiencia de uso 
+ -participacao dos usuarios podem ser relziadas em contexto real de uso ou em laboratorio
+ 
  -->
+
+<!--PRIMEIRA RESPSOTA ELE FLO PRA VOLTA PRA ENTREGA 8 E NAO VOLTEI AINDA ENT EH BOM VERMOS ISSO
+SEGUNDA REPSOTA: COLOQUEI TDOS SOS EXEMPLOS DA AULA MAS É BOM PENSARMOS EM PERG ESPECIFCIAS PRO NOSSO -->
+
+
 | Etapa | Aplicação no projeto |
 |---|---|
-| **D — Determine the goals** | Quais objetivos da avaliação? Relacione às metas de usabilidade da Entrega 8. O  obj da disciplina eh identifcia problemas  de iteracao e interface (falo em aula topico 11) |
-| **E — Explore the questions** | Quais perguntas específicas a avaliação deve responder? |
+| **D — Determine the goals** | Quais objetivos da avaliação? Relacione às metas de usabilidade da Entrega 8. O  obj da disciplina eh identifcia problemas de iteracao e interface (falo em aula topico 12 usar perg) mas tb posso querer ter de obj analisar a aproprieação da tecnologia | 
+| **E — Explore the questions** | O usuário consegue operar o sistema? Ele atinge seu objetivo? Com quanta eficiência? Em quanto tempo? Após cometer quantos erros? Que parte da interface e da interação o deixa insatisfeito> Que parte da interface o desmotiva a explorar novas funcionalidades?Ele entende o que significa e para que serve cada elemento da interface? Ele vai entender o que deve fazer em seguida? Que problemas de IHC dificultam ou impede o usuário de alcançar seus objetivos? Onde esses problemas se manifestam? Com que frequência tendem a ocorrer? Qual é a gravidade desses problemas? Quais barreiras o usuário encontra para atingir seus objetivos? Ele tem acesso a todas as informações oferecidas pelo sistema? |
 | **C — Choose the evaluation paradigm and techniques** | Quais métodos serão usados e por quê? Ex.: inspeção heurística + observação de usuários. |
 | **I — Identify the practical issues** | Participantes, recrutamento, ambiente, equipamentos, piloto, cronograma, responsáveis, riscos técnicos. |
-| **D — Decide how to deal with ethical issues** | Consentimento, privacidade, gravação, anonimização, interrupção, dados sensíveis. |
+| **D — Decide how to deal with ethical issues** | Consentimento, privacidade, gravação, anonimização, interrupção, dados sensíveis.  SEMPRE TEM QUESTAO ETICA QND ENVOVLE pessoa, abrir slide la tipo, termo de concenriment odo exclarecido ,pss pode desistir a qrr momento, tme q te rambiente cofnortavel n posso deixa pss estressada...|
 | **E — Evaluate, interpret and present the data** | Como dados quantitativos/qualitativos serão consolidados, comparados às metas e apresentados. |
 
 ## B. Perguntas de avaliação
+
+<!-- importante usa metodo de observação de uso (que ehentrega  14)
+axcho que tambem caberia fazer o de inspecao: Inspecao nos avlaiadores usamos interfface e fazemoa analise potencial 
+
+-->
 
 | ID | Pergunta | Método | Métrica/evidência | Critério esperado |
 |---|---|---|---|---|
