@@ -69,7 +69,7 @@ Como alinhado em aula, devido ao projeto de IHC ser do nosso TCC e já termos a 
 
 ![F02](../assets/11_figma/f02.jpeg)
 
-**Objetivo do usuário:** Trocar a prova anexada <br> 
+**Objetivo do usuário:** Seguir o fluxo e informar os dados da prova <br> 
 **Signos principais:** Informações do arquivo (nome e tamanho), botão "cancelar" <br> 
 **Origem no MoLIC:** M02/Carregar arquivo <br> 
 
@@ -90,7 +90,7 @@ Como alinhado em aula, devido ao projeto de IHC ser do nosso TCC e já termos a 
 
 ![F02E2](../assets/11_figma/f04.jpeg)
 
-**Objetivo do usuário:** Enviar arquivo no qual questões consigam ser dientificadas <br> 
+**Objetivo do usuário:** Enviar arquivo no qual questões consigam ser identificadas <br> 
 **Signos principais:** Erro2: Erro ao preparar a análise <br> 
 **Origem no MoLIC:** M02/cena de erro<br> 
 
