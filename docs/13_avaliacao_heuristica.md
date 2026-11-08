@@ -1,7 +1,7 @@
 # Entrega 13 — Avaliação de IHC por inspeção heurística
 
-**Data:** {{dd/mm/aaaa}}  <br> 
-**Status:** ⬜ não iniciada  <br> 
+**Data:** 08/11/2026  <br> 
+**Status:**  🟨 Em andamento <br> 
 **Responsabilidade:** 1 avaliação completa por integrante, sobre todas as telas/estados relevantes do projeto.<br> 
 <!--
 criado p busc aproblema de usabilidade

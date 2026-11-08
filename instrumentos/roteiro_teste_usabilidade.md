@@ -35,7 +35,9 @@ Para perfis especializados (DBA, analista, pesquisador, administrador, técnico)
 
 | ID | Instrução ao participante | O moderador pode esclarecer | O moderador não deve dizer |
 |---|---|---|---|
-| UT01 | {{...}} | {{termos do cenário}} | {{nome/local do botão}} |
+| UT01 | Imagine que você acabou de criar uma prova para a matéria que leciona. Você quer saber algumas métricas sobre o formato dessa prova, como a relação dos distratores das alternativas e se o tempo para resolvê-la é suficiente. Use o sistema para obter essas informações. | "Você pode usar qualquer arquivo PDF que estiver na área de trabalho e siga as restrições da tela.", "Sinta-se à vontade para explorar a tela." | "Clique no botão Escolher arquivo.", "Arraste o PDF para a área tracejada.", "Preencha os campos de informações da prova", Esclarecer sobre o tempo de leitura, "Clique no botão verde de Iniciar Análise.", Falar como e com que valores preencher os campos. |
+| UT02 | Agora, imagine que você já aplicou essa prova e o desempenho dos alunos ficou fora do esperado. Você quer analisar as características de formato da sua avaliação para entender o que pode ter acontecido. Faça essa análise no sistema. | "Você pode repetir o processo que fez na tarefa anterior.", "Considere que você quer uma análise mais detalhada desta vez." | "Vá em Análise Completa no menu.","Não esqueça de preencher a dificuldade das questões." |
+| UT03 | Analisando os resultados e as métricas que o sistema gerou, encontre informações que sejam úteis para você como professor. Por exemplo: descubra quais questões podem ter sido as mais difíceis ou as mais cansativas de ler. | "Você pode usar os filtros se achar necessário.", "Fique à vontade para rolar a página." | "Se não entender o que um gráfico significa, pode me perguntar.", "Olhe o gráfico de dispersão lá embaixo.", "A questão mais difícil é a bolinha vermelha.", "Clique no botão Filtro no canto direito."  |
 
 Tarefas podem envolver, conforme o escopo: localizar informação em dashboard; filtrar histórico; configurar análise; comparar resultados; gerar relatório; revisar alerta; editar permissão; recuperar-se de falha.
 
