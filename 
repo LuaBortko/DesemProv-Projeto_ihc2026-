@@ -1,0 +1,318 @@
+[1mdiff --git a/assets/11_figma/f01.jpeg b/assets/11_figma/f01.jpeg[m
+[1mdeleted file mode 100644[m
+[1mindex 05d3a3e..0000000[m
+Binary files a/assets/11_figma/f01.jpeg and /dev/null differ
+[1mdiff --git a/assets/11_figma/f02.jpeg b/assets/11_figma/f02.jpeg[m
+[1mdeleted file mode 100644[m
+[1mindex 3402b7e..0000000[m
+Binary files a/assets/11_figma/f02.jpeg and /dev/null differ
+[1mdiff --git a/assets/11_figma/f03.jpeg b/assets/11_figma/f03.jpeg[m
+[1mdeleted file mode 100644[m
+[1mindex dbbf7d6..0000000[m
+Binary files a/assets/11_figma/f03.jpeg and /dev/null differ
+[1mdiff --git a/assets/11_figma/f04.jpeg b/assets/11_figma/f04.jpeg[m
+[1mdeleted file mode 100644[m
+[1mindex 93c08e1..0000000[m
+Binary files a/assets/11_figma/f04.jpeg and /dev/null differ
+[1mdiff --git a/assets/11_figma/f05.jpeg b/assets/11_figma/f05.jpeg[m
+[1mdeleted file mode 100644[m
+[1mindex fee5afd..0000000[m
+Binary files a/assets/11_figma/f05.jpeg and /dev/null differ
+[1mdiff --git a/assets/11_figma/f06.jpeg b/assets/11_figma/f06.jpeg[m
+[1mdeleted file mode 100644[m
+[1mindex 44ee25a..0000000[m
+Binary files a/assets/11_figma/f06.jpeg and /dev/null differ
+[1mdiff --git a/docs/09_modelo_conceitual.md b/docs/09_modelo_conceitual.md[m
+[1mindex b647ee9..e9fabc2 100644[m
+[1m--- a/docs/09_modelo_conceitual.md[m
+[1m+++ b/docs/09_modelo_conceitual.md[m
+[36m@@ -116,8 +116,6 @@[m [mEntretanto, mesmo após essas etapas, a análise da avaliação continua baseada[m
+ **Autor(a):** Nuno Martins Guilhermino da Silva **RA:** 22.126.099-5<br>[m
+ **Origem:** cenário problema C03 - Professor quer comparar duas versões de uma avaliação[m
+ [m
+[31m-{{cenário de interação com alterações marcadas}}[m
+[31m-[m
+ Vera é professora de inglês e preparou duas versões de uma avaliação para aplicar em turmas diferentes, buscando evitar o compartilhamento de respostas entre os alunos. Ela deseja verificar se as diferenças entre as versões podem fazer com que uma das turmas seja favorecida ou prejudicada.[m
+ [m
+ **Por possuir acesso a um computador com internet, Vera decide utilizar o sistema DesemProv para comparar as duas avaliações de forma rápida e objetiva.**[m
+[36m@@ -219,7 +217,7 @@[m [mArruma fluo das caixas e caixa cheia pras q n eh instrumental[m
+ Ligação entre caixas da o fluxo: pelo diagrama de obj vemos oq precisa faze p chega em obj -->[m
+ [m
+ [m
+[31m-### Dicionário de objetivos do mapa consolidado <!-- mapa eh 1 p equipe toda-->[m
+[32m+[m[32m### Dicionário de objetivos do mapa consolidado[m
+ [m
+ | ID | Objetivo | Persona(s) | Cenário(s) | Prioridade |[m
+ |---|---|---|---|---|[m
+[36m@@ -237,57 +235,50 @@[m [mLigação entre caixas da o fluxo: pelo diagrama de obj vemos oq precisa faze p[m
+ ## 4. Esquema conceitual de signos[m
+ <!--unico e alinhamento ebatido entre todos escolher , ipload,td input e output sao signos, se tem sinalizacao do sistem a eh sigo baseado so na parte de analise da tela é sobre obj ex analise de prova vai ter mtoo signos, dado exibidos e tem grupos de signos (grupo da prova, da área...  -->[m
+ [m
+[31m-[m
+ Conforme alinhado em sala, na nossa aplicação de alto nível existem 3 telas no total (análise, ENEM, e sobre) porém as telas ENEM e sobre não fazem parte da analise conceitual pois não entram no escopo principal estudado na matéria de ihc, que é analisar a prova em diferentes cenários, objetivo esse relacionado a tela "análise", ou seja, agrega mais valor ao proj faze o da analise)[m
+ [m
+ Consolide as informações em **uma tabela única**.[m
+ [m
+ | Grupo | Signo | Origem | Observações/semântica | Tipo de conteúdo | Restrição | Valor padrão | Prevenção | Recuperação |[m
+ |---|---|---|---|---|---|---|---|---|[m
+[31m-| Análise | Prova | Domínio | Avaliação elaborada pelo professor, composta por questões de múltipla escolha, enunciados e alternativas. é o documento fornecido pelo usuário que será processado pelo Desemprov para extração de características estruturais e análises comparativas com o ENEM | Documento digital(PDF), contendo textos e, eventualmente imagens. | Arquivo obrigatório, formato PDF e tamanho máximo de 10 MB. Deve atender aos requisitos da ferramenta | nenhum | Informar os formatos aceitos e o limite de tamanho antes do envio, validar o arquivo selecionado antes de iniciar o processamento | Exibir mensagem explicativa caso o arquivo seja inválido ou não possa ser processado, permitindo que o professor envie outro documento. |[m
+[31m-| Análise | Área tracejada (dropzone) | Convencional | Delimitação da área de soltura do arquivo, atua como limite da zone de transferência | Controle de interface (visual) | nenhum | nenhum | Drag muda de cor ao arrastar um arquivo |  nenhum |[m
+[31m-| Análise | ícone de upload (seta) | Convencional | Representação visual da ação de transferir m arquivo do dispositivo local para o sistema | visual(ícone) | nenhum | nenhum | nenhum | nenhum |[m
+[31m-| Análise | Texto instrucional | Convencional | Explica de forma textual direta as formas de interação possíveis com o componente | textual | nenhum | texto "Selecione ou arraste um arquivo" | nenhum | nenhum |[m
+[31m-| Análise | Texto de restrição | Aplicação | Signo preventivo, comunica as regras do sistema antes do usuário tentar enviar, reduzindo frustração | textual | limite de 10 MB e extensão PDF | texto "Formato aceito: PDF de até 10 MB" | nenhum | previnir envio de arquivo errado|[m
+[31m-| Análise | Botão "Escolher arquivo" | Convencional | Comando, aciona gatilho para abrir o gerenciador de arquivos do SO | botão | Deve permitir selecionar apenas arquivos compatíveis (PDF) | Texto "Escolher arquivo" | habilitar apenas os formatos aceitos na tela | permitir clicar novament epara selecionar outro arquivo, substituindo o selecionado previamente |[m
+[31m-| Análise | Informações do arquivo (nome e tamanho) | Aplicação | Conteúdo de confirmação/validação do usuário | textual | nenhum |. <nome do arquivo>.pdf <tamanho do arquivo> | nenhuma | nenhuma |[m
+[31m-| Análise | Botão "cancelar" | Convencional | Botão para controle de exclusão de arquivo com "X"e fundo vermelho | Botão de ícone | Só aparece junto ao arquivo carregado "Informações do arquivo (nome e tamanho)" | "X" | nehuma | Ação de recuperação pois ao clicar e mexlcuir apaga arquivo atual e deixa visível apenas campos/dados de envio |[m
+[31m-| Análise | Título do formulário ("Informe os dados de sua prova") | Convencional | Cabeçalho que orienta a transição de estado da interface após o upload, indicando a etapa de configuração dos parâmetros da prova. | Textual (cabeçalho) | Nenhum | "Informe os dados de sua prova" | Dar visibilidade ao estado do sistema e orientar o início do preenchimento | Nenhum |[m
+[31m-| Análise | Ícone de ajuda contextual (i) | Convencional | Ícone informativo que permite consultar a justificativa pedagógica e a importância de cada parâmetro antes de configurá-lo. | Visual (ícone) | Nenhum | Visível ao lado dos rótulos dos campos | Esclarecer o propósito da métrica para evitar preenchimento incorreto ou dúvidas | Permite reconsultar a explicação ao posicionar o ponteiro sobre o ícone |[m
+[31m-| Análise | Balão de ajuda contextual (Tooltip) | Aplicação | Mensagem explicativa em sobreposição exibida ao passar o ponteiro (hover) sobre o ícone (i). | Textual (popover/tooltip) | Exibido apenas durante o hover/foco no ícone (i) | Oculto | Explicar a relevância pedagógica do parâmetro sem poluir a interface principal | Desaparece automaticamente ao afastar o ponteiro do ícone |[m
+[31m-| Análise | Opção de tempo de leitura (Padrão / Personalizado) | Aplicação | Botões de rádio para alternar entre a velocidade de leitura padrão (1100 caracteres/minuto) e o valor personalizado. | Seleção (radio button) | Seleção exclusiva entre Padrão e Personalizado | Padrão (1100 caracteres/minuto) | Fornecer uma referência padrão válida para agilizar a configuração | Permitir alternar de volta para a opção "Padrão" a qualquer momento |[m
+[31m-| Análise | Campo de velocidade de leitura personalizada | Domínio | Input numérico para digitação da velocidade de leitura (caracteres/minuto), exibido ao selecionar a opção "Personalizado". | Numérico (inteiro) | Obrigatório e numérico quando "Personalizado" estiver selecionado | Oculto | Exigir valor numérico válido para habilitar a submissão da análise | Permitir editar o valor ou retornar para a velocidade padrão |[m
+[31m-| Análise | Opção de dificuldade das questões (Sim / Não) | Aplicação | Botões de rádio que definem se o professor deseja incluir a atribuição de nível de dificuldade das questões na análise. | Seleção (radio button) | Seleção exclusiva (Sim ou Não) | Não | Evitar preenchimentos desnecessários quando o professor optar por uma análise simplificada | Permitir alterar para "Não" a qualquer momento para ocultar os seletores |[m
+[31m-| Análise | Seletores individuais de dificuldade por questão | Aplicação | Controles de seleção (Fácil, Médio, Difícil) gerados dinamicamente para cada questão da prova quando a opção de dificuldade é ativada. | Seleção (lista por questão) | Preenchimento obrigatório para todas as questões se a opção for "Sim" | Oculto | Mostrar visualmente quantas questões faltam para preencher todas | Permitir alterar/selecionar a classificação de qualquer questão antes de iniciar a análise |[m
+[31m-| Análise | Opção de incluir métricas reais dos estudantes (Sim / Não) | Aplicação | Botões de rádio que habilitam a inclusão de dados reais de desempenho dos alunos (quantidade de alunos e acertos por questão). | Seleção (radio button) | Seleção exclusiva (Sim ou Não) | Não | Evitar preenchimentos desnecessários quando o professor optar por uma análise simplificada/ não tiver ainda essas informações(utilisou o sistema antes da aplicação da prova) | Permitir alterar para "Não" a qualquer momento para ocultar os campos de acertos |[m
+[31m-| Análise | Erro1: Formato inválido | Aplicação | Aviso inline informa que arquivo não é um PDF e necessita correção imediata | Texto inline com conteúdo explicativo | Disparado ao tentar subir um arquivo com extensão errada | Oculto | O texto "Formato aceito: PDF"na tela principal tenta evitar esse erro | Ação de recuperação ao clicar em botão "x" ou "Entendido"|[m
+[31m-| Análise | Erro2: Erro ao preparar a análise | Aplicação | Falha no processamento, um aviso inline na página avisando que não foram encontradas questÕes no arquvio de formato válido | Aviso de alerta com texto e botão "Tentar novamente" | Disparo quando o processamento do PDF não encontra questÕes válidas | Oculto | Instruir no texto da tela que deve ser enviado um PDF com questões | Ação de recuperar, botão "Tentar novamente" ou "x"para fechar aviso que permite usuário inserir novo arquivo |[m
+[31m-| Análise | Erro3: Arquivo excede tamanho | Aplicação | Restrição de sistema, avisa que arquivo escolhido tem mais de 10 MB | Textual (mensagem de erro) | Disparo se arquivo anexado for maior que 10 MB | Oculto | Aviso preventivo na tela principal "até 10 MB"| Ação de recuperação, usuári odeve fechar aviso e selecionar um arquivo menor |[m
+[31m-| Análise | Erro4: Server Error | Aplicação | Falha sistêmica, comunica que o problema é instabilidade na ferramenta | Aviso de alerta com ícone de falha e botão "Tentar novamente" | Disparado quando a requisição falhar | Oculto | nenhum | Ação de recuperação, botão "Tentar novamente"para refazer a requisição |[m
+[31m-| Análise | Erro5: Erro ao colocar valor maior que 6h | Aplicação | Restrição de sistema, avisa que a duração da prova não pode passar de 6h | Textual (mensagem de erro) | Disparado quando o valor ultrapassa das 6h no campo da duração da prova | Oculto | nenhum | usuário deve inserir um novo valor no campo da duração |[m
+[31m-| Análise | Erro6: Falha ao carregar modelos de ia | Aplicação | Falha sistêmica, comunica que houve uma falha ao usar os modelos de IA (BERT/RoBERTa) | popUp de alerta com ícone de falha e texto avisando a falha | Disparado quando os modelos de IA não forem carregados corretamente | Oculto | nenhum | Ação de recuperação, apertar o botão de Analisar a prova novamente |[m
+[31m-| Análise | Tipo de análise | Aplicação | Define qual análise estrutural o professor deseja realizar. | Seleção (lista de opções). | Deve selecionar uma opção disponível. | Análise Completa. | Apresentar as análises disponíveis. | Permitir selecionar outra(s) análise(s). |[m
+[31m-| Análise | Duração da prova | Domínio | Tempo total disponibilizado para a realização da avaliação. | Numérico (horas e minutos). | Obrigatório; valores válidos de duração. | Nenhum. | Indicar os campos de horas e minutos e validar os valores. | Dar um aviso caso supere o tempo máximo de uma avaliação (6h) informando a necessidade de correção. |[m
+[31m-| Análise | Tempo de leitura | Domínio | Velocidade de leitura utilizada como referência para estimar o tempo necessário para ler os enunciados. | Numérico (caracteres por minuto). | Valor positivo. | 1100 caracteres/minuto. | Explicar a diferença entre velocidade padrão e personalizada e da onde veio o valor 1100 | Permitir retornar ao padrão ou informar outro valor. |[m
+[31m-| Análise | Quantidade de questões | Domínio | Número total de questões que compõem a avaliação. | Numérico inteiro. | Deve corresponder à quantidade de questões da prova. | Nenhum. | Informar o número esperado de questões. | Permitir corrigir a quantidade informada. |[m
+[31m-| Análise | Dificuldade das questões | Domínio | Classificação da dificuldade atribuída pelo professor a cada questão. | Seleção (fácil, média ou difícil). | Uma classificação por questão, quando habilitada. | Nenhum. | Apresentar as opções de dificuldade para cada questão. | Permitir alterar a classificação. |[m
+[31m-| Análise | Incluir métricas reais dos estudantes | Aplicação | Define se o professor deseja complementar a análise com informações reais de desempenho dos estudantes. | Seleção (sim/não). | Resposta obrigatória caso a funcionalidade seja utilizada. | não | Explicar quais informações serão solicitadas ao selecionar a opção. | Permitir alterar a seleção. |[m
+[31m-| Análise | Quantidade de participantes | Domínio | Número de estudantes que realizaram a avaliação. | Numérico inteiro. | Não negativo; necessário quando forem utilizadas métricas reais. | Nenhum. | Informar que deve corresponder aos participantes da avaliação. | Permitir corrigir o valor informado. |[m
+[31m-| Análise | Acertos por questão | Domínio | Quantidade de estudantes que acertaram cada questão da avaliação. | Numérico inteiro por questão. | Não pode ultrapassar o número de participantes. | Nenhum. | Limitar os valores conforme a quantidade de participantes. | Permitir corrigir os acertos informados. |[m
+[31m-| Análise | Métricas estruturais | Aplicação | Conjunto de indicadores extraídos da prova, como quantidade de caracteres, palavras e presença de imagens. | Numérico e textual. | Depende das características identificadas no documento. | Nenhum. | Apresentar a descrição de cada métrica. | Informar quando não for possível extrair determinada característica. |[m
+[31m-| Análise | Tempo estimado de leitura | Aplicação | Estimativa do tempo necessário para leitura das questões com base na quantidade de caracteres e na velocidade de leitura configurada. | Numérico (minutos). | Depende do conteúdo extraído e da velocidade informada. | Calculado pelo sistema. | Explicar os parâmetros utilizados no cálculo. | Informar quando não houver conteúdo suficiente para estimar o tempo. |[m
+[31m-| Análise | Formalismo | Aplicação | Indicador relacionado ao nível de formalidade linguística identificado nos enunciados. | Numérico. | Depende do processamento textual realizado pelo modelo. | Nenhum. | Explicar o significado do indicador. | Informar quando não for possível classificar o texto. |[m
+[31m-| Análise | Similaridade dos distratores | Aplicação | Indicador que representa a similaridade semântica entre as alternativas incorretas e o gabarito. | Numérico. | Depende da identificação das alternativas e do gabarito. | Nenhum. | Explicar o que representa a similaridade. | Informar quando não houver dados suficientes para o cálculo. |[m
+[31m-| Análise | Correlação com desempenho | Aplicação | Representação das associações observadas entre características estruturais das questões e desempenho dos candidatos no ENEM. | Estatístico (coeficiente e significância). | Depende da disponibilidade de dados de referência. | Nenhum. | Explicar a interpretação da correlação e que associação não implica causalidade. | Informar quando não houver dados suficientes para estabelecer a associação. |[m
+[31m-| Análise | Distribuição do tempo de prova | Aplicação | Apresenta a distribuição estimada do tempo entre leitura das questões, leitura de textos introdutórios e tempo restante para resolução. | Gráfico e dados numéricos. | Depende da duração total e das estimativas de leitura. | Calculado pelo sistema. | Identificar as categorias e unidades utilizadas no gráfico. | Informar quando não for possível calcular a distribuição. |[m
+[31m-| Análise | Resultados por questão | Aplicação | Apresenta as métricas individualizadas de cada questão, permitindo identificar diferenças estruturais ao longo da avaliação. | Gráfico e dados numéricos. | Depende da extração das questões. | Nenhum. | Identificar o número de cada questão e as métricas correspondentes. | Informar questões que não puderam ser processadas. |[m
+[31m-| Análise | Filtros | Convencional | Permitem selecionar quais informações ou questões serão exibidas nas visualizações. | Controle de interface. | Depende dos filtros disponíveis em cada gráfico. | Todos os dados. | Identificar visualmente as opções de filtragem. | Permitir limpar os filtros e retornar à visualização original. |[m
+[31m-| Navegação | Escolher arquivo | Convencional | Aciona a seleção de um documento armazenado no dispositivo do professor. | Botão. | Deve permitir selecionar arquivos compatíveis. | Nenhum. | Informar formatos aceitos. | Permitir selecionar outro arquivo. |[m
+[31m-| Navegação | Avançar/voltar questões | Convencional | Permite navegar entre os conjuntos de questões apresentados no formulário. | Botão. | Respeita a quantidade de questões e páginas disponíveis. | Primeira página. | Indicar a página atual e o total. | Permitir retornar à página anterior. |[m
+[31m-| Navegação | Analisar | Aplicação | Aciona o processamento da prova e a geração das métricas solicitadas. | Botão e estado de processamento. | Exige o preenchimento dos dados obrigatórios. | Inativo até atender aos requisitos. | Validar os campos antes do processamento. | Apresentar mensagens de erro e permitir nova tentativa. |[m
+[31m-| Navegação | Menu de navegação | Convencional | Permite acessar as seções Análise, ENEM e Sobre. | Links de navegação. | Destinos devem estar disponíveis. | Análise. | Identificar a seção atual. | Permitir retornar à seção anterior. |[m
+[31m-| Navegação | Botão "Iniciar Análise" | Aplicação | Comando de ação principal que valida os parâmetros e dispara o processamento da análise pelos modelos do sistema. | Botão de ação | Exige o preenchimento válido de todos os parâmetros obrigatórios da tela | "Iniciar Análise" | Impedir a submissão com dados inconsistentes através de validações em tempo real | Em caso de falha de sistema (Erro 6), permite clicar no botão sem perder os dados preenchidos |[m
+[31m-[m
+[32m+[m[32m| Análise | Prova | Domínio | Avaliação elaborada pelo professor, composta por questões de múltipla escolha, enunciados e alternativas. É o documento fornecido pelo usuário que será processado pelo DesemProv. | Documento digital (PDF), contendo textos e, eventualmente, imagens. | Arquivo obrigatório, formato PDF e tamanho máximo de 10 MB. Deve atender aos requisitos da ferramenta. | Nenhum | Informar os formatos aceitos e o limite de tamanho antes do envio; validar o arquivo selecionado antes de iniciar o processamento. | Exibir mensagem explicativa caso o arquivo seja inválido ou não possa ser processado, permitindo que o professor envie outro documento. |[m
+[32m+[m[32m| Análise | Área tracejada (dropzone) | Convencional | Delimitação da área de soltura do arquivo, atua como limite da zona de transferência. | Controle de interface (visual) | Nenhum | Nenhum | Drag muda de cor ao arrastar um arquivo | Nenhum |[m
+[32m+[m[32m| Análise | Ícone de upload (seta) | Convencional | Representação visual da ação de transferir um arquivo do dispositivo local para o sistema. | Visual (ícone) | Nenhum | Nenhum | Nenhum | Nenhum |[m
+[32m+[m[32m| Análise | Texto instrucional | Convencional | Explica de forma textual direta as formas de interação possíveis com o componente. | Textual | Nenhum | "Selecione ou arraste um arquivo" | Nenhum | Nenhum |[m
+[32m+[m[32m| Análise | Texto de restrição | Aplicação | Signo preventivo, comunica as regras do sistema antes do usuário tentar enviar, reduzindo frustração. | Textual | Limite de 10 MB, extensão PDF e especificações para a extração da prova (apenas provas alternativas, com questões numeradas). | "Formato aceito: PDF de até 10 MB; Envie uma prova com questões numeradas (ex.: “Questão 1”) e alternativas de A a E; PDFs escaneados como imagem não são reconhecidos." | Nenhum | Prevenir envio de arquivo errado |[m
+[32m+[m[32m| Análise | Botão "Escolher arquivo" | Convencional | Comando que aciona o gatilho para abrir o gerenciador de arquivos do sistema operacional. | Botão | Deve permitir selecionar apenas arquivos compatíveis (PDF) | "Escolher arquivo" | Habilitar apenas os formatos aceitos na tela | Permitir clicar novamente para selecionar outro arquivo, substituindo o selecionado previamente |[m
+[32m+[m[32m| Análise | Informações do arquivo (nome e tamanho) | Aplicação | Conteúdo de confirmação/validação do envio para o usuário. | Textual | Nenhum | <nome do arquivo>.pdf <tamanho do arquivo> | Nenhuma | Nenhuma |[m
+[32m+[m[32m| Análise | Botão "Cancelar" (excluir arquivo) | Convencional | Botão para exclusão do arquivo carregado, representado por um "X" com fundo vermelho. | Botão de ícone | Só aparece junto ao arquivo carregado em "Informações do arquivo" | "X" | Nenhuma | Ao clicar, exclui o arquivo atual e deixa visíveis novamente os campos de envio |[m
+[32m+[m[32m| Análise | Título do formulário ("Informe os dados de sua prova") | Convencional | Cabeçalho que orienta a transição de estado da interface após o upload, indicando a etapa de configuração dos parâmetros da prova. | Textual (cabeçalho) | Nenhum | "Informe os dados de sua prova" | Dar visibilidade ao estado do sistema e orientar o início da configuração | Nenhum |[m
+[32m+[m[32m| Análise | Tipo de análise | Aplicação | Dropdown para escolha do escopo da análise estrutural (ex: Análise Completa, Formalismo, etc.). | Seleção (dropdown) | Deve selecionar uma opção disponível | Análise Completa | Apresentar as opções de análise disponíveis em lista suspensa | Permitir alterar a seleção a qualquer momento |[m
+[32m+[m[32m| Análise | Duração da prova (Horas e Minutos) | Domínio | Campos numéricos separados para Horas e Minutos, acompanhados de tag visual de resumo (ex: 2h 30m). | Numérico (inteiros) e badge textual | Obrigatório; valor total não pode exceder 6 horas (360 min) | Nenhum | Indicar campos separados para horas e minutos com tag de resumo para maior clareza | Exibir aviso de alerta inline caso ultrapasse 6h, permitindo a correção do valor |[m
+[32m+[m[32m| Análise | Aviso de duração excedida (Banner Inline) | Aplicação | Banner visual amarelado de alerta comunicando que a duração informada ultrapassou o limite máximo de 6 horas. | Textual (banner de aviso) | Disparado quando a duração inserida for maior que 6h | Oculto | Comunicar em tempo real a regra de negócio sem bloquear a edição dos campos | Desaparece automaticamente assim que o usuário ajusta a duração para ≤ 6h |[m
+[32m+[m[32m| Análise | Ícone de ajuda contextual (i) | Convencional | Ícone informativo ao lado dos rótulos (Tempo de Leitura, Dificuldade, Métricas Reais) para acionar explicações. | Visual (ícone) | Nenhum | Visível ao lado dos rótulos | Esclarecer o propósito da métrica antes do preenchimento | Permitir reconsultar a explicação ao posicionar o ponteiro sobre o ícone |[m
+[32m+[m[32m| Análise | Balão de ajuda contextual (Tooltip) | Aplicação | Mensagem explicativa em sobreposição exibida ao passar o ponteiro (hover) sobre o ícone (i). | Textual (popover/tooltip) | Exibido apenas durante o hover no ícone (i) | Oculto | Explicar a relevância pedagógica da métrica sem poluir a interface principal | Desaparece automaticamente ao afastar o ponteiro do ícone |[m
+[32m+[m[32m| Análise | Opção de tempo de leitura (Padrão / Personalizado) | Aplicação | Botões de rádio para alternar entre a velocidade de leitura padrão (1100 caracteres/minuto) e um valor customizado. | Seleção (radio button) | Seleção exclusiva entre Padrão e Personalizado | Padrão (1100 char/min) | Fornecer uma referência padrão válida para agilizar a configuração | Permitir alternar de volta para a opção "Padrão" a qualquer momento |[m
+[32m+[m[32m| Análise | Campo de velocidade de leitura personalizada | Domínio | Input numérico para digitação da velocidade de leitura (caracteres/minuto), exibido ao marcar "Personalizado". | Numérico (inteiro) | Obrigatório e numérico quando "Personalizado" estiver selecionado | Oculto | Exigir valor numérico válido para habilitar a submissão da análise | Permitir editar o valor ou retornar para a velocidade padrão |[m
+[32m+[m[32m| Análise | Opção de dificuldade das questões (Sim / Não) | Aplicação | Botões de rádio que definem se o professor deseja incluir a atribuição de nível de dificuldade das questões. | Seleção (radio button) | Seleção exclusiva (Sim ou Não) | Não | Evitar preenchimentos desnecessários quando o professor optar por análise simplificada | Permitir alterar para "Não" a qualquer momento para ocultar a seção |[m
+[32m+[m[32m| Análise | Seletores de dificuldade por questão | Aplicação | Cartões de questões contendo botões de escolha direta (Fácil, Médio, Difícil) para cada questão detectada na prova. | Seleção (lista por questão) | Preenchimento obrigatório para todas as questões se a opção for "Sim" | Oculto | Exibir indicador de progresso (X/Y preenchidas) para mostrar quantas faltam | Permitir alterar a classificação de qualquer questão antes de iniciar |[m
+[32m+[m[32m| Análise | Opção de incluir métricas reais dos estudantes (Sim / Não) | Aplicação | Botões de rádio que habilitam a inclusão de dados empíricos de desempenho dos alunos. | Seleção (radio button) | Seleção exclusiva (Sim ou Não) | Não | Permitir o uso do sistema mesmo em provas que ainda não foram aplicadas aos alunos | Permitir alterar para "Não" a qualquer momento para ocultar os campos |[m
+[32m+[m[32m| Análise | Quantidade de participantes ("Quantas pessoas realizaram essa avaliação?") | Domínio | Input numérico para informar o total de alunos da turma que realizaram a avaliação. | Numérico (inteiro) | Maior que zero; obrigatório se métricas reais = Sim | Oculto | Utilizar o valor informado como teto máximo para a validação dos acertos por questão | Permitir corrigir a quantidade informada a qualquer momento |[m
+[32m+[m[32m| Análise | Acertos por questão | Domínio | Inputs numéricos individuais para registrar a quantidade de estudantes que acertaram cada questão da prova. | Numérico (inteiro por questão) | Não pode ultrapassar o número de participantes da avaliação | Oculto | Travar o incremento/digitação diretamente no campo caso tente ultrapassar o total de alunos | Permitir editar os acertos informados para cada questão |[m
+[32m+[m[32m| Análise | Controle de paginação de questões (← X/Y →) | Convencional | Botões de navegação e indicador de página para alternar entre blocos de questões (em Dificuldade e Acertos). | Botões de ícone e texto | Respeita os limites da lista (desabilita voltar na pág. 1 e avançar na última) | Página 1 | Dividir o conjunto de questões em páginas para manter a tela limpa e organizada | Permitir navegar livremente entre as páginas para revisar respostas |[m
+[32m+[m[32m| Análise | Erro1: Formato inválido | Aplicação | Aviso inline informa que o arquivo não é um PDF e necessita de correção imediata. | Texto inline explicativo | Disparado ao tentar subir arquivo com extensão errada | Oculto | O texto "Formato aceito: PDF" na tela principal tenta evitar esse erro | Ação de recuperação ao clicar no botão "x" ou "Entendido" |[m
+[32m+[m[32m| Análise | Erro2: Erro ao preparar a análise | Aplicação | Falha no processamento, aviso inline informando que não foram encontradas questões no arquivo. | Aviso de alerta com botão "Tentar novamente" | Disparado quando a extração não encontra questões válidas | Oculto | Instruir no texto da tela que deve ser enviado um PDF com questões válidas | Botão "Tentar novamente" ou "x" para fechar o aviso e permitir novo arquivo |[m
+[32m+[m[32m| Análise | Erro3: Arquivo excede tamanho | Aplicação | Restrição de sistema, avisa que o arquivo escolhido possui mais de 10 MB. | Textual (mensagem de erro) | Disparado se o arquivo for maior que 10 MB | Oculto | Aviso preventivo na tela principal "até 10 MB" | O usuário fecha o aviso e seleciona um arquivo menor |[m
+[32m+[m[32m| Análise | Erro4: Server Error | Aplicação | Falha sistêmica, comunica instabilidade temporária na ferramenta. | Aviso de alerta com ícone de falha e botão "Tentar novamente" | Disparado quando a requisição falhar | Oculto | Nenhum | Botão "Tentar novamente" para refazer a requisição |[m
+[32m+[m[32m| Análise | Erro5: Erro ao colocar valor maior que 6h | Aplicação | Restrição de sistema, avisa que a duração da prova não pode ultrapassar 6h. | Textual (mensagem de erro) | Disparado quando o valor ultrapassa 6h | Oculto | Validação em tempo real no campo de duração | O usuário insere um novo valor válido no campo de duração |[m
+[32m+[m[32m| Análise | Erro6: Falha ao carregar modelos de IA | Aplicação | Falha sistêmica, comunica que houve erro no carregamento dos modelos BERT/RoBERTa. | Pop-up/modal de alerta com texto explicativo | Disparado quando os modelos de IA falharem no processamento | Oculto | Nenhum | Botão "Tentar novamente" direcionando direto ao processamento sem perder dados |[m
+[32m+[m[32m| Análise | Métricas estruturais | Aplicação | Conjunto de indicadores extraídos da prova, como quantidade de caracteres, palavras e presença de imagens. | Numérico e textual | Depende das características identificadas no documento | Nenhum | Apresentar a descrição de cada métrica | Informar quando não for possível extrair determinada característica |[m
+[32m+[m[32m| Análise | Tempo estimado de leitura | Aplicação | Estimativa do tempo necessário para leitura das questões com base nos caracteres e na velocidade configurada. | Numérico (minutos) | Depende do conteúdo extraído e da velocidade informada | Calculado pelo sistema | Explicar os parâmetros utilizados no cálculo | Informar quando não houver conteúdo suficiente para estimar o tempo |[m
+[32m+[m[32m| Análise | Formalismo | Aplicação | Indicador relacionado ao nível de formalidade linguística identificado nos enunciados pelos modelos de IA. | Numérico | Depende do processamento textual realizado pelo modelo | Nenhum | Explicar o significado do indicador | Informar quando não for possível classificar o texto |[m
+[32m+[m[32m| Análise | Similaridade dos distratores | Aplicação | Indicador que representa a similaridade semântica entre as alternativas incorretas e o gabarito. | Numérico | Depende da identificação das alternativas e do gabarito | Nenhum | Explicar o que representa a similaridade | Informar quando não houver dados suficientes para o cálculo |[m
+[32m+[m[32m| Análise | Correlação com desempenho | Aplicação | Representação das associações observadas entre características da prova e dados de referência do ENEM. | Estatístico (coeficiente e significância) | Depende da disponibilidade de dados de referência | Nenhum | Explicar a interpretação da correlação ressaltando que associação não implica causalidade | Informar quando não houver dados suficientes para estabelecer a associação |[m
+[32m+[m[32m| Análise | Distribuição do tempo de prova | Aplicação | Apresenta a distribuição estimada do tempo entre leitura das questões, textos e tempo restante. | Gráfico e dados numéricos | Depende da duração total e das estimativas de leitura | Calculado pelo sistema | Identificar as categorias e unidades utilizadas no gráfico | Informar quando não for possível calcular a distribuição |[m
+[32m+[m[32m| Análise | Resultados por questão | Aplicação | Apresenta as métricas individualizadas de cada questão, permitindo identificar diferenças estruturais. | Gráfico e dados numéricos | Depende da extração das questões | Nenhum | Identificar o número de cada questão e as métricas correspondentes | Informar questões que não puderam ser processadas |[m
+[32m+[m[32m| Análise | Filtros | Convencional | Permitem selecionar quais características ou questões serão exibidas nas visualizações de resultado. | Controle de interface | Depende dos filtros disponíveis em cada gráfico | Todos os dados | Identificar visualmente as opções de filtragem | Permitir limpar os filtros e retornar à visualização original |[m
+[32m+[m[32m| Navegação | Menu de navegação | Convencional | Permite acessar as seções Análise, ENEM e Sobre no cabeçalho da aplicação. | Links de navegação | Destinos devem estar disponíveis | Análise | Identificar a seção atualmente ativa | Permitir retornar à seção anterior a qualquer momento |[m
+[32m+[m[32m| Navegação | Botão "Iniciar Análise" | Aplicação | Comando de ação principal que valida os parâmetros e dispara o processamento da análise pelos modelos do sistema. | Botão de ação | Exige o preenchimento válido de todos os parâmetros obrigatórios da tela | "Iniciar Análise" | Impedir a submissão com dados inconsistentes através de validações em tempo real | Em caso de falha de sistema (Erro 6), permite clicar em "Tentar novamente" sem perder os dados preenchidos |[m
+ [m
+ ### Regras para os signos[m
+ [m
+[1mdiff --git a/docs/10_molic.md b/docs/10_molic.md[m
+[1mindex 1093bc7..dda10eb 100644[m
+[1m--- a/docs/10_molic.md[m
+[1m+++ b/docs/10_molic.md[m
+[36m@@ -119,7 +119,7 @@[m [mDado que a prova foi validada (precond: {prova validada}), o docente interage co[m
+ Durante o preenchimento na cena Informar dados da prova, as validações das regras de negócio ocorrem instantaneamente na própria cena, sem acionar o nó de processamento interno:[m
+ [m
+ - Duração > 6h: Ao inserir um valor superior a 6 horas, a interface exibe imediatamente um alerta visual de validação. O docente ajusta o valor  na própria cena, voltando para o fluxo principal[m
+[31m-[m
+[32m+[m[32m<!--[m
+ #### Caminho alternativo 3 (Tratamento de Erro de Sistema / Modelos de IA)[m
+ [m
+ Após preencher todos os parâmetros válidos e clicar em u: Iniciar análise, a conversa avança para o nó de processamento interno.[m
+[36m@@ -127,14 +127,17 @@[m [mApós preencher todos os parâmetros válidos e clicar em u: Iniciar análise, a[m
+ Caso ocorra uma indisponibilidade nos modelos de Linguagem Natural (BERT / RoBERTa) ou falha de comunicação com o servidor, o sistema emite uma transição por linha tracejada (d: falha ao carregar modelos de IA) para a Cena de Erro de Sistema.[m
+ [m
+ Como todos os dados digitados foram validados e permanecem preservados na tela, o docente seleciona novamente o u: Iniciar análise, sem a necessidade de re-preencher o formulário.[m
+[32m+[m[32m-->[m
+ [m
+ #### Alternativas e rupturas[m
+ [m
+ | Situação | Onde ocorre | Como o usuário percebe | Caminho de recuperação/saída |[m
+ | --- | --- | --- | --- |[m
+ | Duração da prova excede 6 horas | Na própria cena do formulário (validação instantânea no campo) | Alerta visual imediato no campo informando que a duração não pode ultrapassar 6h (`d: Duração máxima de 6h excedida`) | O docente ajusta a duração para um valor menor ou igual a 6h na própria cena (`u: Corrigir erro`) |[m
+[31m-| Falha temporária no servidor ou modelos de IA (BERT/RoBERTa) | No nó de processamento interno do sistema (Caixa Preta) | Mensagem na cena de erro de sistema  informando indisponibilidade (`d: falha ao carregar modelos de IA`) | O docente clica novamente no `u: iniciar análise` para novamente ir para o nó de processamento interno do sistema |[m
+ [m
+[32m+[m[32m<!--[m
+[32m+[m[32m| Falha temporária no servidor ou modelos de IA (BERT/RoBERTa) | No nó de processamento interno do sistema (Caixa Preta) | Mensagem na cena de erro de sistema  informando indisponibilidade (`d: falha ao carregar modelos de IA`) | O docente clica novamente no `u: iniciar análise` para novamente ir para o nó de processamento interno do sistema |[m
+[32m+[m[32m-->[m
+ ### Checklist específico de modelagem[m
+ [m
+ - [ ] Existe **ponto de abertura** coerente com o início do objetivo.[m
+[36m@@ -154,7 +157,7 @@[m [mComo todos os dados digitados foram validados e permanecem preservados na tela,[m
+ ## M02 — Enviar a avaliação em PDF[m
+ [m
+ **Autor(a):** Beatriz Manaia Lourenço Berto <br>[m
+[31m-**Cenário de interação de origem:** CI02  <br>[m
+[32m+[m[32m**Cenário de interação de origem:** CI01  <br>[m
+ **Objetivo(s):** O01  <br>[m
+ **Tarefa(s) relacionada(s):** T01 - Analisar a prova  <br>[m
+ **Signos relevantes:** Prova, Área tracejada (dropzone), ícone de upload (seta), Texto instrucional, Texto de restrição, Botão "Escolher arquivo", Informações do arquivo (nome e tamanho), Botão "cancelar". [m
+[36m@@ -219,7 +222,7 @@[m [mDado que a prova se encontra elaborada (precond: {prova elaborada}), o docente a[m
+ ## M03 — Consultar as métricas/analise da prova[m
+ [m
+ **Autor(a):** Nuno Martins Guilhermino da Silva RA: 22.126.099-5 <br>[m
+[31m-**Cenário de interação de origem:** CI03 <br>[m
+[32m+[m[32m**Cenário de interação de origem:** CI01 <br>[m
+ **Objetivo(s):** O03  <br>[m
+ **Tarefa(s) relacionada(s):**  T01 - Analisar a prova <br>[m
+ **Signos relevantes:** {{...}}<!-- complete--><br>[m
+[1mdiff --git a/docs/11_figma.md b/docs/11_figma.md[m
+[1mindex 2fb8286..9acee67 100644[m
+[1m--- a/docs/11_figma.md[m
+[1m+++ b/docs/11_figma.md[m
+[36m@@ -51,7 +51,7 @@[m [mComo alinhado em aula, devido ao projeto de IHC ser do nosso TCC e já termos a[m
+ [m
+ | MoLIC | Objetivo | Fluxo/telas no Figma | Estados de erro/recuperação | Responsável |[m
+ |---|---|---|---|---|[m
+[31m-| M01 | O01, O02, O03 | `F01 → F02 → F03` | `F02E, F03R` | Luana Bortko Rodrigues |[m
+[32m+[m[32m| M01 | O01, O02, O03 | `---` | `F03E1` | Luana Bortko Rodrigues |[m
+ | M02 | O01, O02, O03 | `F01 → F02` | `F02E1, F02E2, F02E3, F02E4` | Beatriz Manaia Lourenço Berto |[m
+ | M03 | O01, O02, O03 | `F01 → F02 → F03` | `F02E, F03R` | Nuno Martins Guilhermino da Silva |[m
+ [m
+[36m@@ -59,7 +59,7 @@[m [mComo alinhado em aula, devido ao projeto de IHC ser do nosso TCC e já termos a[m
+ [m
+ ### F01 — Tela principal [m
+ [m
+[31m-![F01](../assets/11_figma/f01.jpeg)[m
+[32m+[m[32m![F01](../assets/11_figma/f01.png)[m
+ [m
+ **Objetivo do usuário:** Anexar um arquivo na tela<br> [m
+ **Signos principais:** Prova, Área tracejada, ícone de upload (seta), texto instrucional, texto de restrição, botão "Escolher arquivo"<br> [m
+[36m@@ -67,7 +67,7 @@[m [mComo alinhado em aula, devido ao projeto de IHC ser do nosso TCC e já termos a[m
+ [m
+ ### F02 — Arquivo no formato válido enviado (fluxo feliz)[m
+ [m
+[31m-![F02](../assets/11_figma/f02.jpeg)[m
+[32m+[m[32m![F02](../assets/11_figma/f02.png)[m
+ [m
+ **Objetivo do usuário:** Seguir o fluxo e informar os dados da prova <br> [m
+ **Signos principais:** Informações do arquivo (nome e tamanho), botão "cancelar" <br> [m
+[36m@@ -75,7 +75,7 @@[m [mComo alinhado em aula, devido ao projeto de IHC ser do nosso TCC e já termos a[m
+ [m
+ ### F02E1 — Arquivo com formato inválido[m
+ [m
+[31m-![F02E1](../assets/11_figma/f03.jpeg)[m
+[32m+[m[32m![F02E1](../assets/11_figma/f02e1.png)[m
+ [m
+ **Objetivo do usuário:** Enviar arquivo em formato válido  <br> [m
+ **Signos principais:** Erro1: Formato inválido  <br> [m
+[36m@@ -84,7 +84,7 @@[m [mComo alinhado em aula, devido ao projeto de IHC ser do nosso TCC e já termos a[m
+ [m
+ ### F02E2 — Erro ao extrair questões do PDF[m
+ [m
+[31m-![F02E2](../assets/11_figma/f04.jpeg)[m
+[32m+[m[32m![F02E2](../assets/11_figma/f02e2.png)[m
+ [m
+ **Objetivo do usuário:** Enviar arquivo no qual questões consigam ser identificadas <br> [m
+ **Signos principais:** Erro2: Erro ao preparar a análise <br> [m
+[36m@@ -93,7 +93,7 @@[m [mComo alinhado em aula, devido ao projeto de IHC ser do nosso TCC e já termos a[m
+ [m
+ ### F02E3 — Tamanho do arquivo excede limite [m
+ [m
+[31m-![F02E3](../assets/11_figma/f05.jpeg)[m
+[32m+[m[32m![F02E3](../assets/11_figma/f02e3.png)[m
+ [m
+ **Objetivo do usuário:** Enviar um arquivo dentro das limitações específicas para seguir o fluxo feliz de analisar sua avaliação <br> [m
+ **Signos principais:** Erro3: Arquivo excede tamanho <br> [m
+[36m@@ -102,7 +102,7 @@[m [mComo alinhado em aula, devido ao projeto de IHC ser do nosso TCC e já termos a[m
+ [m
+ ### F02E4 — Erro interno[m
+ [m
+[31m-![F0E4](../assets/11_figma/f06.jpeg)[m
+[32m+[m[32m![F02E4](../assets/11_figma/f02e4.png)[m
+ [m
+ **Objetivo do usuário:** Conseguir prosseguir para a tela de informar os dados de sua prova <br> [m
+ **Signos principais:** Erro4: Server Error <br> [m
+[36m@@ -111,14 +111,53 @@[m [mComo alinhado em aula, devido ao projeto de IHC ser do nosso TCC e já termos a[m
+ > Documente também estados que muitas equipes esquecem: carregamento, vazio, confirmação, sucesso, erro, permissão negada, cancelamento, desfazer/voltar quando aplicável.[m
+ [m
+ [m
+[31m-### F0x — xxxxxx [m
+[32m+[m[32m### F03 — Todos os campos obrigatórios preenchidos (fluxo feliz)[m
+ [m
+[31m-![F0xx](../assets/11_figma/f06.jpeg)[m
+[32m+[m[32m![F03](../assets/11_figma/f03.png)[m
+ [m
+[31m-**Objetivo do usuário:** <br> [m
+[31m-**Signos principais:**  <br> [m
+[31m-**Origem no MoLIC:** <br> [m
+[32m+[m[32m**Objetivo do usuário:** Seguir para a página das analises para ver os resultados<br>[m[41m [m
+[32m+[m[32m**Signos principais:** duração da prova, tipo da analise, botão "Iniciar Análise"<br>[m[41m [m
+[32m+[m[32m**Origem no MoLIC:** M01/cena de Informar dados da prova<br>[m[41m [m
+ [m
+[32m+[m[32m### F03E1 — Aviso de duração máxima inválida[m
+[32m+[m
+[32m+[m[32m![F03](../assets/11_figma/f03e1.png)[m
+[32m+[m
+[32m+[m[32m**Objetivo do usuário:** Mudar a duração da prova para não exceder o tempo máximo e conseguir prosseguir com a análise<br>[m[41m [m
+[32m+[m[32m**Signos principais:** duração da prova, erro5: Erro ao colocar valor maior que 6h<br>[m[41m [m
+[32m+[m[32m**Origem no MoLIC:** M01/cena de erro (erro 5)<br>[m
+[32m+[m
+[32m+[m[32m### F03.1 — Informações sobre os campos[m
+[32m+[m
+[32m+[m[32m![F03](../assets/11_figma/f03_1.png)[m
+[32m+[m
+[32m+[m[32m**Objetivo do usuário:** Entender melhor porque selecionar alguma opção<br>[m[41m [m
+[32m+[m[32m**Signos principais:** ícone de ajuda contextual(i), balão de ajuda contextual(tooltip)<br>[m[41m [m
+[32m+[m[32m**Origem no MoLIC:** M01/cena de Informação dos inputs<br>[m
+[32m+[m
+[32m+[m[32m### F03.2 — Informar tempo de leitura válido[m
+[32m+[m
+[32m+[m[32m![F03](../assets/11_figma/f03_2.png)[m
+[32m+[m
+[32m+[m[32m**Objetivo do usuário:** Quer utilizar outro tempo de leitura para a análise<br>[m[41m [m
+[32m+[m[32m**Signos principais:** Opção do tempo de leitura, campo de velocidade de leitura<br>[m[41m [m
+[32m+[m[32m**Origem no MoLIC:** M01/cena de Ajustar velocidade de leitura<br>[m
+[32m+[m
+[32m+[m[32m### F03.3 — Utilizar a dificuldade[m
+[32m+[m
+[32m+[m[32m![F03](../assets/11_figma/f03_3.png)[m
+[32m+[m
+[32m+[m[32m**Objetivo do usuário:** Deseja que a dificuldade das questões seja considerada na análise<br>[m[41m [m
+[32m+[m[32m**Signos principais:** Opção de dificuldade das questões, dificuldade das questões<br>[m[41m [m
+[32m+[m[32m**Origem no MoLIC:** M01/cena de Atribuir dificuldade das questões<br>[m
+[32m+[m
+[32m+[m[32m### F03.4 — Utilizar as métricas dos estudantes[m
+[32m+[m
+[32m+[m[32m![F03](../assets/11_figma/f03_4.png)[m
+[32m+[m
+[32m+[m[32m**Objetivo do usuário:** Deseja que a quantidade de alunos que acertou as questões seja considerado na análise<br>[m[41m [m
+[32m+[m[32m**Signos principais:** opção de incluir métricas dos alunos, quantidade de participantes, acertos por questão<br>[m[41m [m
+[32m+[m[32m**Origem no MoLIC:** M01/cena de Inserir acertos dos alunos<br>[m
+ [m
+ ## Sistema visual e consistência[m
+ [m

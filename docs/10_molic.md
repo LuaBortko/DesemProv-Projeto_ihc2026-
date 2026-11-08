@@ -119,7 +119,7 @@ Dado que a prova foi validada (precond: {prova validada}), o docente interage co
 Durante o preenchimento na cena Informar dados da prova, as validações das regras de negócio ocorrem instantaneamente na própria cena, sem acionar o nó de processamento interno:
 
 - Duração > 6h: Ao inserir um valor superior a 6 horas, a interface exibe imediatamente um alerta visual de validação. O docente ajusta o valor  na própria cena, voltando para o fluxo principal
-
+<!--
 #### Caminho alternativo 3 (Tratamento de Erro de Sistema / Modelos de IA)
 
 Após preencher todos os parâmetros válidos e clicar em u: Iniciar análise, a conversa avança para o nó de processamento interno.
@@ -127,14 +127,17 @@ Após preencher todos os parâmetros válidos e clicar em u: Iniciar análise, a
 Caso ocorra uma indisponibilidade nos modelos de Linguagem Natural (BERT / RoBERTa) ou falha de comunicação com o servidor, o sistema emite uma transição por linha tracejada (d: falha ao carregar modelos de IA) para a Cena de Erro de Sistema.
 
 Como todos os dados digitados foram validados e permanecem preservados na tela, o docente seleciona novamente o u: Iniciar análise, sem a necessidade de re-preencher o formulário.
+-->
 
 #### Alternativas e rupturas
 
 | Situação | Onde ocorre | Como o usuário percebe | Caminho de recuperação/saída |
 | --- | --- | --- | --- |
 | Duração da prova excede 6 horas | Na própria cena do formulário (validação instantânea no campo) | Alerta visual imediato no campo informando que a duração não pode ultrapassar 6h (`d: Duração máxima de 6h excedida`) | O docente ajusta a duração para um valor menor ou igual a 6h na própria cena (`u: Corrigir erro`) |
-| Falha temporária no servidor ou modelos de IA (BERT/RoBERTa) | No nó de processamento interno do sistema (Caixa Preta) | Mensagem na cena de erro de sistema  informando indisponibilidade (`d: falha ao carregar modelos de IA`) | O docente clica novamente no `u: iniciar análise` para novamente ir para o nó de processamento interno do sistema |
 
+<!--
+| Falha temporária no servidor ou modelos de IA (BERT/RoBERTa) | No nó de processamento interno do sistema (Caixa Preta) | Mensagem na cena de erro de sistema  informando indisponibilidade (`d: falha ao carregar modelos de IA`) | O docente clica novamente no `u: iniciar análise` para novamente ir para o nó de processamento interno do sistema |
+-->
 ### Checklist específico de modelagem
 
 - [ ] Existe **ponto de abertura** coerente com o início do objetivo.
@@ -154,7 +157,7 @@ Como todos os dados digitados foram validados e permanecem preservados na tela, 
 ## M02 — Enviar a avaliação em PDF
 
 **Autor(a):** Beatriz Manaia Lourenço Berto <br>
-**Cenário de interação de origem:** CI02  <br>
+**Cenário de interação de origem:** CI01  <br>
 **Objetivo(s):** O01  <br>
 **Tarefa(s) relacionada(s):** T01 - Analisar a prova  <br>
 **Signos relevantes:** Prova, Área tracejada (dropzone), ícone de upload (seta), Texto instrucional, Texto de restrição, Botão "Escolher arquivo", Informações do arquivo (nome e tamanho), Botão "cancelar". 
@@ -219,7 +222,7 @@ Dado que a prova se encontra elaborada (precond: {prova elaborada}), o docente a
 ## M03 — Consultar as métricas/analise da prova
 
 **Autor(a):** Nuno Martins Guilhermino da Silva RA: 22.126.099-5 <br>
-**Cenário de interação de origem:** CI03 <br>
+**Cenário de interação de origem:** CI01 <br>
 **Objetivo(s):** O03  <br>
 **Tarefa(s) relacionada(s):**  T01 - Analisar a prova <br>
 **Signos relevantes:** {{...}}<!-- complete--><br>

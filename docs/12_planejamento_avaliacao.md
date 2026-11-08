@@ -2,8 +2,8 @@
 
 <!-- LER ANOTACAO TOPICO 12 PRINCIPALMENTE O NAO GRIFADO E VER ANOTACAO AULA -->
 
-**Data:** 08/11/2026  <br> 
-**Status:** 🟨 Em andamento  <br> 
+**Data:** 08/11/2026<br> 
+**Status:** 🟨 Em andamento<br> 
 **Responsabilidade:** 1 solução por equipe<br> 
 
 <!--Entrega eh p entender tecnicas de planejamento, qnd fa zplanejamento resp perg e sabe se vai faze teste de avaliaco heuristica, ou comunicabilidade ou observacao do usuario, ensina a planejar -->
@@ -82,11 +82,11 @@ há problemas de feedback?
 
 | ID | Pergunta | Método | Métrica/evidência | Critério esperado |
 |---|---|---|---|---|
-| QA01 | O usuário consegue operar o sistema sem grandes dificuldades? | heurística, observação | Taxa de conclusão das tarefas, quantidade de erros, solicitações de ajuda e  abandonos |  Taxa de sucesso de pelo menos 90% na primeira tentativa sem auxilio (MU01) |
+| QA01 | O usuário consegue operar o sistema sem grandes dificuldades? | heurística, observação | Taxa de conclusão das tarefas, quantidade de erros, solicitações de ajuda e  abandonos | Taxa de sucesso de pelo menos 90% na primeira tentativa sem auxilio (MU01) |
 | QA02 | O usuário consegue analisar as métricas da prova? | heurística, observação | Taxa de interpretação correta das métricas, dúvidas apresentadas e violações heurísticas relacionadas a compreensão | Os usuários conseguem interpretar as métricas e identificar informações relevantes para analisar a prova |
 | QA03 | As métricas disponibilizadas auxiliam na compreensão da avaliação? | observação | Relatos dos usuários, interpretações realizadas e necessidades não atendidas | As métricas são compreensíveis e fornecem informações relevantes para apoiar a análise da prova |
 | QA04 | Quais objetivos dos usuários podem ser alcançados através do sistema e quais não podem ser alcançados através do sistema? | observação | Tarefas concluídas, parcialmente concluídas ou não realizadas e necessidades não atendidas | Os principais objetivos relacionados à análise da prova podem ser alcançados pelo sistema, com identificação de possíveis limitações |
-| QA05 | Quais barreiras o usuário encontra para atingir seus objetivos? | heurística,observação | Quantidade e tipo de dificuldades, erros, dúvidas, interrupções e violações heurísticas identificadas | Os  usuários conseguem superar as dificuldades sen comprometer a conclusão das tarefas com média inferior a um erro por usuário (MU04) |
+| QA05 | Quais barreiras o usuário encontra para atingir seus objetivos? | heurística,observação | Quantidade e tipo de dificuldades, erros, dúvidas, interrupções e violações heurísticas identificadas | Os  usuários conseguem superar as dificuldades sem comprometer a conclusão das tarefas com média inferior a um erro por usuário (MU04) |
 | QA06 | A tecnologia disponível pode oferecer maneiras mais interessantes ou eficientes de os usuários atingirem seus objetivo? | observação | Sugestões dos usuários, dificuldades recorrentes e oportunidades de melhoria identificadas durante o uso | São identificadas oportunidades de melhoria que tornem a interação mais simples, eficiente e adequada às necessidades dos professores |
 | QA07 | O usuário consegue operar o sistema com quanta eficiência? Em quanto tempo? Após cometer quantos erros?  | heurística, observação | Tempo de execução, taxa de sucesso, quantidade de erros e solicitações de ajuda por tarefa| Tempo mediano de execução de até 15 minutos (MU03) e média inferior a um erro por uusário (MU04) |
 | QA08 | Que parte da interface e da interação o deixa insatisfeito? | heurística, observação | Relátos de insatisfação, dificuldades percebidas e violações heurísticas identifciadas | Atingir pelo menos 75% de satisfação na avaliação pós-tarefa (MU05) |

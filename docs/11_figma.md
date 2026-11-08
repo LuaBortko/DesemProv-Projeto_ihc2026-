@@ -51,7 +51,7 @@ Como alinhado em aula, devido ao projeto de IHC ser do nosso TCC e já termos a 
 
 | MoLIC | Objetivo | Fluxo/telas no Figma | Estados de erro/recuperação | Responsável |
 |---|---|---|---|---|
-| M01 | O01, O02, O03 | `F01 → F02 → F03` | `F02E, F03R` | Luana Bortko Rodrigues |
+| M01 | O01, O02, O03 | `---` | `F03E1` | Luana Bortko Rodrigues |
 | M02 | O01, O02, O03 | `F01 → F02` | `F02E1, F02E2, F02E3, F02E4` | Beatriz Manaia Lourenço Berto |
 | M03 | O01, O02, O03 | `F01 → F02 → F03` | `F02E, F03R` | Nuno Martins Guilhermino da Silva |
 
@@ -59,7 +59,7 @@ Como alinhado em aula, devido ao projeto de IHC ser do nosso TCC e já termos a 
 
 ### F01 — Tela principal 
 
-![F01](../assets/11_figma/f01.jpeg)
+![F01](../assets/11_figma/f01.png)
 
 **Objetivo do usuário:** Anexar um arquivo na tela<br> 
 **Signos principais:** Prova, Área tracejada, ícone de upload (seta), texto instrucional, texto de restrição, botão "Escolher arquivo"<br> 
@@ -67,7 +67,7 @@ Como alinhado em aula, devido ao projeto de IHC ser do nosso TCC e já termos a 
 
 ### F02 — Arquivo no formato válido enviado (fluxo feliz)
 
-![F02](../assets/11_figma/f02.jpeg)
+![F02](../assets/11_figma/f02.png)
 
 **Objetivo do usuário:** Seguir o fluxo e informar os dados da prova <br> 
 **Signos principais:** Informações do arquivo (nome e tamanho), botão "cancelar" <br> 
@@ -75,7 +75,7 @@ Como alinhado em aula, devido ao projeto de IHC ser do nosso TCC e já termos a 
 
 ### F02E1 — Arquivo com formato inválido
 
-![F02E1](../assets/11_figma/f03.jpeg)
+![F02E1](../assets/11_figma/f02e1.png)
 
 **Objetivo do usuário:** Enviar arquivo em formato válido  <br> 
 **Signos principais:** Erro1: Formato inválido  <br> 
@@ -84,7 +84,7 @@ Como alinhado em aula, devido ao projeto de IHC ser do nosso TCC e já termos a 
 
 ### F02E2 — Erro ao extrair questões do PDF
 
-![F02E2](../assets/11_figma/f04.jpeg)
+![F02E2](../assets/11_figma/f02e2.png)
 
 **Objetivo do usuário:** Enviar arquivo no qual questões consigam ser identificadas <br> 
 **Signos principais:** Erro2: Erro ao preparar a análise <br> 
@@ -93,7 +93,7 @@ Como alinhado em aula, devido ao projeto de IHC ser do nosso TCC e já termos a 
 
 ### F02E3 — Tamanho do arquivo excede limite 
 
-![F02E3](../assets/11_figma/f05.jpeg)
+![F02E3](../assets/11_figma/f02e3.png)
 
 **Objetivo do usuário:** Enviar um arquivo dentro das limitações específicas para seguir o fluxo feliz de analisar sua avaliação <br> 
 **Signos principais:** Erro3: Arquivo excede tamanho <br> 
@@ -102,7 +102,7 @@ Como alinhado em aula, devido ao projeto de IHC ser do nosso TCC e já termos a 
 
 ### F02E4 — Erro interno
 
-![F0E4](../assets/11_figma/f06.jpeg)
+![F02E4](../assets/11_figma/f02e4.png)
 
 **Objetivo do usuário:** Conseguir prosseguir para a tela de informar os dados de sua prova <br> 
 **Signos principais:** Erro4: Server Error <br> 
@@ -111,14 +111,53 @@ Como alinhado em aula, devido ao projeto de IHC ser do nosso TCC e já termos a 
 > Documente também estados que muitas equipes esquecem: carregamento, vazio, confirmação, sucesso, erro, permissão negada, cancelamento, desfazer/voltar quando aplicável.
 
 
-### F0x — xxxxxx 
+### F03 — Todos os campos obrigatórios preenchidos (fluxo feliz)
 
-![F0xx](../assets/11_figma/f06.jpeg)
+![F03](../assets/11_figma/f03.png)
 
-**Objetivo do usuário:** <br> 
-**Signos principais:**  <br> 
-**Origem no MoLIC:** <br> 
+**Objetivo do usuário:** Seguir para a página das analises para ver os resultados<br> 
+**Signos principais:** duração da prova, tipo da analise, botão "Iniciar Análise"<br> 
+**Origem no MoLIC:** M01/cena de Informar dados da prova<br> 
 
+### F03E1 — Aviso de duração máxima inválida
+
+![F03](../assets/11_figma/f03e1.png)
+
+**Objetivo do usuário:** Mudar a duração da prova para não exceder o tempo máximo e conseguir prosseguir com a análise<br> 
+**Signos principais:** duração da prova, erro5: Erro ao colocar valor maior que 6h<br> 
+**Origem no MoLIC:** M01/cena de erro (erro 5)<br>
+
+### F03.1 — Informações sobre os campos
+
+![F03](../assets/11_figma/f03_1.png)
+
+**Objetivo do usuário:** Entender melhor porque selecionar alguma opção<br> 
+**Signos principais:** ícone de ajuda contextual(i), balão de ajuda contextual(tooltip)<br> 
+**Origem no MoLIC:** M01/cena de Informação dos inputs<br>
+
+### F03.2 — Informar tempo de leitura válido
+
+![F03](../assets/11_figma/f03_2.png)
+
+**Objetivo do usuário:** Quer utilizar outro tempo de leitura para a análise<br> 
+**Signos principais:** Opção do tempo de leitura, campo de velocidade de leitura<br> 
+**Origem no MoLIC:** M01/cena de Ajustar velocidade de leitura<br>
+
+### F03.3 — Utilizar a dificuldade
+
+![F03](../assets/11_figma/f03_3.png)
+
+**Objetivo do usuário:** Deseja que a dificuldade das questões seja considerada na análise<br> 
+**Signos principais:** Opção de dificuldade das questões, dificuldade das questões<br> 
+**Origem no MoLIC:** M01/cena de Atribuir dificuldade das questões<br>
+
+### F03.4 — Utilizar as métricas dos estudantes
+
+![F03](../assets/11_figma/f03_4.png)
+
+**Objetivo do usuário:** Deseja que a quantidade de alunos que acertou as questões seja considerado na análise<br> 
+**Signos principais:** opção de incluir métricas dos alunos, quantidade de participantes, acertos por questão<br> 
+**Origem no MoLIC:** M01/cena de Inserir acertos dos alunos<br>
 
 ## Sistema visual e consistência
 
