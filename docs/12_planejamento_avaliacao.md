@@ -54,31 +54,13 @@ SEGUNDA REPSOTA: COLOQUEI TDOS SOS EXEMPLOS DA AULA MAS É BOM PENSARMOS EM PERG
 | **C — Choose the evaluation paradigm and techniques** | Serão utilizados os métodos de inspeção heurística e observação de usuários devido a sua obrigatoriedade pelo professor da disciplina. |
 | **I — Identify the practical issues** | Participantes: 3 a 5 desenvolvedores (para a inspeção heurística) e 1 a 3 professores (para a observação de uso). Recrutamento: Professores serão convidados via contato direto (pessoalmente) no período de aula. Devido à janela de 1 semana para a realização dos testes, eles terão que ser rápidos. Ambiente: As sessões com os professores serão presenciais, na faculdade. A inspeção heurística será presencial/Google Meet entre a equipe. Equipamentos: Computador com acesso à internet, microfone, câmera. Piloto: Um integrante da equipe fará o papel de "professor" 1 dia antes para validar o roteiro e o tempo (máximo 40 min). Cronograma: Semana 1: Dias 1-2 (Recrutamento e Heurística); Dias 3-4 (Testes com Professores); Dias 5-7 (Análise de dados e redação). Responsáveis: Luana (Facilitadora), Beatriz (Observador/Anotações), Nuno (Análise e Cronometragem). Riscos Técnicos: Falha na conexão ou no protótipo local. |
 | **D — Decide how to deal with ethical issues** | Os participantes devem ser respeitados e não podem ser prejudicados direta ou indiretamente, nem durante os experimentos, nem após a divulgação dos resultados. Para os testes presenciais na faculdade com os professores, adotaremos as seguintes medidas, alinhadas à Resolução 196/96:  1. Autonomia e Consentimento Livre e Esclarecido: Antes de iniciar o teste, o professor receberá e assinará o Termo de Consentimento. Será esclarecido que ele tem total liberdade para recusar-se a participar ou desistir a qualquer momento, sem qualquer prejuízo ou constrangimento.  2. Não Maleficência e Ambiente Seguro: Como o teste ocorre na faculdade, garantiremos uma sala reservada e silenciosa. O facilitador deixará claro que o objeto de avaliação é o sistema e não a capacidade do professor. Se o professor errar, a equipe não o julgará; pelo contrário, o erro será tratado como uma oportunidade de melhoria da interface, evitando qualquer estresse ou sensação de incapacidade. 3. Confidencialidade e Anonimato: Na divulgação dos resultados, os nomes dos professores serão totalmente anonimizados (ex: Professor P1, Professor P2).  4. Proteção de Dados de Terceiros: Como o sistema analisa provas (arquivos PDF), orientaremos os professores a utilizarem arquivos de prova modelo ou sem dados sensíveis de alunos reais. Caso utilizem provas reais, garantiremos que os PDFs não serão retidos após a avaliação, respeitando a privacidade dos estudantes.|
-| **E — Evaluate, interpret and present the data** | Como dados quantitativos/qualitativos serão consolidados, comparados às metas e apresentados. |
+| **E — Evaluate, interpret and present the data** | 
+Consolidação: Os dados quantitativos (tempo, erros, notas de satisfação) serão organizados em gráficos e tabelas de frequência/média. Os dados qualitativos (falas e observações) serão agrupados por temas (ex: "dificuldade de feedback", "confusão nos gráficos").  Comparação com Metas: Os resultados serão comparados diretamente com os critérios de sucesso da seção B (ex: verificar se a taxa de sucesso passou de 90% ou se a média de erros ficou abaixo de 1).  Apresentação: Os resultados serão apresentados em um relatório contendo: gráficos comparativos, citações anônimas dos professores para ilustrar os problemas e uma lista final de melhorias para a interface, classificada por gravidade (grave, moderado, leve).|
 
 ## B. Perguntas de avaliação
 
 <!-- importante usa metodo de observação de uso (que ehentrega  14)
 axcho que tambem caberia fazer o de inspecao: Inspecao nos avlaiadores usamos interfface e fazemoa analise potencial -->
-
-<!--
-O usuário consegue operar o sistema sem grandes dificuldades?
-O usuário consegue analisar as métricas da prova?
-As métricas disponibilizadas auxiliam na compreensão da avaliação?
-Quais objetivos dos usuários podem ser alcançados através do sistema e quais não podem ser alcançados através do sistema?
-Quais barreiras o usuário encontra para atingir seus objetivos? 
-A tecnologia disponível pode oferecer maneiras mais interessantes ou eficientes de os usuários atingirem seus objetivo?
-O usuário consegue operar o sistema com quanta eficiência? Em quanto tempo? 
-Após cometer quantos erros? 
-Que parte da interface e da interação o deixa insatisfeito? 
-Quais são os pontos fortes e fracos do sistema, na opinião dos usuários?
-Que parte da interface o desmotiva a explorar novas funcionalidades?
-Ele entende o que significa e para que serve cada elemento da interface? 
-Ele vai entender o que deve fazer em seguida? 
-Ele tem acesso a todas as informações oferecidas pelo sistema?
-O que é possível modificar no sistema interativo para adequá-lo melhor ao ambiente de trabalho?
-há problemas de feedback?
--->
 
 | ID | Pergunta | Método | Métrica/evidência | Critério esperado |
 |---|---|---|---|---|
@@ -114,7 +96,9 @@ há problemas de feedback?
 
 | ID | Cenário neutro entregue ao usuário | Objetivo oculto da avaliação | Critério de sucesso | Tempo-limite (se houver) |
 |---|---|---|---|---|
-| UT01 | {{...}} | {{T01/O01}} | {{...}} | {{...}} |
+| UT01 | "Você acabou de criar uma prova de alguma matéria que leciona e quer saber métricas sobre o formato da sua prova como: relação dos distraotres das alternativas, se o tempo para fazer as questÕes é suficiente." | T01/O01 | Concluir upload, preencher as informações da prova e gerar a análise | 5 minutos |
+| UT02 | "Você quer avaliar uma prova já aplicada que teve um desempenho fora do esperado, para isso deseja analisar as caracteristicas de formato da sua avaliação" | T01/O02 | Concluir upload, preencher as informações da prova e gerar a análise | 5 minutos |
+| UT03 | "Analisando os resultados/métricas geradas pelo sistema, identifique informações úteis para você, como elaborador de prova" | T01/O01/O02 | Localizar as informações e analisar as métricas e gráficos disponibiloizados | 10 minutos |
 
 > Uma boa instrução descreve o objetivo do participante sem dizer **onde clicar** ou usar o rótulo exato do controle que está sendo testado.
 
