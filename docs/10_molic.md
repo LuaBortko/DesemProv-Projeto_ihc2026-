@@ -225,43 +225,90 @@ Dado que a prova se encontra elaborada (precond: {prova elaborada}), o docente a
 **Cenário de interação de origem:** CI01 <br>
 **Objetivo(s):** O03  <br>
 **Tarefa(s) relacionada(s):**  T01 - Analisar a prova <br>
-**Signos relevantes:** {{...}}<!-- complete--><br>
+**Signos relevantes:** formalismo, similaridade de distratores, quantidade de palavras, distribuição do tempo de prova e o tempo estimado de leitura, resultados por questão, filtros, quantidade de questões, dificuldade das questões, prova, métricas estruturais, correlação com desempenho, erro6: falha ao usar os modelos de IA, balão de ajuda contextual<br>
 
 ### Diagrama
 
-![MoLIC M01](../assets/10_molic/molic_m01.svg)
+![MoLIC M01](../assets/10_molic/molic_m03.svg)
 
 **Fonte editável:** [link editável](https://canva.link/tbgn4mxijuochce)
 
 ### Leitura do diagrama
 
-Explique em texto o caminho principal e pelo menos os caminhos alternativos/rupturas mais importantes.
+<!--Explique em texto o caminho principal e pelo menos os caminhos alternativos/rupturas mais importantes.-->
 
-#### Caminho principal
+### Caminho principal
 
-1. {{ponto de abertura → cena...}}
-2. {{...}}
+Pré-condição (precond): {Inserir dados da prova}
+
+Objetivo (gco): Consultar as métricas/análise da prova
+
+Garantia de Sucesso (gcc): Métricas da prova disponibilizadas para consulta e exploração.
+
+1. **Abertura do objetivo:** Após a inserção e análise dos dados da prova, o usuário acessa a análise da prova.
+2. **Exibição dos dados:** O sistema apresenta as métricas gerais e os resultados extraídos da análise da prova, como formalismo, similaridade de distratores, quantidade de palavras e tempo estimado de leitura e resolução.
+3. **Continuação da interação:** O usuário pode consultar as métricas apresentadas, sem a necessidade de aplicar filtros.
+
+### Caminho alternativo 1 (Usuário quer filtrar informações)
+
+Dado que o usuário acessou as métricas da prova (precond: Dados da prova inseridos e analisados):
+
+1. **Seleção dos filtros:** O usuário acessa a opção de filtragem e escolhe quais características deseja consultar, como formalismo, similaridade de distratores, quantidade de palavras, tempo de resolução e presença de imagens.
+2. **Aplicação dos filtros:** O usuário envia os filtros selecionados e o sistema apresenta as informações e os gráficos correspondentes aos critérios escolhidos.
+3. **Continuação da interação:** O usuário pode prosseguir com o uso normalmente.
+
+### Caminho alternativo 2 (Usuário utiliza filtros sem resultados)
+
+Dado que o usuário selecionou filtros que não possuem resultados correspondentes:
+
+1. **Identificação da ruptura:** Após o envio dos filtros, o sistema identifica que não existem informações correspondentes aos critérios selecionados.
+2. **Exibição do erro:** O sistema apresenta uma mensagem informando que não foram encontrados resultados para os filtros aplicados.
+3. **Recuperação da ruptura:** O usuário pode limpar ou modificar os filtros selecionados e realizar uma nova consulta, permitindo que o sistema apresente os resultados correspondentes aos novos critérios.
+
+### Caminho alternativo 3 (Métricas parcialmente indisponíveis)
+
+Dado que a análise da prova foi realizada, mas algumas métricas não puderam ser calculadas devido à ausência de dados ou falhas no processamento:
+
+1. **Exibição dos resultados:** O sistema apresenta as métricas e os gráficos que foram gerados corretamente.
+2. **Aviso de indisponibilidade:** O sistema informa ao usuário quais métricas não puderam ser calculadas e, quando possível, o motivo, como a ausência de dados de acerto ou falha no processamento pelo modelo RoBERTa.
+3. **Continuação da interação:** O usuário pode continuar consultando as métricas disponíveis. 
+
+### Caminho alternativo 4 (Usuário desmarca todas as análises)
+
+Dado que o usuário está consultando as métricas da prova e desmarca todas as análises disponíveis nos filtros:
+
+1. **Identificação da ruptura:** O sistema identifica que nenhuma análise está selecionada para visualização.
+2. **Exibição da mensagem:** O sistema informa ao usuário que nenhuma análise foi selecionada no filtro.
+3. **Recuperação da ruptura:** O usuário pode acessar novamente os filtros e selecionar ao menos uma análise para voltar a visualizar os resultados.
+
+### Caminho alternativo 5 (Usuário consulta informações sobre uma métrica)
+
+Dado que o usuário está consultando os resultados da análise da prova:
+
+1. **Solicitação de informações:** O usuário posiciona o cursor sobre o ícone de informações de uma métrica para consultar detalhes sobre seu cálculo.
+2. **Exibição da explicação:** O sistema apresenta um tooltip contendo informações sobre o cálculo e o significado da métrica selecionada.
+3. **Continuação da interação:** Ao retirar o cursor do ícone, o tooltip é ocultado e o usuário pode continuar consultando as métricas disponíveis.
+
 
 #### Alternativas e rupturas
 
 | Situação | Onde ocorre | Como o usuário percebe | Caminho de recuperação/saída |
 |---|---|---|---|
-| {{dado inválido}} | {{...}} | {{fala/feedback}} | {{...}} |
-
+| Filtro sem informação | Na escolha do filtro | Mensagem de explicação | O usuário redefine os filtros e os aplica novamente. |
 ### Checklist específico de modelagem
 
-- [ ] Existe **ponto de abertura** coerente com o início do objetivo.
-- [ ] As **cenas de conversa** representam tópicos/assuntos, não nomes de páginas apenas.
-- [ ] As transições/falas deixam claro o que o usuário ou o sistema comunica.
-- [ ] Há **ponto(s) de encerramento** para objetivos concluídos/abandonados quando aplicável.
-- [ ] Processamentos do sistema estão representados conforme a notação adotada em aula, sem “inventar” fala do usuário.
-- [ ] Rupturas (breakdowns) relevantes têm feedback e caminho de recuperação, não becos sem saída.
-- [ ] Acessos ubíquos/atalhos só aparecem quando semanticamente justificáveis.
-- [ ] O diagrama cobre caminhos alternativos importantes, e não apenas o “happy path”.
-- [ ] Nomes de objetivos, tópicos e signos são coerentes com a Entrega 9.
+- [X] Existe **ponto de abertura** coerente com o início do objetivo.
+- [X] As **cenas de conversa** representam tópicos/assuntos, não nomes de páginas apenas.
+- [X] As transições/falas deixam claro o que o usuário ou o sistema comunica.
+- [X] Há **ponto(s) de encerramento** para objetivos concluídos/abandonados quando aplicável.
+- [X] Processamentos do sistema estão representados conforme a notação adotada em aula, sem “inventar” fala do usuário.
+- [X] Rupturas (breakdowns) relevantes têm feedback e caminho de recuperação, não becos sem saída.
+- [X] Acessos ubíquos/atalhos só aparecem quando semanticamente justificáveis.
+- [X] O diagrama cobre caminhos alternativos importantes, e não apenas o “happy path”.
+- [X] Nomes de objetivos, tópicos e signos são coerentes com a Entrega 9.
 - [ ] O diagrama é legível em tamanho normal no GitHub.
-- [ ] O MoLIC representa a conversa usuário–sistema, não o fluxo interno do algoritmo.
-- [ ] Processamento, filtros, administração, relatórios e históricos incluem retornos/rupturas quando relevantes.
+- [X] O MoLIC representa a conversa usuário–sistema, não o fluxo interno do algoritmo.
+- [X] Processamento, filtros, administração, relatórios e históricos incluem retornos/rupturas quando relevantes.
 
 > Repita M02, M03... para todos os integrantes.
 
@@ -271,12 +318,15 @@ Explique em texto o caminho principal e pelo menos os caminhos alternativos/rupt
 
 | Objetivo | MoLIC que cobre | Lacunas/duplicidades | Decisão |
 |---|---|---|---|
-| O01 | M01 | {{...}} | {{...}} |
-
+| O01 | M02 | {{...}} | {{...}} |
+| O04 | M02 | {{...}} | {{...}} |
+| O05 | M01 | {{...}} | {{...}} |
+| O06 | M03 | {{...}} | {{...}} |
 ### Preparação para o Figma
 
 Liste os estados/telas que serão necessários **a partir das conversas modeladas**, incluindo feedback, confirmação, erro e recuperação.
 
+Serão necessárias as telas de upload de prova, com os estados de confirmação de upload, erro caso o arquivo seja inválido ou ocorra algum erro de inicialização/servidor, junto com o formulário para inserir os dados das provas, também indicando inputs inválidos, como um tempo de prova maior do que o permitido. Além disso, é necessária a tela de métricas para mostrar ao usuário os resultados da análise da prova escolhida, tendo recuperação caso coloque filtros que não tenham informações relacionadas/vazio ou caso tenha alguma informação que não pode ser calculada. 
 ## Erros frequentes a evitar
 
 - desenhar apenas caixas com nomes de telas e setas de navegação;
