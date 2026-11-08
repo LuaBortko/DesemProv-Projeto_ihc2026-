@@ -92,6 +92,18 @@ axcho que tambem caberia fazer o de inspecao: Inspecao nos avlaiadores usamos in
 | Protótipo/versão | {{...}} |
 | Teste piloto | {{quem, quando, o que validar}} |
 
+## C. Escopo e participantes
+
+| Item | Planejamento |
+| ------ | ------ |
+| Perfis | **Avaliadores (Inspeção Heurística):** 3 integrantes da equipe de desenvolvimento, com conhecimento prévio nas 10 Heurísticas de Nielsen e na notação do MoLIC. **Usuários (Observação de Uso):** 1 a 3 professores da própria faculdade (docentes universitários da instituição) que elaboram e aplicam avaliações com questões de múltipla escolha e utilizam computador em sua rotina acadêmica. |
+| Critérios de inclusão/exclusão | **Inclusão:** Docentes da própria faculdade que elaboram e aplicam provas objetivas/múltipla escolha em suas disciplinas; uso habitual de computador com internet; disponibilidade para realizar a sessão presencial de até 30 minutos no ambiente universitário. **Exclusão:** Docentes que não aplicam avaliações de múltipla escolha. |
+| Nº de participantes | **Inspeção Heurística:** 3 avaliadores internos da equipe. **Observação de Uso:** 1 a 3 professores da própria faculdade (conforme delimitado na etapa *Identify practical issues* do método DECIDE). |
+| Ambiente | **Observação de Uso:** Presencial, em sala reservada e silenciosa na própria faculdade (para evitar ruídos e interrupções) **Inspeção Heurística:** Presencial/Remoto em reunião síncrona (Google Meet) entre os membros da equipe. |
+| Dispositivo | Computador ou notebook com acesso à internet, navegador web atualizado, microfone e software de gravação de tela e áudio (ex.: OBS Studio). |
+| Protótipo/versão | Sistema web funcional em desenvolvimento (versão parcial) do DesemProv, cobrindo os fluxos de upload da prova em PDF, o formulário de parâmetros de configuração (duração, velocidade de leitura, dificuldade e acertos por questão) e o painel de visualização das métricas estruturais. Por se tratar de uma versão parcial em desenvolvimento, limitações funcionais ou dados eventualmente simulados serão declarados e instruídos no roteiro de teste. |
+| Teste piloto | **Quem:** 1 integrante da equipe (desempenhando o papel de "professor"). **Quando:** 1 dia antes do início das sessões presenciais com os professores convidados. **O que validar:** Clareza das instruções e do roteiro de tarefas; cumprimento do tempo máximo de 30 minutos por sessão e o tempo de execução das tarefas; funcionamento dos softwares de gravação (tela/áudio); estabilidade do protótipo. |
+
 ## D. Lista de tarefas de avaliação
 
 | ID | Cenário neutro entregue ao usuário | Objetivo oculto da avaliação | Critério de sucesso | Tempo-limite (se houver) |
@@ -113,7 +125,7 @@ axcho que tambem caberia fazer o de inspecao: Inspecao nos avlaiadores usamos in
 ## F. Plano de análise
 
 Defina antes dos testes:
-
+<!--
 - sucesso total / parcial / falha;
 - o que conta como erro, dúvida, ajuda e abandono;
 - como tempo será medido;
@@ -121,6 +133,58 @@ Defina antes dos testes:
 - como observações/falas serão codificadas;
 - como problemas serão priorizados;
 - como comparar resultados às metas de usabilidade.
+-->
+
+### 1. Critérios de Desempenho
+
+- Sucesso Total (Sem Ajuda): O participante conclui o objetivo da tarefa autonomamente, sem intervenção do facilitador e sem cometer erros irrecuperáveis.
+- Sucesso Parcial (Com Ajuda/Recuperação): O participante conclui o objetivo após cometer algum erro de percurso recuperado por ele mesmo, ou necessitando de uma dica pontual do facilitador.
+- Falha: O participante desiste de concluir a tarefa, comete um erro crítico não recuperado, ou necessita de intervenção direta do facilitador para realizar a ação por ele.
+
+### 2. Categorização dos Eventos da Interação
+
+- Erro: Ação na interface que afasta o participante do objetivo da tarefa (ex.: tentar digitar caracteres em campos numéricos, tentar enviar arquivo fora das especificações, clicar em elementos não interativos).
+- Dúvida: Manifestação verbal de incerteza (ex.: "O que significa 1100 char/min?") ou hesitação visível sem ação na tela por mais de 10 segundos.
+- Solicitação de Ajuda: Pedido explícito do participante por orientação quando se sente bloqueado na tarefa.
+- Abandono: Declaração explícita do participante de que não consegue ou não deseja continuar a tarefa.
+
+### 3. Medição de Tempo e Eficiência
+
+- A medição do tempo será realizada em segundos, utilizando a gravação de áudio/vídeo da sessão (via OBS Studio ou Google Meet).
+- **Tempo Total da Sessão:** A sessão presencial terá duração total de aproximadamente 30 minutos, cobrindo acolhimento, assinatura do TCLE, instrução, tarefas e questionário pós-teste.
+- **Tempo de Execução das Tarefas:** Para medir a eficiência da interface, será cronometrado o tempo de interação ativa no sistema. A cronometragem de cada tarefa inicia imediatamente após a leitura do cenário neutro e encerra quando o participante conclui o objetivo. A soma do tempo de execução de todas as tarefas será comparada à meta MU03 (tempo mediano de execução no sistema de até 15 minutos).
+
+### 4. Escala de Satisfação Pós-Tarefa e Pós-Teste
+
+- Avaliação Pós-Tarefa (Single Ease Question - SEQ): Ao final de cada tarefa, o participante responderá a uma escala visual de 1 a 7 (*"Quão fácil ou difícil foi realizar esta tarefa?"*).
+- Avaliação Pós-Teste (Satisfação Perceptual): Questionário final pós-teste para avaliar a clareza dos feedbacks, utilidade visual e conforto de uso do DesemProv, buscando atingir a meta de satisfação de pelo menos 75% (MU05).
+
+### 5. Codificação de Dados Qualitativos (Think Aloud)
+
+As falas e comportamentos gravados durante o teste de observação serão transcritos e categorizados nas seguintes classes:
+
+- PI (Problema de Interface): Rótulos confusos, botões pouco visíveis, falta de contraste ou ausência de indicação de estado.
+- PS (Problema de Signo/Conceito): Dificuldade de compreensão sobre o significado pedagógico de uma métrica ou parâmetro (ex.: formalismo, tempo de leitura).
+- SE (Sugestão/Elogio): Comentários positivos ou sugestões espontâneas de adaptação ao ambiente de trabalho docente.
+
+### 6. Classificação de Severidade dos Problemas (Graus de Nielsen)
+
+Os problemas identificados (na inspeção heurística e na observação de uso) serão priorizados conforme os graus de severidade de Nielsen:
+
+- Grau 0 (Sem Importância): Não afeta a usabilidade da interface.
+- Grau 1 (Cosmético): Necessita de ajuste estético/visual; não prejudica a realização das tarefas.
+- Grau 2 (Menor): Causa pequena hesitação ou erro leve com fácil recuperação; baixa prioridade de correção.
+- Grau 3 (Maior): Dificulta consideravelmente a execução da tarefa e gera frustração; alta prioridade de correção.
+- Grau 4 (Catastrófico): Impede a conclusão da tarefa ou causa perda indesejada de dados; correção crítica e obrigatória.
+
+### 7. Confronto com as Metas de Usabilidade
+
+Os dados consolidados serão comparados com os critérios esperados definidos na Tabela B:
+
+- MU01 (Taxa de Sucesso): Confirmar se atingiu pelo menos 90% de sucesso sem auxílio.
+- MU03 (Tempo de Execução): Verificar se o tempo mediano permaneceu dentro do limite de 15 minutos.
+- MU04 (Taxa de Erros): Validar se a média de erros por usuário ficou inferior a 1 erro por tarefa.
+- MU05 (Satisfação): Verificar se o nível geral de satisfação atingiu a meta de pelo menos 75%.
 
 ## Checklist
 
