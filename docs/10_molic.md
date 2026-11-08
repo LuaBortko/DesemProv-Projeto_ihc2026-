@@ -83,7 +83,7 @@ Modele também rupturas plausíveis: entrada inválida, falha de processamento, 
 **Cenário de interação de origem:** CI01 <br>
 **Objetivo(s):** O05(Informar os dados necessários para a análise<br>
 **Tarefa(s) relacionada(s):** T01 - Analisar a prova<br>
-**Signos relevantes:** <!-- complete--><br>
+**Signos relevantes:** muitos<br>
 
 ### Diagrama
 
