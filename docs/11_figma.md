@@ -1,7 +1,7 @@
 # Entrega 11 — Protótipo no Figma
 
 **Data:** 05/11/2026  <br> 
-**Status:** 🟨 Em andamento  <br> 
+**Status:** 🟩 Concluída <br> 
 **Responsabilidade:** 1 protótipo integrado por equipe cobrindo os fluxos MoLIC. Se a turma exigir divisão individual, identifique o responsável por cada fluxo/tela.<br> 
 
 
@@ -159,6 +159,46 @@ Como alinhado em aula, devido ao projeto de IHC ser do nosso TCC e já termos a 
 **Signos principais:** opção de incluir métricas dos alunos, quantidade de participantes, acertos por questão<br> 
 **Origem no MoLIC:** M01/cena de Inserir acertos dos alunos<br>
 
+### F04 - Ver estatísticas da avaliação
+
+![F03](../assets/11_figma/f04.png)
+
+**Objetivo do usuário:** Iniciar a análise da prova <br> 
+**Signos principais:** formalismo, similaridade de distratores, quantidade de palavras, distribuição do tempo de prova e o tempo estimado de leitura, resultados por questão, filtros, quantidade de questões, dificuldade das questões, prova, métricas estruturais, correlação com desempenho |<br> 
+**Origem no MoLIC:** M03/cena de Consultar métricas da prova <br>
+
+### F04E1 - Não escolheu nenhum filtro
+![F03](../assets/11_figma/f04_1.png)
+**Objetivo do usuário:** Filtrar informações da prova <br> 
+**Signos principais:** filtros |<br> 
+**Origem no MoLIC:** M03/cena de Filtrar dados <br>
+
+### F04E2 - Não foi preenchida número de acertos
+![F03](../assets/11_figma/f04_2.png)
+
+**Objetivo do usuário:** Ver correlações utilizando os acertos dos alunos <br> 
+**Signos principais:** correlação com desempenho |<br> 
+**Origem no MoLIC:** M03/cena de Consultar métricas da prova <br>
+
+### F04E3 - Usuário quer olhar informações extras
+![F03](../assets/11_figma/f04_3.png)
+**Objetivo do usuário:** Ver informações sobre os cálculos feitos na análise <br> 
+**Signos principais:** balão de ajuda contextual |<br> 
+**Origem no MoLIC:** M03/cena de Consultar métricas da prova <br>
+
+### F04E4 - Modelo RoBERTa não conseguiu conectar(interação simulada)
+
+![F03](../assets/11_figma/F04_4.png)
+**Objetivo do usuário:** Deseja que a quantidade de alunos que acertou as questões seja considerado na análise<br> 
+**Signos principais:** Erro: Falha ao carregar RoBERTa|<br> 
+**Origem no MoLIC:** M01/cena de Enviar avaliação<br>
+
+### F04E5 - Modelo BERT não conseguiu conectar(interação simulada)
+![F03](../assets/11_figma/f04_5.png)
+**Objetivo do usuário:** Iniciar a análise da prova <br> 
+**Signos principais:** Erro: Falha ao carregar BERT|<br> 
+**Origem no MoLIC:** M01/cena de Enviar avaliação<br>
+
 ## Sistema visual e consistência
 
 | Elemento | Regra adotada | Justificativa |
@@ -186,10 +226,9 @@ os critérios tem 3 níveis: A (mínimo), AA (padrão exigido pela maioria das l
 
 Para o protótipo web do desemprov, foram avaliados os seguintes critérios baseados nas diretrizes WCAG (nível AA):
 
-- Contraste de Cores: A paleta de cores do sistema (fundo branco com textos em cinza escuro #333 e preto) foi validada para garantir que a leitura seja confortável. Os botões de ação (como "Escolher arquivo", "Tentar novamente", "Entendido") possuem contraste adequado entre o texto branco e o fundo colorido (azul/verde). Nos estados de erro (telas F02E1, F02E2, F02E3, F02E4), a cor vermelha não é usada sozinha; ela é acompanhada de títulos em negrito e texto explicativo, garantindo a compreensão para usuários com daltonismo.<br>
+- Contraste de Cores: A paleta de cores do sistema (fundo branco com textos em cinza escuro #333 e preto) foi validada para garantir que a leitura seja confortável. Os botões de ação (como "Escolher arquivo", "Tentar novamente", "Entendido") possuem contraste adequado entre o texto branco e o fundo colorido (azul/verde). Nos estados de erro (telas F02E1, F02E2, F02E3, F02E4, F04E4, F04E5), a cor vermelha não é usada sozinha; ela é acompanhada de títulos em negrito e texto explicativo, garantindo a compreensão para usuários com daltonismo.<br>
 - Redimensionamento de Texto e Responsividade (Reflow): A interface foi construída para ser responsiva. É possível aplicar zoom elevado (acima de 200%) e a página continua legível, sem sobreposição de elementos ou perda de conteúdo. Os cards se ajustam à tela e as barras de rolagem horizontal são evitadas, garantindo que usuários com baixa visão possam ampliar os textos e gráficos sem quebrar o layout.<br>
 - Tamanho do Alvo (Target Size): Os botões de ação primários e secundários (ex: "Escolher arquivo", "Entendido", "Filtro") possuem áreas de clique generosas, facilitando o toque em dispositivos móveis e o clique com usuários com limitações motoras.<br>
-<!-- COMPLETAR COM TELAS LU E NUNO -->
 - Navegação por Teclado e Foco: Os formulários (tela F02/F0xxxxxx - Informe os dados de sua prova) utilizam campos padrão de input (radio buttons, selects, inputs de texto), que recebem foco visível ao navegar com a tecla Tab. A área de drag-and-drop (arrastar e soltar) possui o botão "Escolher arquivo" como alternativa acessível para quem não consegue usar o mouse.Além dos campos em sua maioria já virem com valore default, facilitando a redução de movimentos desnecessários.<br>
 - Texto Alternativo e Semântica: Ícones puramente visuais (como a seta de upload e o "X" de fechar/cancelar) contém rótulos ARIA (aria-label) para que leitores de tela os identifiquem (ex: "Ícone de upload", "Cancelar arquivo").<br>
 - Identificação de Erros (Feedback): Os erros de upload (formato inválido, tamanho excedido, PDF sem questões ou falha de rede) são apresentados de forma clara, informando exatamente o que aconteceu e oferecendo uma ação de recuperação imediata (botão "Tentar novamente" ou "Entendido").<br>
@@ -199,15 +238,15 @@ Para o protótipo web do desemprov, foram avaliados os seguintes critérios base
 
 ## Checklist
 
-- [ ] Link do Figma está acessível.
-- [ ] Há screenshots representativos no repositório.
-- [ ] Todos os MoLIC relevantes estão cobertos.
-- [ ] Estados de erro, feedback e recuperação foram prototipados.
-- [ ] Terminologia/signos são consistentes com Entrega 9.
-- [ ] Componentes equivalentes se comportam de forma consistente.
-- [ ] Fluxos críticos são clicáveis do início ao fim.
-- [ ] O protótipo está pronto para inspeção e testes, sem “links mortos” nas tarefas avaliadas.
-- [ ] Dashboards, relatórios, históricos, filtros, administração e CRUDs presentes possuem justificativa rastreável.
-- [ ] Estados de vazio, processamento, erro e recuperação foram considerados quando pertinentes.
-- [ ] Resultados técnicos são apresentados de forma interpretável para o perfil de usuário.
-- [ ] A equipe distingue no protótipo o que é interação simulada e o que é funcionalidade técnica realmente integrada, quando necessário.
+- [X] Link do Figma está acessível.
+- [X] Há screenshots representativos no repositório.
+- [X] Todos os MoLIC relevantes estão cobertos.
+- [X] Estados de erro, feedback e recuperação foram prototipados.
+- [X] Terminologia/signos são consistentes com Entrega 9.
+- [X] Componentes equivalentes se comportam de forma consistente.
+- [X] Fluxos críticos são clicáveis do início ao fim.
+- [X] O protótipo está pronto para inspeção e testes, sem “links mortos” nas tarefas avaliadas.
+- [X] Dashboards, relatórios, históricos, filtros, administração e CRUDs presentes possuem justificativa rastreável.
+- [X] Estados de vazio, processamento, erro e recuperação foram considerados quando pertinentes.
+- [X] Resultados técnicos são apresentados de forma interpretável para o perfil de usuário.
+- [X] A equipe distingue no protótipo o que é interação simulada e o que é funcionalidade técnica realmente integrada, quando necessário.

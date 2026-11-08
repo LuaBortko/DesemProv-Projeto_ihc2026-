@@ -225,7 +225,7 @@ Dado que a prova se encontra elaborada (precond: {prova elaborada}), o docente a
 **Cenário de interação de origem:** CI01 <br>
 **Objetivo(s):** O03  <br>
 **Tarefa(s) relacionada(s):**  T01 - Analisar a prova <br>
-**Signos relevantes:** formalismo, similaridade de distratores, quantidade de palavras, distribuição do tempo de prova e o tempo estimado de leitura, resultados por questão, filtros, quantidade de questões, dificuldade das questões, prova, métricas estruturais, correlação com desempenho, erro6: falha ao usar os modelos de IA, balão de ajuda contextual<br>
+**Signos relevantes:** formalismo, similaridade de distratores, quantidade de palavras, distribuição do tempo de prova e o tempo estimado de leitura, resultados por questão, filtros, quantidade de questões, dificuldade das questões, prova, métricas estruturais, correlação com desempenho balão de ajuda contextual<br>
 
 ### Diagrama
 
