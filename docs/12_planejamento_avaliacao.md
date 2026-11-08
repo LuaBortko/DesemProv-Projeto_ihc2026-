@@ -50,57 +50,63 @@ SEGUNDA REPSOTA: COLOQUEI TDOS SOS EXEMPLOS DA AULA MAS É BOM PENSARMOS EM PERG
 | Etapa | Aplicação no projeto |
 |---|---|
 | **D — Determine the goals** | Os objetivos da avaliação são identificar problemas de iteração e interface e também analisar a aproprieação da tecnologia | 
-| **E — Explore the questions** | |
+| **E — Explore the questions** | O usuário consegue operar o sistema sem grandes dificuldades? O usuário consegue analisar as métricas da prova?
+As métricas disponibilizadas auxiliam na compreensão da avaliação?
+Quais objetivos dos usuários podem ser alcançados através do sistema e quais não podem ser alcançados através do sistema?
+Quais barreiras o usuário encontra para atingir seus objetivos? 
+A tecnologia disponível pode oferecer maneiras mais interessantes ou eficientes de os usuários atingirem seus objetivo? O usuário consegue operar o sistema com quanta eficiência? Em quanto tempo? Após cometer quantos erros? Que parte da interface e da interação o deixa insatisfeito? Quais são os pontos fortes e fracos do sistema, na opinião dos usuários? Que parte da interface o desmotiva a explorar novas funcionalidades? Ele entende o que significa e para que serve cada elemento da interface? Ele vai entender o que deve fazer em seguida? Ele tem acesso a todas as informações oferecidas pelo sistema? O que é possível modificar no sistema interativo para adequá-lo melhor ao ambiente de trabalho? Há problemas de feedback?|
 | **C — Choose the evaluation paradigm and techniques** | Quais métodos serão usados e por quê? Ex.: inspeção heurística + observação de usuários. |
 | **I — Identify the practical issues** | Participantes, recrutamento, ambiente, equipamentos, piloto, cronograma, responsáveis, riscos técnicos. |
 | **D — Decide how to deal with ethical issues** | Consentimento, privacidade, gravação, anonimização, interrupção, dados sensíveis.  SEMPRE TEM QUESTAO ETICA QND ENVOVLE pessoa, abrir slide la tipo, termo de concenriment odo exclarecido ,pss pode desistir a qrr momento, tme q te rambiente cofnortavel n posso deixa pss estressada...|
 | **E — Evaluate, interpret and present the data** | Como dados quantitativos/qualitativos serão consolidados, comparados às metas e apresentados. |
 
-<!--
-O usuário consegue operar o sistema?
-Ele atinge seu objetivo? 
-Com quanta eficiência? Em quanto tempo? 
-Após cometer quantos erros? 
-Que parte da interface e da interação o deixa insatisfeito? 
-Que parte da interface o desmotiva a explorar novas funcionalidades?
-Ele entende o que significa e para que serve cada elemento da interface? 
-Ele vai entender o que deve fazer em seguida? 
-Que problemas de IHC dificultam ou impede o usuário de alcançar seus objetivos? Onde esses problemas se manifestam? 
-Com que frequência tendem a ocorrer? 
-Qual é a gravidade desses problemas? 
-Quais barreiras o usuário encontra para atingir seus objetivos? 
-Ele tem acesso a todas as informações oferecidas pelo sistema?
-
-
----
-
-De que maneira os usuários utilizam o sistema?
-Em que difere do planejado?
-Como o sistema interativo afeta o modo de as pessoas se comunicarem e relacionarem?
-Que variação houve no número de erros cometidos pelos usuários ao utilizarem o novo sistema?
-E no tempo que levam para atingir seus objetivos?
-E na sua satisfação com o sistema?
-O quanto os usuários consideram o apoio computacional adequado para auxiliá-los na realizaçãi de suas atividades?
-Quais são os pontos fortes e fracos do sistema, na opinião dos usuários?
-Quais objetivos dos uusários podem ser alcançados através do sistema?
-Quais objetivos dos usuários não podem ser alcançados através do sistema?
-Quais necessidades ou desejos foram ou não atendidos?
-A tecnologia disponível pode oferecer maneiras mais interessantes ou eficientes de os usuários atingirem seus objetivo?
-O que é possível modifical no sistema interativo para adequá-lo melhor ao ambiente de trabalho?
-Por que os usuários não incorporaram o sistema no seu cotidiano?
-
--->
-
-
 ## B. Perguntas de avaliação
 
 <!-- importante usa metodo de observação de uso (que ehentrega  14)
-axcho que tambem caberia fazer o de inspecao: Inspecao nos avlaiadores usamos interfface e fazemoa analise potencial 
+axcho que tambem caberia fazer o de inspecao: Inspecao nos avlaiadores usamos interfface e fazemoa analise potencial -->
 
+
+<!--
+O usuário consegue operar o sistema sem grandes dificuldades?
+O usuário consegue analisar as métricas da prova?
+As métricas disponibilizadas auxiliam na compreensão da avaliação?
+Quais objetivos dos usuários podem ser alcançados através do sistema e quais não podem ser alcançados através do sistema?
+Quais barreiras o usuário encontra para atingir seus objetivos? 
+A tecnologia disponível pode oferecer maneiras mais interessantes ou eficientes de os usuários atingirem seus objetivo?
+O usuário consegue operar o sistema com quanta eficiência? Em quanto tempo? 
+Após cometer quantos erros? 
+Que parte da interface e da interação o deixa insatisfeito? 
+Quais são os pontos fortes e fracos do sistema, na opinião dos usuários?
+Que parte da interface o desmotiva a explorar novas funcionalidades?
+Ele entende o que significa e para que serve cada elemento da interface? 
+Ele vai entender o que deve fazer em seguida? 
+Ele tem acesso a todas as informações oferecidas pelo sistema?
+O que é possível modificar no sistema interativo para adequá-lo melhor ao ambiente de trabalho?
+há problemas de feedback?
 -->
 
 | ID | Pergunta | Método | Métrica/evidência | Critério esperado |
 |---|---|---|---|---|
+| QA01 | O usuário consegue operar o sistema sem grandes dificuldades? | heurística, observação | Taxa de conclusão das tarefas, quantidade de erros | {{MU01}} |
+
+| QA02 | O usuário consegue analisar as métricas da prova? | heurística, observação | violações H1 | {{...}} |
+| QA03 | As métricas disponibilizadas auxiliam na compreensão da avaliação? | observação | violações H1 | {{...}} |
+| QA04 | Quais objetivos dos usuários podem ser alcançados através do sistema e quais não podem ser alcançados através do sistema? | observação | violações H1 | {{...}} |
+| QA05 | Quais barreiras o usuário encontra para atingir seus objetivos? | heurística,observação | violações H1 | {{...}} |
+| QA06 | A tecnologia disponível pode oferecer maneiras mais interessantes ou eficientes de os usuários atingirem seus objetivo? | observação | violações H1 | {{...}} |
+| QA07 | O usuário consegue operar o sistema com quanta eficiência? Em quanto tempo? Após cometer quantos erros?  | heurística, observação | violações H1 | {{...}} |
+| QA08 | Que parte da interface e da interação o deixa insatisfeito? | heurística, observação | violações H1 | {{...}} |
+| QA09 | Quais são os pontos fortes e fracos do sistema, na opinião dos usuários? | observação | violações H1 | {{...}} |
+| QA10 | Que parte da interface o desmotiva a explorar novas funcionalidades? | heurística, observação | violações H1 | {{...}} |
+| QA11 | Ele entende o que significa e para que serve cada elemento da interface?  | heurística, observação | violações H1 | {{...}} |
+| QA12 | Ele vai entender o que deve fazer em seguida?  | heurística | violações H1 | {{...}} |
+| QA13 | Ele tem acesso a todas as informações oferecidas pelo sistema? | observação | violações H1 | {{...}} |
+| QA14 | O que é possível modificar no sistema interativo para adequá-lo melhor ao ambiente de trabalho? | observação | violações H1 | {{...}} |
+| QA15 | Há problemas de feedback? | heurística, observação | violações H1 | {{...}} |
+
+
+
+
 | QA01 | {{usuários completam T01 sem ajuda?}} | observação | sucesso, ajuda, erro | {{MU01}} |
 | QA02 | {{há problemas de feedback?}} | heurística | violações H1 | {{...}} |
 
