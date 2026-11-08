@@ -73,8 +73,6 @@ Como alinhado em aula, devido ao projeto de IHC ser do nosso TCC e já termos a 
 **Signos principais:** Informações do arquivo (nome e tamanho), botão "cancelar" <br> 
 **Origem no MoLIC:** M02/Carregar arquivo <br> 
 
-<!--OU F03?-->
-
 ### F02E1 — Arquivo com formato inválido
 
 ![F02E1](../assets/11_figma/f03.jpeg)
@@ -84,8 +82,6 @@ Como alinhado em aula, devido ao projeto de IHC ser do nosso TCC e já termos a 
 **Origem no MoLIC:** M02/cena de erro<br> 
 
 
-<!--OU F04?-->
-
 ### F02E2 — Erro ao extrair questões do PDF
 
 ![F02E2](../assets/11_figma/f04.jpeg)
@@ -94,7 +90,6 @@ Como alinhado em aula, devido ao projeto de IHC ser do nosso TCC e já termos a 
 **Signos principais:** Erro2: Erro ao preparar a análise <br> 
 **Origem no MoLIC:** M02/cena de erro<br> 
 
-<!--OU F05?-->
 
 ### F02E3 — Tamanho do arquivo excede limite 
 
@@ -104,7 +99,6 @@ Como alinhado em aula, devido ao projeto de IHC ser do nosso TCC e já termos a 
 **Signos principais:** Erro3: Arquivo excede tamanho <br> 
 **Origem no MoLIC:** M02/cena de erro<br> 
 
-<!--OU F06?-->
 
 ### F02E4 — Erro interno
 
@@ -136,7 +130,7 @@ Como alinhado em aula, devido ao projeto de IHC ser do nosso TCC e já termos a 
 | Feedback | Usamos cor e texto juntos, nunca só a cor. Erro: vermelho, com fundo rosado `#fff5f5`, borda vermelha e texto vermelho escuro `#c0392b`, contraste de 5,1:1 (formato inválido, arquivo acima de 10 MB, falha de rede). Atenção: amarelo-âmbar, com fundo amarelo claro `#fff3cd`, borda âmbar `#ffc107` e texto marrom-oliva `#856404`, contraste de 5,0:1 (duração acima de 6h, dados faltando para a correlação). Sucesso: não há mensagem de sucesso no MVP, quando é sucesso apenas continua/habilita o fluxo feliz, o verde `#10B981` é usado na marca e nos gráficos, não como status. Os blocos têm título em negrito e, nos avisos, borda à esquerda. | Mantém o feedback compreensível sem depender só da cor, para usuários com daltonismo ou baixa visão. Os pares de texto escolhidos passam do mínimo de 4,5:1 do WCAG. |
 
 
-<!--ONDE NA AULA FLO DE WCAG????
+<!--
 Define como tornar a web mais acessivel para pessoas com deficiência
 
 principios: 

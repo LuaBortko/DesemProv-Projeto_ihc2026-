@@ -87,28 +87,21 @@ há problemas de feedback?
 
 | ID | Pergunta | Método | Métrica/evidência | Critério esperado |
 |---|---|---|---|---|
-| QA01 | O usuário consegue operar o sistema sem grandes dificuldades? | heurística, observação | Taxa de conclusão das tarefas, quantidade de erros | {{MU01}} |
-
-| QA02 | O usuário consegue analisar as métricas da prova? | heurística, observação | violações H1 | {{...}} |
-| QA03 | As métricas disponibilizadas auxiliam na compreensão da avaliação? | observação | violações H1 | {{...}} |
-| QA04 | Quais objetivos dos usuários podem ser alcançados através do sistema e quais não podem ser alcançados através do sistema? | observação | violações H1 | {{...}} |
-| QA05 | Quais barreiras o usuário encontra para atingir seus objetivos? | heurística,observação | violações H1 | {{...}} |
-| QA06 | A tecnologia disponível pode oferecer maneiras mais interessantes ou eficientes de os usuários atingirem seus objetivo? | observação | violações H1 | {{...}} |
-| QA07 | O usuário consegue operar o sistema com quanta eficiência? Em quanto tempo? Após cometer quantos erros?  | heurística, observação | violações H1 | {{...}} |
-| QA08 | Que parte da interface e da interação o deixa insatisfeito? | heurística, observação | violações H1 | {{...}} |
-| QA09 | Quais são os pontos fortes e fracos do sistema, na opinião dos usuários? | observação | violações H1 | {{...}} |
-| QA10 | Que parte da interface o desmotiva a explorar novas funcionalidades? | heurística, observação | violações H1 | {{...}} |
-| QA11 | Ele entende o que significa e para que serve cada elemento da interface?  | heurística, observação | violações H1 | {{...}} |
-| QA12 | Ele vai entender o que deve fazer em seguida?  | heurística | violações H1 | {{...}} |
-| QA13 | Ele tem acesso a todas as informações oferecidas pelo sistema? | observação | violações H1 | {{...}} |
-| QA14 | O que é possível modificar no sistema interativo para adequá-lo melhor ao ambiente de trabalho? | observação | violações H1 | {{...}} |
-| QA15 | Há problemas de feedback? | heurística, observação | violações H1 | {{...}} |
-
-
-
-
-| QA01 | {{usuários completam T01 sem ajuda?}} | observação | sucesso, ajuda, erro | {{MU01}} |
-| QA02 | {{há problemas de feedback?}} | heurística | violações H1 | {{...}} |
+| QA01 | O usuário consegue operar o sistema sem grandes dificuldades? | heurística, observação | Taxa de conclusão das tarefas, quantidade de erros, solicitações de ajuda e  abandonos |  Taxa de sucesso de pelo menos 90% na primeira tentativa sem auxilio (MU01) |
+| QA02 | O usuário consegue analisar as métricas da prova? | heurística, observação | Taxa de interpretação correta das métricas, dúvidas apresentadas e violações heurísticas relacionadas a compreensão | Os usuários conseguem interpretar as métricas e identificar informações relevantes para analisar a prova |
+| QA03 | As métricas disponibilizadas auxiliam na compreensão da avaliação? | observação | Relatos dos usuários, interpretações realizadas e necessidades não atendidas | As métricas são compreensíveis e fornecem informações relevantes para apoiar a análise da prova |
+| QA04 | Quais objetivos dos usuários podem ser alcançados através do sistema e quais não podem ser alcançados através do sistema? | observação | Tarefas concluídas, parcialmente concluídas ou não realizadas e necessidades não atendidas | Os principais objetivos relacionados à análise da prova podem ser alcançados pelo sistema, com identificação de possíveis limitações |
+| QA05 | Quais barreiras o usuário encontra para atingir seus objetivos? | heurística,observação | Quantidade e tipo de dificuldades, erros, dúvidas, interrupções e violações heurísticas identificadas | Os  usuários conseguem superar as dificuldades sen comprometer a conclusão das tarefas com média inferior a um erro por usuário (MU04) |
+| QA06 | A tecnologia disponível pode oferecer maneiras mais interessantes ou eficientes de os usuários atingirem seus objetivo? | observação | Sugestões dos usuários, dificuldades recorrentes e oportunidades de melhoria identificadas durante o uso | São identificadas oportunidades de melhoria que tornem a interação mais simples, eficiente e adequada às necessidades dos professores |
+| QA07 | O usuário consegue operar o sistema com quanta eficiência? Em quanto tempo? Após cometer quantos erros?  | heurística, observação | Tempo mediano de execução de até 15 minutos (MU03) e média inferior a um erro por uusário (MU04) |
+| QA08 | Que parte da interface e da interação o deixa insatisfeito? | heurística, observação | Relátos de insatisfação, dificuldades percebidas e violações heurísticas identifciadas | Atingir pelo menos 75% de satisfação na avaliação pós-tarefa (MU05) |
+| QA09 | Quais são os pontos fortes e fracos do sistema, na opinião dos usuários? | observação | Comentários positivos de negativos, sugestões e aspectos destacados pelos participantes | Identificar os principais pontos positivos e aspectos que precisam de melhorias, considerando a meta de satisfaçã de pelo menos 75% (MU05) |
+| QA10 | Que parte da interface o desmotiva a explorar novas funcionalidades? | heurística, observação | Funcionalidades não exploradas, desist6encias, dúvidas e relatoa de desmotivação | A interface apresenta funcionalidades acessíveis e compreensíveis, incentivando a exploração sem gerar insegurança ou confusão |
+| QA11 | Ele entende o que significa e para que serve cada elemento da interface?  | heurística, observação | Interpretação dos rótulos, ícones, indicadores e funcionalidades, dúvidas e interpretações incorretas | Os elementos da interface possuem identificação clara e seus significados e funções são compreendidos pelos usuários |
+| QA12 | Ele vai entender o que deve fazer em seguida? | heurística | Hesitações, solicitaçÕes de ajuda, erros de navegação e violações relacionadas ã orientação e conssitência| a interface fornece indicações claras sobre a sproóximas ações, permitindo a continuidade da interação sem dúvidas |
+| QA13 | Ele tem acesso a todas as informações oferecidas pelo sistema? | observação | Informações não localizadas, elementos inacessíveis, dificuldades de navegação e violações identificadas. | Os usuários conseguem localizar e acessar as informações necessárias para realizar suas tarefas |
+| QA14 | O que é possível modificar no sistema interativo para adequá-lo melhor ao ambiente de trabalho? | observação | Necessidades relatadas, sugestões de adaptação e incompatibilidade entre interface e o contexto de trabalho | São identificadas adaptaçÕes que aproximem a interface das necessidades e práticas de trabalho dos professores |
+| QA15 | Há problemas de feedback? | heurística, observação | Ausência ou inadequação de mensagens, respostas às ações, indicadores de carregamento e confirmações de operações | O sistema fornece feedback claro e oportuno, permitindo que o usuário compreenda o resultado de suas ações e o estado da interação. |
 
 ## C. Escopo e participantes
 

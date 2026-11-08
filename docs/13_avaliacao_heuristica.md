@@ -10,8 +10,6 @@ criado p busc aproblema de usabilidade
 
 PASSO A PASSO DA HERUSTICA: FLUXOGRAMA Q CRIAREMOS 9anotacao topico 13)
 
-
-
 Metodo baseado em inspecao, que mfaz inspeco somos nos especialistas 
 
 todo metodo de avalaicao é baseado em 
