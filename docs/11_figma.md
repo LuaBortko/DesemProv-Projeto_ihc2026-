@@ -126,9 +126,6 @@ Como alinhado em aula, devido ao projeto de IHC ser do nosso TCC e já termos a 
 **Origem no MoLIC:** <br> 
 
 
-<!--NAO SEI se dividi os topicos corretamente --> 
-
-
 ## Sistema visual e consistência
 
 | Elemento | Regra adotada | Justificativa |
@@ -163,7 +160,8 @@ Para o protótipo web do desemprov, foram avaliados os seguintes critérios base
 - Navegação por Teclado e Foco: Os formulários (tela F02/F0xxxxxx - Informe os dados de sua prova) utilizam campos padrão de input (radio buttons, selects, inputs de texto), que recebem foco visível ao navegar com a tecla Tab. A área de drag-and-drop (arrastar e soltar) possui o botão "Escolher arquivo" como alternativa acessível para quem não consegue usar o mouse.Além dos campos em sua maioria já virem com valore default, facilitando a redução de movimentos desnecessários.<br>
 - Texto Alternativo e Semântica: Ícones puramente visuais (como a seta de upload e o "X" de fechar/cancelar) contém rótulos ARIA (aria-label) para que leitores de tela os identifiquem (ex: "Ícone de upload", "Cancelar arquivo").<br>
 - Identificação de Erros (Feedback): Os erros de upload (formato inválido, tamanho excedido, PDF sem questões ou falha de rede) são apresentados de forma clara, informando exatamente o que aconteceu e oferecendo uma ação de recuperação imediata (botão "Tentar novamente" ou "Entendido").<br>
-- MODIFICAR: FALA DE INFO ICONE DESCRICOES QUE EXPLICAM GRAFICOS.... Gráficos e Resultados: Os gráficos da tela de resultados (Pizza, Barras, Dispersão) precisam de alternativas textuais (ex: tabelas ocultas visualmente ou descrições via aria-describedby), pois leitores de tela não leem gráficos visuais nativamente.<br>
+- Gráficos e Resultados: Os gráficos da tela de resultados (Pizza, Barras, Dispersão) tem texto descritivos que auxiliam na interpretacao, bem como descrições e calculos utilizados nas tooltips, facilitando a leitura e comprensão.
+
 
 
 ## Checklist

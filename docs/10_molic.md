@@ -157,7 +157,7 @@ Como todos os dados digitados foram validados e permanecem preservados na tela, 
 **Cenário de interação de origem:** CI02  <br>
 **Objetivo(s):** O01  <br>
 **Tarefa(s) relacionada(s):** T01 - Analisar a prova  <br>
-**Signos relevantes:** {{...}}<!-- complete--><br>
+**Signos relevantes:** Prova, Área tracejada (dropzone), ícone de upload (seta), Texto instrucional, Texto de restrição, Botão "Escolher arquivo", Informações do arquivo (nome e tamanho), Botão "cancelar". 
 
 ### Diagrama
 

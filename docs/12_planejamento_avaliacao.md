@@ -3,7 +3,7 @@
 <!-- LER ANOTACAO TOPICO 12 PRINCIPALMENTE O NAO GRIFADO E VER ANOTACAO AULA -->
 
 **Data:** 08/11/2026  <br> 
-**Status:** 🟨 Em andamento   <br> 
+**Status:** 🟨 Em andamento  <br> 
 **Responsabilidade:** 1 solução por equipe<br> 
 
 <!--Entrega eh p entender tecnicas de planejamento, qnd fa zplanejamento resp perg e sabe se vai faze teste de avaliaco heuristica, ou comunicabilidade ou observacao do usuario, ensina a planejar -->
