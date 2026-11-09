@@ -75,7 +75,7 @@ axcho que tambem caberia fazer o de inspecao: Inspecao nos avlaiadores usamos in
 | QA14 | O que é possível modificar no sistema interativo para adequá-lo melhor ao ambiente de trabalho? | observação | Necessidades relatadas, sugestões de adaptação e incompatibilidade entre interface e o contexto de trabalho | São identificadas adaptaçÕes que aproximem a interface das necessidades e práticas de trabalho dos professores |
 | QA15 | Há problemas de feedback? | heurística, observação | Ausência ou inadequação de mensagens, respostas às ações, indicadores de carregamento e confirmações de operações | O sistema fornece feedback claro e oportuno, permitindo que o usuário compreenda o resultado de suas ações e o estado da interação. |
 
-## C. Escopo e participantes
+<!--## C. Escopo e participantes
 
 | Item | Planejamento |
 |---|---|
@@ -85,7 +85,7 @@ axcho que tambem caberia fazer o de inspecao: Inspecao nos avlaiadores usamos in
 | Ambiente | presencial/remoto/campo/laboratório |
 | Dispositivo | {{...}} |
 | Protótipo/versão | {{...}} |
-| Teste piloto | {{quem, quando, o que validar}} |
+| Teste piloto | {{quem, quando, o que validar}} |-->
 
 ## C. Escopo e participantes
 
