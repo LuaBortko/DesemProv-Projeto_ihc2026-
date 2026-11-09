@@ -78,7 +78,7 @@ Em TCCs técnicos, observe especialmente se a interface comunica o estado do pro
 | Item | Definição |
 |---|---|
 | Versão avaliada | verão atual do código disponível em: [Repositório TCC](https://github.com/beatrizmanaia26/TCC-DesempenhoEnem) |
-| Telas/estados | f01, f02, f02e1, f02e2, f02e3, f02e4, f03, f03_1, f03_2, f03_3, f03_4, f03e1, f04, f04_1, f04_2, f04_3, f04_4, f04_5,|
+| Telas/estados | f01, f02, f02e1, f02e2, f02e3, f02e4, f03, f03_1, f03_2, f03_3, f03_4, f03e1, f04, f04_1, f04_2, f04_3, f04e1, f04e2,|
 | Fluxos | M01/M02/M03 |
 | Dispositivo/viewport | Notebook |
 | Avaliadores | Beatriz Manaia Lourenço Berto, Luana Bortko Rodrigues, Nuno Martins Guilhermino da Silva |
