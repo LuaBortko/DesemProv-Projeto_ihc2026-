@@ -78,7 +78,7 @@ Em TCCs técnicos, observe especialmente se a interface comunica o estado do pro
 | Item | Definição |
 |---|---|
 | Versão avaliada | verão atual do código disponível em: [Repositório TCC](https://github.com/beatrizmanaia26/TCC-DesempenhoEnem) |
-| Telas/estados | f01, f02, f02e1, f02e2, f02e3, f02e4, f03, f03_1, f03_2, f03_3, f03_4, f03e1, f04, f04_1, f04_2, f04_3, f04e1, f04e2,|
+| Telas/estados | f01,f02,f02e1,f02e2,f02e3,f02e4,f03,f03_1,f03_2,f03_3, f03_4,f03e1, f04,f04_1,f04_2,f04_3,F04_4,F04e1,f04e2 |
 | Fluxos | M01/M02/M03 |
 | Dispositivo/viewport | Notebook |
 | Avaliadores | Beatriz Manaia Lourenço Berto, Luana Bortko Rodrigues, Nuno Martins Guilhermino da Silva |
@@ -134,26 +134,26 @@ H10: ajuda e documentacao: é necessario oferecer ajuda e documentacao de alta q
 
  -->
 
-
 | Heurística | Telas/fluxos examinados | Houve violação? | IDs dos achados | Exemplo de boa prática se não violada |
 |---|---|---|---|---|
-| H1 | {{...}} | sim/não | {{V01...}} | {{...}} |
-| H2 | {{...}} | sim/não |  |  |
-| H3 | {{...}} | sim/não |  |  |
-| H4 | {{...}} | sim/não |  |  |
-| H5 | {{...}} | sim/não |  |  |
-| H6 | {{...}} | sim/não |  |  |
-| H7 | {{...}} | sim/não |  |  |
-| H8 | {{...}} | sim/não |  |  |
-| H9 | {{...}} | sim/não |  |  |
-| H10 | {{...}} | sim/não |  |  |
+| H1 | f01,f02,f02e1,f02e2,f02e3,f02e4,f03,f03_1,f03_2,f03_3, f03_4,f03e1, f04,f04_1,f04_2,f04_3,F04_4,F04e1,f04e2 | não | não há | Há informações das métricas em tooltips, aviso de todos os erros que ocorrem com explicação de como arrumar, informação de como preencher um campo, entre outros |
+| H2 | f01,f02,f02e1,f02e2,f02e3,f02e4,f03,f03_1,f03_2,f03_3, f03_4,f03e1, f04,f04_1,f04_2,f04_3,F04_4,F04e1,f04e2 | sim | V01 | Apesar das falhas, outros termos que podem não ser muito conhecidos como "correlação" "valores p", "holm" aparecem porem sempre com uma explicação de seu contexto/aplicação, além de terem links que redirecionam o usuário a um site explicativo. |
+| H3 | f01,f02,f02e1,f02e2,f02e3,f02e4,f03,f03_1,f03_2,f03_3, f03_4,f03e1, f04,f04_1,f04_2,f04_3,F04_4,F04e1,f04e2 | não | não há | todas as ações do usuário podem ser refeitas/desfeitas, desde o arquivo anexado, filtro aplicado a valor inserido, além de termos acessos ubiquos na navbar. |
+| H4 | f01,f02,f02e1,f02e2,f02e3,f02e4,f03,f03_1,f03_2,f03_3, f03_4,f03e1, f04,f04_1,f04_2,f04_3,F04_4,F04e1,f04e2 | sim | V02 | Apesar da inconsistência em "entendi" e "tentar novamente" nas telas de erro, utilizamos as mesmas palavras ao inves de sinônimos, mantemos convenções e padrões entre as telas tanto de palavras, consistência de valores quanto cores |
+| H5 | f01,f02,f02e1,f02e2,f02e3,f02e4,f03,f03_1,f03_2,f03_3, f03_4,f03e1, f04,f04_1,f04_2,f04_3,F04_4,F04e1,f04e2 | não | não há | Sempre informamos os usuários de conteúdos que ele precisa saber, seja para preencher os campos de input ou para compreender melhor as anaálises, fazemos isso por meio de tooltips e de marcadores de inputs preenchidos, por exemplo. |
+| H6 | 01,f02,f02e1,f02e2,f02e3,f02e4,f03,f03_1,f03_2,f03_3, f03_4,f03e1, f04,f04_1,f04_2,f04_3,F04_4,F04e1,f04e2| não | não há | Garantimos isso permitindo que usuário nevegue pela aplicação por meio da tecla tab, bem como preencha campos numéricoms aumentando o numero com a seta ou digitando, também mantemos a persistnecia dos dados e filtros entre as telas e permitimos que filtros sejam alterados sem reiniciar a análise |
+| H7 | 01,f02,f02e1,f02e2,f02e3,f02e4,f03,f03_1,f03_2,f03_3, f03_4,f03e1, f04,f04_1,f04_2,f04_3,F04_4,F04e1,f04e2 | não | não há | Apesar de haver uma grande quantidade de texto para as métricas, eles são necessários para compreender o que é analisado e do que os gráficos se tratam.Assim, tornamos a interface o mais minimalista possível.  |
+| H8 | 01,f02,f02e1,f02e2,f02e3,f02e4,f03,f03_1,f03_2,f03_3, f03_4,f03e1, f04,f04_1,f04_2,f04_3,F04_4,F04e1,f04e2 | não | não há | Todos os possíveis erros são informados tanto visualmente quanto textualmente de uma maneira bem clara onde mencionamos o problema e como arrumá-lo |
+| H9 | 01,f02,f02e1,f02e2,f02e3,f02e4,f03,f03_1,f03_2,f03_3, f03_4,f03e1, f04,f04_1,f04_2,f04_3,F04_4,F04e1,f04e2 | não | não há |Todos os possíveis erros são informados tanto visualmente quanto textualmente de uma maneira bem clara onde mencionamos o problema e como arrumá-lo, trazendo eles de uma forma compreensível |
+| H10 | 01,f02,f02e1,f02e2,f02e3,f02e4,f03,f03_1,f03_2,f03_3, f03_4,f03e1, f04,f04_1,f04_2,f04_3,F04_4,F04e1,f04e2 | não | não há | Fornecemos ajuda e documentação para os coneitos que cosndieramos ser mais distantes de alguns docentes por meio de tooltips descritivas, explicação de como realizamos os cálculos e links para tópicos que os usuários podem não conhecer, como correlação, modelo logístico  |
 
 
 ### 5. Declaração de violações
 
 | ID | Heurística | Tela/estado | Problema observado | Evidência | Severidade | Justificativa da severidade | Recomendação |
 |---|---|---|---|---|---:|---|---|
-| V01 | H1 | {{F02}} | {{o que ocorre, em que ação e qual consequência}} | ![print](../assets/13_heuristica/v01.svg) | 3 | {{frequência/impacto/persistência}} | {{correção específica}} |
+| V01 | H2 | tooltip????, f04_2, f4 | algumas palavras e expressões não apresentam explicações claras sobre o que representam, podendo gerar dúvidas ou interpretações equivocadas por parte dos usuários. Por exemplo, não há uma definição do que é considerado um “texto introdutório”. Além disso, alguns tooltips utilizam siglas pouco conhecidas, como “IQR”, sem apresentar seus significados, o que pode dificultar a compreensão das informações. | ![print1](../assets/13_heuristica/V01_1.jpeg),![print2](../assets/13_heuristica/V01_2.jpeg) | 3 | ocorre sempre que as análises são carregadas, podendo dificultar um pouco na interpretsção correto das analises por parte do usuárioe influenciar negativamente sua compreensão. | adicinar na toolti uma explicação mais explicita do que são esses cocneitos (IQR e texto introdutório) que ficaram um pouco vagos |
+| V02 | H4 | f02e1, f02e2, f02e3, f02e4 | nas telas de erro há uma incosist6encia entre a recuperação, em algumas oferecemos o botão "entendido" enquanto em outras aparece o botão "tentar novamente" | ![print1](../assets/13_heuristica/v02_1.png),![print2](../assets/13_heuristica/V02_2.png),![print3](../assets/13_heuristica/V02_3.png),![print4](../assets/13_heuristica/V02_4.png) | 2 | Ocorre sempre que da algum dos 4 erros mencionados, a inconsistência está na comparação deles, impacto baixo pois usuário consegue arrumar o erro apesar disso | padronizar todos os botões de erro para "Tentar novamente" |
 
 **Qualidade do relato:** o problema deve ser observável e localizado. Evite “interface confusa” sem dizer **o que**, **onde**, **quando** e **para quem**.
 
@@ -161,7 +161,25 @@ H10: ajuda e documentacao: é necessario oferecer ajuda e documentacao de alta q
 
 | Heurística sem violação | Exemplo no sistema | Evidência | Por que atende |
 |---|---|---|---|
-| {{H4}} | {{...}} | {{print}} | {{...}} |
+| H1 | informamos o usuário da análise sendo carregada, dos erros, das questões com dificuldade preenchida, se o tempo preenchido ultrapassa o limite, o motivo de algum gráfico não aparecer | ![analise carregada](../assets/13_heuristica/analiseCarregada.jpeg), [exemplo de erro](../assets/13_heuristica/exemploErro.png),[dificuldade preenchida](../assets/13_heuristica/dificuldadepreenchida.png),[tempo maior que limite](../assets/13_heuristica/tempoMaior.png), [gráfico não aparecer](../assets/13_heuristica/graficonaoAparecer.png), | pois o sistema mantém o usuário informado sobre o que está acontecendo durante sua interação, fornecendo feedbacks claros em momentos adequados, isso ocorre por meio de mensagens que indicam o carregamento da análise, notificações de erro, entre outros. Assim, o usuário consegue acompanhar o estado atual do sistema, compreender os resultados de suas ações e identificar possíveis problemas sem ficar sem orientação |
+| H3 | telas de erro com opções de clicar em botões para cancelar ou alterar sua ação, ou seguir as informaçÕes de como resolver o problema, ubiquidade da navbar permitindo voltar a telas, presenta da seta "<-" para retornar a momentos anteriores, ao realizar uma ação, o meio (botão ou input) qe te levou ao novo estado permanece lá permitindo que volte/mude de ideia | [arquivo errado](../assets/13_heuristica/arquivoErrado.jpeg), [voltar erro](../assets/13_heuristica/botaoVoltarErro.jpeg),[info para resolver problema](../assets/13_heuristica/tempoMaior.png), [seta](../assets/13_heuristica/seta.jpeg), [botão permanece](../assets/13_heuristica/botaoPermanece.png) | Atende à heurística porque oferece ao usuário controle sobre suas ações, permitindo cancelar, alterar ou desfazer operações quando necessário. Isso é evidenciado pela presença de botões que possibilitam retornar de situações de erro, orientações para corrigir problemas, opções de navegação pela barra de menu e setas para voltar a etapas anteriores, dentre outras coisas. Dessa forma, o sistema oferece alternativas para sair de situações indesejadas sem exigir que o usuário reinicie todo o processo. |
+| H5 | Sempre informamos os usuários de conteúdos que ele precisa saber, seja para fazer o upload do arquivo válido, preencher os campos de input ou para compreender melhor as anaálises, compreender os gráficos de maneira mais básica ou detalhada por tooltips, ou fornecer opçoes de filtro e exportação lembrando ele dessas opções | [upload](../assets/13_heuristica/upload.png), [preenchimento de campos](../assets/13_heuristica/preencherCampos.png), [textos compreender analises](../assets/13_heuristica/textoAnalise.jpeg), [melhor compreeão analises](../assets/13_heuristica/melhorCompreencaoAnalise.png),[opções de filtro e exportar](../assets/13_heuristica/seta.jpeg), | Atende à heurística porque disponibiliza informações e orientações diretamente na interface, evitando que o usuário precise memorizar instruções ou recorrer à própria memória para realizar as tarefas. Isso ocorre por meio de orientações sobre o formato correto do arquivo para upload, instruções para o preenchimento dos campos, textos explicativos que auxiliam na compreensão das análises e tooltips que oferecem explicações adicionais sobre os gráficos e suas métricas. Além disso, as opções de filtragem e exportação são sinalizadas na interface, facilitando sua identificação e utilização. Dessa forma, o sistema mantém as informações, ações e opções relevantes visíveis ou facilmente acessíveis sempre que necessário. |
+| H6 | Garantimos isso permitindo que usuário nevegue pela aplicação por meio da tecla tab, bem como preencha campos numéricoms aumentando o numero com a seta ou digitando,também mantemos a persistnecia dos dados e filtros entre as telas e permitimos que filtros sejam alterados sem reiniciar a análise | [preencher rápido](../assets/13_heuristica/preencherRapido.jpeg), [filtro](../assets/13_heuristica/seta.jpeg),| Atende à heurística porque oferece diferentes formas de interação que tornam o uso do sistema mais rápido e eficiente, respeitando as preferências dos usuários. Isso é evidenciado pela possibilidade de navegar entre os elementos da interface utilizando a tecla Tab, sem depender exclusivamente do mouse, e pela facilidade de preenchimento dos campos numéricos, que podem ser editados tanto pela digitação direta quanto pelas setas de incremento e decremento. Além disso, o sistema permite alterar filtros sem precisar reiniciar toda a análise e mantém os dados preenchidos e os filtros aplicados mesmo quando o usuário navega entre diferentes telas. Dessa forma, evita retrabalho, reduz etapas desnecessárias e oferece uma experiência mais flexível e eficiente para usuários com diferentes níveis de familiaridade com a aplicação. |
+
+| H7 | {{...}} | {{print}} | {{...}} |
+| H8 | {{...}} | {{print}} | {{...}} |
+| H9 | {{...}} | {{print}} | {{...}} |
+| H10 | {{...}} | {{print}} | {{...}} |
+<!--
+
+| H7 | 01,f02,f02e1,f02e2,f02e3,f02e4,f03,f03_1,f03_2,f03_3, f03_4,f03e1, f04,f04_1,f04_2,f04_3,F04_4,F04e1,f04e2 | não | não há | Apesar de haver uma grande quantidade de texto para as métricas, eles são necessários para compreender o que é analisado e do que os gráficos se tratam.Assim, tornamos a interface o mais minimalista possível.  |
+
+| H8 | 01,f02,f02e1,f02e2,f02e3,f02e4,f03,f03_1,f03_2,f03_3, f03_4,f03e1, f04,f04_1,f04_2,f04_3,F04_4,F04e1,f04e2 | não | não há | Todos os possíveis erros são informados tanto visualmente quanto textualmente de uma maneira bem clara onde mencionamos o problema e como arrumá-lo |
+
+| H9 | 01,f02,f02e1,f02e2,f02e3,f02e4,f03,f03_1,f03_2,f03_3, f03_4,f03e1, f04,f04_1,f04_2,f04_3,F04_4,F04e1,f04e2 | não | não há |Todos os possíveis erros são informados tanto visualmente quanto textualmente de uma maneira bem clara onde mencionamos o problema e como arrumá-lo, trazendo eles de uma forma compreensível |
+
+| H10 | 01,f02,f02e1,f02e2,f02e3,f02e4,f03,f03_1,f03_2,f03_3, f03_4,f03e1, f04,f04_1,f04_2,f04_3,F04_4,F04e1,f04e2 | não | não há | Fornecemos ajuda e documentação para os coneitos que cosndieramos ser mais distantes de alguns docentes por meio de tooltips descritivas, explicação de como realizamos os cálculos e links para tópicos que os usuários podem não conhecer, como correlação, modelo logístico  |
+-->
 
 
 ## Avaliador A01 — Luana Bortko Rodrigues
@@ -233,7 +251,7 @@ H10: ajuda e documentacao: é necessario oferecer ajuda e documentacao de alta q
 
 > Repita a seção para A02, A03... um avaliador por integrante.
 
-## 7. Consolidação da equipe
+## 7. Consolidação da equipe <!-- FAZER -->
 
 Problemas iguais ou muito semelhantes encontrados por avaliadores diferentes devem ser consolidados, preservando quem os encontrou.
 
@@ -241,14 +259,14 @@ Problemas iguais ou muito semelhantes encontrados por avaliadores diferentes dev
 |---|---|---|---|---:|---|---|
 | HC01 | V01(A01), V04(A02) | H1 | {{...}} | {{...}} | alta | {{...}} |
 
-## 8. Síntese e plano de melhoria
+## 8. Síntese e plano de melhoria <!-- FAZER -->
 
 - Quantidade de problemas por heurística e severidade.
 - Problemas críticos/graves que bloqueiam teste ou release.
 - Padrões recorrentes entre telas.
 - Correções que serão feitas antes/para a avaliação com usuários.
 
-## Checklist
+## Checklist <!-- FAZER -->
 
 - [ ] Cada integrante fez uma inspeção completa e identificada.
 - [ ] Todas as telas/estados relevantes foram examinados.
