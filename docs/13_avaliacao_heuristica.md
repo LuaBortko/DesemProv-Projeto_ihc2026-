@@ -77,11 +77,11 @@ Em TCCs técnicos, observe especialmente se a interface comunica o estado do pro
 
 | Item | Definição |
 |---|---|
-| Versão avaliada | {{link/commit/data}} |
-| Telas/estados | {{lista completa}} |
-| Fluxos | {{M01/M02...}} |
-| Dispositivo/viewport | {{...}} |
-| Avaliadores | {{nomes}} |
+| Versão avaliada | verão atual do código disponível em: [Repositório TCC](https://github.com/beatrizmanaia26/TCC-DesempenhoEnem) |
+| Telas/estados | f01, f02, f02e1, f02e2, f02e3, f02e4, f03, f03_1, f03_2, f03_3, f03_4, f03e1, f04, f04_1, f04_2, f04_3, f04_4, f04_5,|
+| Fluxos | M01/M02/M03 |
+| Dispositivo/viewport | Notebook |
+| Avaliadores | Beatriz Manaia Lourenço Berto, Luana Bortko Rodrigues, Nuno Martins Guilhermino da Silva |
 
 ## 3. Procedimento individual
 
@@ -107,7 +107,7 @@ Ao justificar, considere **frequência, impacto e persistência** do problema no
 
 ---
 
-## Avaliador A01 — {{nome}}
+## Avaliador A01 — Beatriz Manaia Lourenço Berto
 
 ### 4. Matriz de cobertura das 10 heurísticas
 
@@ -124,6 +124,7 @@ Ao justificar, considere **frequência, impacto e persistência** do problema no
 | H9 | {{...}} | sim/não |  |  |
 | H10 | {{...}} | sim/não |  |  |
 
+
 ### 5. Declaração de violações
 
 | ID | Heurística | Tela/estado | Problema observado | Evidência | Severidade | Justificativa da severidade | Recomendação |
@@ -137,6 +138,74 @@ Ao justificar, considere **frequência, impacto e persistência** do problema no
 | Heurística sem violação | Exemplo no sistema | Evidência | Por que atende |
 |---|---|---|---|
 | {{H4}} | {{...}} | {{print}} | {{...}} |
+
+
+## Avaliador A01 — Luana Bortko Rodrigues
+
+### 4. Matriz de cobertura das 10 heurísticas
+
+| Heurística | Telas/fluxos examinados | Houve violação? | IDs dos achados | Exemplo de boa prática se não violada |
+|---|---|---|---|---|
+| H1 | {{...}} | sim/não | {{V01...}} | {{...}} |
+| H2 | {{...}} | sim/não |  |  |
+| H3 | {{...}} | sim/não |  |  |
+| H4 | {{...}} | sim/não |  |  |
+| H5 | {{...}} | sim/não |  |  |
+| H6 | {{...}} | sim/não |  |  |
+| H7 | {{...}} | sim/não |  |  |
+| H8 | {{...}} | sim/não |  |  |
+| H9 | {{...}} | sim/não |  |  |
+| H10 | {{...}} | sim/não |  |  |
+
+
+### 5. Declaração de violações
+
+| ID | Heurística | Tela/estado | Problema observado | Evidência | Severidade | Justificativa da severidade | Recomendação |
+|---|---|---|---|---|---:|---|---|
+| V01 | H1 | {{F02}} | {{o que ocorre, em que ação e qual consequência}} | ![print](../assets/13_heuristica/v01.svg) | 3 | {{frequência/impacto/persistência}} | {{correção específica}} |
+
+**Qualidade do relato:** o problema deve ser observável e localizado. Evite “interface confusa” sem dizer **o que**, **onde**, **quando** e **para quem**.
+
+### 6. Boas práticas — heurísticas não violadas (atividade didática)
+
+| Heurística sem violação | Exemplo no sistema | Evidência | Por que atende |
+|---|---|---|---|
+| {{H4}} | {{...}} | {{print}} | {{...}} |
+
+
+## Avaliador A01 — Nuno Martins Guilhermino da Silva
+
+### 4. Matriz de cobertura das 10 heurísticas
+
+| Heurística | Telas/fluxos examinados | Houve violação? | IDs dos achados | Exemplo de boa prática se não violada |
+|---|---|---|---|---|
+| H1 | {{...}} | sim/não | {{V01...}} | {{...}} |
+| H2 | {{...}} | sim/não |  |  |
+| H3 | {{...}} | sim/não |  |  |
+| H4 | {{...}} | sim/não |  |  |
+| H5 | {{...}} | sim/não |  |  |
+| H6 | {{...}} | sim/não |  |  |
+| H7 | {{...}} | sim/não |  |  |
+| H8 | {{...}} | sim/não |  |  |
+| H9 | {{...}} | sim/não |  |  |
+| H10 | {{...}} | sim/não |  |  |
+
+
+### 5. Declaração de violações
+
+| ID | Heurística | Tela/estado | Problema observado | Evidência | Severidade | Justificativa da severidade | Recomendação |
+|---|---|---|---|---|---:|---|---|
+| V01 | H1 | {{F02}} | {{o que ocorre, em que ação e qual consequência}} | ![print](../assets/13_heuristica/v01.svg) | 3 | {{frequência/impacto/persistência}} | {{correção específica}} |
+
+**Qualidade do relato:** o problema deve ser observável e localizado. Evite “interface confusa” sem dizer **o que**, **onde**, **quando** e **para quem**.
+
+### 6. Boas práticas — heurísticas não violadas (atividade didática)
+
+| Heurística sem violação | Exemplo no sistema | Evidência | Por que atende |
+|---|---|---|---|
+| {{H4}} | {{...}} | {{print}} | {{...}} |
+
+
 
 > Repita a seção para A02, A03... um avaliador por integrante.
 

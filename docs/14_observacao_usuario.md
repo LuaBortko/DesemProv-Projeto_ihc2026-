@@ -1,7 +1,7 @@
 # Entrega 14 — Avaliação de usabilidade por observação de usuários
 
-**Data:** {{dd/mm/aaaa}}  
-**Status:** ⬜ não iniciada  
+**Data:** 08/11/2026
+**Status:**  🟨 Em andamento
 **Responsabilidade:** solução consolidada por equipe. O número de participantes finais observados deve ser igual ao número de integrantes, conforme o modelo da disciplina; recomenda-se que cada integrante seja responsável por conduzir/analisar ao menos um participante.
 <!--
 anotacao topico 12 e 14....
@@ -42,7 +42,12 @@ O fluxograma deve representar, no mínimo: planejamento → recrutamento → con
 
 ### Passo 1 — Objetivos e versão avaliada
 
-**Versão/commit/Figma:** {{...}}  
+**Versão/commit/Figma:** {{...}} 
+<!--versao do sistema ver ENTREGA 13 VERSAO 
+Como alinhado em aula, devido ao projeto de IHC ser do nosso TCC e já termos a prototipação de alta fidelidade (a própria aplicação do TCC), utilizaremos prints da aplicação, porém, para rodá-la basta clonar o repositório [ Repositório do TCC](https://github.com/beatrizmanaia26/TCC-DesempenhoEnem) abrir 2 terminais:
+1- cd aplicacao, cd MVP, cd frontend e rodar "npm run dev"
+3- cd aplicacao, cd MVP, cd backend e rodar "npm run dev"
+--> 
 **Metas de usabilidade relacionadas:** {{MU01...}}
 
 ### Passo 2 — Participantes
@@ -50,21 +55,23 @@ O fluxograma deve representar, no mínimo: planejamento → recrutamento → con
 | ID | Perfil | Critérios que justificam participação | Integrante responsável |
 |---|---|---|---|
 | U01 | {{sem nome real}} | {{...}} | {{...}} |
+| U02 | {{sem nome real}} | {{...}} | {{...}} |
+| U03 | {{sem nome real}} | {{...}} | {{...}} |
 
-### Passo 3 — Consentimento e privacidade
+### Passo 3 — Consentimento e privacidade <!--BIA -->
 
 - Termo/registro de consentimento: {{link}}
 - Gravação de tela/áudio/vídeo: sim/não e finalidade.
 - Forma de anonimização: IDs `U01`, `U02`...
 - Local e período de armazenamento: {{...}}
 
-### Passo 4 — Teste piloto
+### Passo 4 — Teste piloto <!-- LU E NUNO FAZEREM TESTE PILOTO NA QUARTA-->
 
-**Data:** {{...}}  
+**Data:** 
 **O que foi validado:** roteiro, duração, entendimento das instruções, protótipo, gravação.  
 **Mudanças após piloto:** {{...}}
 
-### Passo 5 — Tarefas
+### Passo 5 — Tarefas <!-- BIA -->
 
 | ID | Cenário/instrução apresentada | Critério de sucesso | Métricas | Ligação com modelo |
 |---|---|---|---|---|
@@ -93,6 +100,24 @@ O fluxograma deve representar, no mínimo: planejamento → recrutamento → con
 **Link da gravação (se autorizado):** {{...}}  
 **Resposta pós-teste:** {{...}}
 
+### U03 — {{perfil resumido}}
+
+| Tarefa | Grau de sucesso | Erros | Tipos de erro/dificuldade | Ajudas | Tempo | Satisfação | Evidência/observação |
+|---|---|---:|---|---:|---|---|---|
+| UT01 | total/parcial/falha | {{n}} | {{...}} | {{n}} | {{mm:ss}} | {{escala}} | {{fala/comportamento}} |
+
+**Link da gravação (se autorizado):** {{...}}  
+**Resposta pós-teste:** {{...}}
+
+### U03 — {{perfil resumido}}
+
+| Tarefa | Grau de sucesso | Erros | Tipos de erro/dificuldade | Ajudas | Tempo | Satisfação | Evidência/observação |
+|---|---|---:|---|---:|---|---|---|
+| UT01 | total/parcial/falha | {{n}} | {{...}} | {{n}} | {{mm:ss}} | {{escala}} | {{fala/comportamento}} |
+
+**Link da gravação (se autorizado):** {{...}}  
+**Resposta pós-teste:** {{...}}
+
 > Repita para U02, U03...
 
 ## D. Consolidação por tarefa
@@ -100,6 +125,8 @@ O fluxograma deve representar, no mínimo: planejamento → recrutamento → con
 | Tarefa | Taxa de sucesso | Tempo típico | Erros recorrentes | Satisfação | Meta atendida? | Problemas prioritários |
 |---|---:|---|---|---|---|---|
 | UT01 | {{...}} | {{...}} | {{...}} | {{...}} | sim/não | {{...}} |
+| UT02 | {{...}} | {{...}} | {{...}} | {{...}} | sim/não | {{...}} |
+| UT03 | {{...}} | {{...}} | {{...}} | {{...}} | sim/não | {{...}} |
 
 ## E. Achados e recomendações
 
