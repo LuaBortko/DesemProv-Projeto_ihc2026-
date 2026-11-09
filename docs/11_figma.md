@@ -167,7 +167,7 @@ Como alinhado em aula, devido ao projeto de IHC ser do nosso TCC e já termos a 
 **Signos principais:** formalismo, similaridade de distratores, quantidade de palavras, distribuição do tempo de prova e o tempo estimado de leitura, resultados por questão, filtros, quantidade de questões, dificuldade das questões, prova, métricas estruturais, correlação com desempenho |<br> 
 **Origem no MoLIC:** M03/cena de Consultar métricas da prova <br>
 
-### F04E1 - Não escolheu nenhum filtro
+### F04.1 - Escolha de filtros das informações gerais
 ![F03](../assets/11_figma/f04_1.png)
 **Objetivo do usuário:** Filtrar informações da prova <br> 
 **Signos principais:** filtros |<br> 
