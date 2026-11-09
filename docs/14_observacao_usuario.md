@@ -32,25 +32,20 @@ O teste avalia a **interação com o protótipo**. Não é necessário que o par
 
 Tarefas podem envolver, por exemplo, interpretar um dashboard, configurar uma análise, encontrar uma execução no histórico usando filtros, comparar resultados, gerar relatório, revisar alerta ou administrar permissões.
 
-## A. Fluxograma do processo — equipe
+## A. Fluxograma do processo — equipe 
 
-![Fluxograma](../assets/14_testes/fluxograma_avaliacao.svg)
+![Fluxograma](../assets/14_testes/fluxogramaEntrega14.jpeg)
 
-O fluxograma deve representar, no mínimo: planejamento → recrutamento → consentimento → preparação → execução das tarefas/observação → pós-teste → consolidação/análise → recomendações.
+<!--O fluxograma deve representar, no mínimo: planejamento → recrutamento → consentimento → preparação → execução das tarefas/observação → pós-teste → consolidação/análise → recomendações.-->
 
 ## B. Procedimento de preparação e execução — equipe
 
-### Passo 1 — Objetivos e versão avaliada
+### Passo 1 — Objetivos e versão avaliada 
 
-**Versão/commit/Figma:** {{...}} 
-<!--versao do sistema ver ENTREGA 13 VERSAO 
-Como alinhado em aula, devido ao projeto de IHC ser do nosso TCC e já termos a prototipação de alta fidelidade (a própria aplicação do TCC), utilizaremos prints da aplicação, porém, para rodá-la basta clonar o repositório [ Repositório do TCC](https://github.com/beatrizmanaia26/TCC-DesempenhoEnem) abrir 2 terminais:
-1- cd aplicacao, cd MVP, cd frontend e rodar "npm run dev"
-3- cd aplicacao, cd MVP, cd backend e rodar "npm run dev"
---> 
-**Metas de usabilidade relacionadas:** {{MU01...}}
+**Versão/commit/Figma:** verão atual do código disponível em: [Repositório TCC](https://github.com/beatrizmanaia26/TCC-DesempenhoEnem) 
+**Metas de usabilidade relacionadas:** MU01 (facilidade de aprendizado), MU02 (facilidade de memorização), MU03 (eficiência), MU04 (taxa e gravidade de erros) e MU05 (satisfação).
 
-### Passo 2 — Participantes
+### Passo 2 — Participantes <!--fazer -->
 
 | ID | Perfil | Critérios que justificam participação | Integrante responsável |
 |---|---|---|---|
@@ -58,12 +53,12 @@ Como alinhado em aula, devido ao projeto de IHC ser do nosso TCC e já termos a 
 | U02 | {{sem nome real}} | {{...}} | {{...}} |
 | U03 | {{sem nome real}} | {{...}} | {{...}} |
 
-### Passo 3 — Consentimento e privacidade <!--BIA -->
+### Passo 3 — Consentimento e privacidade 
 
-- Termo/registro de consentimento: {{link}}
-- Gravação de tela/áudio/vídeo: sim/não e finalidade.
-- Forma de anonimização: IDs `U01`, `U02`...
-- Local e período de armazenamento: {{...}}
+- Termo/registro de consentimento: [Modelo de termo de consentimento](../instrumentos/termo_consentimento_modelo.md) <br>
+- Gravação de tela/áudio/vídeo: Sim, mediante autorização do participante. A gravação de tela será utilizada para analisar a navegação, identificar dificuldades e verificar as ações realizadas durante as tarefas. A gravação de áudio poderá ser utilizada para registrar comentários e dúvidas verbalizadas durante a avaliação.<br>
+- Forma de anonimização:  Os participantes serão identificados exclusivamente por códigos, como ⁠ U01 ⁠, ⁠ U02 ⁠ e ⁠ U03 ⁠, sem utilização de nomes ou outras informações pessoais nos registros e na apresentação dos resultados.<br>
+- Local e período de armazenamento: Os registros da avaliação serão armazenados em pasta digital de acesso restrito à equipe, durante o período de realização e análise da atividade. Após a consolidação dos resultados e a conclusão da avaliação, os arquivos contendo gravações serão excluídos. <br>
 
 ### Passo 4 — Teste piloto <!-- LU E NUNO FAZEREM TESTE PILOTO NA QUARTA-->
 
@@ -71,13 +66,13 @@ Como alinhado em aula, devido ao projeto de IHC ser do nosso TCC e já termos a 
 **O que foi validado:** roteiro, duração, entendimento das instruções, protótipo, gravação.  
 **Mudanças após piloto:** {{...}}
 
-### Passo 5 — Tarefas <!-- BIA -->
+### Passo 5 — Tarefas 
 
 | ID | Cenário/instrução apresentada | Critério de sucesso | Métricas | Ligação com modelo |
 |---|---|---|---|---|
-| UT01 | {{“Você precisa...” sem dizer o controle}} | {{resultado observável}} | sucesso, tempo, erros, ajudas, satisfação | {{T01/M01/F01}} |
+| UT01 | Você é um professor e precisa analisar uma prova para compreender características de sua estrutura e identificar aspectos que possam influenciar o desempenho dos alunos. Utilize o sistema para enviar o arquivo da prova, preencher os parâmetros solicitados e realizar a análise. Ao final, explore os resultados apresentados e explique o que conseguiu compreender a partir das métricas disponíveis. | O participante consegue enviar o PDF aceito, preencher os par6ametros necessários, iniciar a análise e acessar os resultados. Além disso, consegue identificar e explicar o significado das principais métricas apresentadas, sem auxilio do moderador | taxa de sucesso, tempo de execução, quantidade de erros, taxa de recuperação, pedidos de ajudas, satisfação  pós tarefa|T01/M01/M02/M03/f01,f02,f02e1,f02e2,f02e3,f02e4,f03,f03_1,f03_2,f03_3, f03_4,f03e1, f04,f04_1,f04_2,f04_3,F04_4,F04e1,f04e2 |
 
-### Passo 6 — Protocolo do moderador
+### Passo 6 — Protocolo do moderador <!--fazer -->
 
 1. Receber participante e explicar que **o produto está sendo avaliado, não a pessoa**.
 2. Obter consentimento.
@@ -89,7 +84,7 @@ Como alinhado em aula, devido ao projeto de IHC ser do nosso TCC e já termos a 
 8. Fazer pós-teste/entrevista breve.
 9. Encerrar e explicar uso dos dados.
 
-## C. Resultados — por participante
+## C. Resultados — por participante <!--fazer -->
 
 ### U01 — {{perfil resumido}}
 
@@ -120,7 +115,7 @@ Como alinhado em aula, devido ao projeto de IHC ser do nosso TCC e já termos a 
 
 > Repita para U02, U03...
 
-## D. Consolidação por tarefa
+## D. Consolidação por tarefa <!--fazer -->
 
 | Tarefa | Taxa de sucesso | Tempo típico | Erros recorrentes | Satisfação | Meta atendida? | Problemas prioritários |
 |---|---:|---|---|---|---|---|
@@ -128,19 +123,19 @@ Como alinhado em aula, devido ao projeto de IHC ser do nosso TCC e já termos a 
 | UT02 | {{...}} | {{...}} | {{...}} | {{...}} | sim/não | {{...}} |
 | UT03 | {{...}} | {{...}} | {{...}} | {{...}} | sim/não | {{...}} |
 
-## E. Achados e recomendações
+## E. Achados e recomendações <!--fazer -->
 
 | ID | Achado | Evidência (quant. + qual.) | Impacto | Recomendação | Artefatos a revisar |
 |---|---|---|---|---|---|
 | AU01 | {{...}} | {{2/4 falharam + fala U03...}} | {{...}} | {{...}} | {{MoLIC/Figma/signos...}} |
 
-## F. Comparação com a avaliação heurística
+## F. Comparação com a avaliação heurística <!--fazer -->
 
 | Problema | Detectado na heurística? | Detectado por usuários? | O que aprendemos |
 |---|---|---|---|
 | {{...}} | sim/não | sim/não | {{...}} |
 
-## G. Conclusão
+## G. Conclusão <!--fazer -->
 
 A conclusão deve responder:
 
