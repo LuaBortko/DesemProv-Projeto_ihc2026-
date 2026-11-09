@@ -173,27 +173,27 @@ Como alinhado em aula, devido ao projeto de IHC ser do nosso TCC e já termos a 
 **Signos principais:** filtros |<br> 
 **Origem no MoLIC:** M03/cena de Filtrar dados <br>
 
-### F04E2 - Não foi preenchida número de acertos
+### F04.2 - Não foi preenchida número de acertos
 ![F03](../assets/11_figma/f04_2.png)
 
 **Objetivo do usuário:** Ver correlações utilizando os acertos dos alunos <br> 
 **Signos principais:** correlação com desempenho |<br> 
 **Origem no MoLIC:** M03/cena de Consultar métricas da prova <br>
 
-### F04E3 - Usuário quer olhar informações extras
+### F04.3 - Usuário quer olhar informações extras
 ![F03](../assets/11_figma/f04_3.png)
 **Objetivo do usuário:** Ver informações sobre os cálculos feitos na análise <br> 
 **Signos principais:** balão de ajuda contextual |<br> 
 **Origem no MoLIC:** M03/cena de Consultar métricas da prova <br>
 
-### F04E4 - Modelo RoBERTa não conseguiu conectar(interação simulada)
+### F04E1 - Modelo RoBERTa não conseguiu conectar(interação simulada)
 
 ![F03](../assets/11_figma/F04_4.png)
 **Objetivo do usuário:** Deseja que a quantidade de alunos que acertou as questões seja considerado na análise<br> 
 **Signos principais:** Erro: Falha ao carregar RoBERTa|<br> 
 **Origem no MoLIC:** M01/cena de Enviar avaliação<br>
 
-### F04E5 - Modelo BERT não conseguiu conectar(interação simulada)
+### F04E2 - Modelo BERT não conseguiu conectar(interação simulada)
 ![F03](../assets/11_figma/f04_5.png)
 **Objetivo do usuário:** Iniciar a análise da prova <br> 
 **Signos principais:** Erro: Falha ao carregar BERT|<br> 
