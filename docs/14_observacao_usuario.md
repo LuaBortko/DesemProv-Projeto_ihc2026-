@@ -49,9 +49,9 @@ Tarefas podem envolver, por exemplo, interpretar um dashboard, configurar uma an
 
 | ID | Perfil | Critérios que justificam participação | Integrante responsável |
 |---|---|---|---|
-| U01 | {{sem nome real}} | {{...}} | {{...}} |
-| U02 | {{sem nome real}} | {{...}} | {{...}} |
-| U03 | {{sem nome real}} | {{...}} | {{...}} |
+| U01 | P01 | Professor que atua na docência e possui conhecimentos de Interação Humano-Computador (IHC). Representa o público-alvo do sistema, por possuir familiaridade com o contexto educacional e experiência para avaliar aspectos de usabilidade da interface. | {{...}} |
+| U02 | P02 | Colega de turma que já cursou a disciplina de IHC, mas não participou do desenvolvimento do projeto. Possui conhecimentos básicos sobre usabilidade, permitindo avaliar a interface sem influência das decisões tomadas pela equipe durante o desenvolvimento. | {{...}} |
+| U03 | P03 | Amigo ou familiar que não conhece o projeto e não possui conhecimentos específicos de IHC. Representa um usuário sem familiaridade prévia com o sistema, permitindo observar dificuldades de compreensão, navegação e realização das tarefas. | {{...}} |
 
 ### Passo 3 — Consentimento e privacidade 
 
