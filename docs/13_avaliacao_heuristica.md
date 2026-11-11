@@ -175,25 +175,49 @@ H10: ajuda e documentacao: é necessario oferecer ajuda e documentacao de alta q
 
 ### 4. Matriz de cobertura das 10 heurísticas
 
+<!--
+H1: visibilidade do estado d osistema: o sistema deve sempre manter os usuários informados sobre o que está acontecendo atraves de feedback (respsota às ações do usuário) adequado e no tempo certo
+
+H2: correspondência entre o sistema e o mundo real: o sistema deve utilizar palavras, expressões e conceitos que são familiares aos usuários, em vez de utilizar termos orientados ao sistema ou jargão dos desenvolvedores. O designer deve seguir as convenções do mundo real, fazendo com que a informação apareça em uma ordem natural e lógica, conforme esperado pelos usuários
+
+H3: controle e liberdade do usuário: os usuários frequentemente realizam acoes equivocadas no sistema e precisam de uma "saida de emergencia"claramente marcada para sair do estado indesejado sem ter que percorrer um dialogo extenso. A interface deve permitir que o ususario desfaca e refação suas acoes 
+
+H4: consistencia e padronizacao: os usuários nao devem ter de se perguntar se palavras, situacoes ou acoes diferentes significam a mesma coisa. O designer deve seguir as convencoes da plataforma ou do ambiente computacional
+
+H5: reconhecimento em vez de memorizacao: o desginer deve tornar os objetivos, as acoes e opcoes visiveis. As instrucoes de uso do sistema devem estar visiveis ou facilmente acessiveis sempre que necessário 
+
+H6: flexibilidade e eficiencia de uso: aceleradores podem tornar a interacao do usuario mais rapida e eficiente, permitindo que o sistrema consiga servir igualmemte bem os usuarios experientes e inexperientes
+
+H7: projeto estético e minimalista: a interface nao deve conter informacao que seja irrelevante ou raramente necessária. Cada unidade extra de informacao em uma interface reduz sua visiibilidade relativa, pois compete com as demais unidades de informacao pela atencao do usuário
+
+H8: prevencao de erros: melhor do que uma boa mensagem de erro é um projeto cuidadoso que evite que um problema ocorra, caso isso seja possivel
+
+H9: ajude os usuarios a reconhecerem, diagnosticarem e se recuperarem de erros: as mensagem de erro devem ser expressas em linguagem simples (sem codigos indecifraveis), indicar precisamente o problema e sugerir uma solucao de forma construtiva
+
+H10: ajuda e documentacao: é necessario oferecer ajuda e documentacao de alta qualidade. Tais informacoes devem ser facilmente encontradas, focadas na tarefa do usuario, enumerar passos concretos a serem realizados e nao ser muito extensas
+
+ -->
+
+
 | Heurística | Telas/fluxos examinados | Houve violação? | IDs dos achados | Exemplo de boa prática se não violada |
 |---|---|---|---|---|
-| H1 | {{...}} | sim/não | {{V01...}} | {{...}} |
-| H2 | {{...}} | sim/não |  |  |
-| H3 | {{...}} | sim/não |  |  |
-| H4 | {{...}} | sim/não |  |  |
-| H5 | {{...}} | sim/não |  |  |
-| H6 | {{...}} | sim/não |  |  |
-| H7 | {{...}} | sim/não |  |  |
-| H8 | {{...}} | sim/não |  |  |
-| H9 | {{...}} | sim/não |  |  |
-| H10 | {{...}} | sim/não |  |  |
+| H1 | f01,f02,f02e1,f02e2,f02e3,f02e4,f03,f03_1,f03_2,f03_3, f03_4,f03e1, f04,f04_1,f04_2,f04_3,F04_4,F04e1,f04e2 | não | --- | O sistema tem alertas visiveis e que informam o erro e oque fazer quando ele acontece; Sistema avisa na tela dos inputs quando é possivel iniciar a analise (estado do botão) |
+| H2 | f01,f02,f02e1,f02e2,f02e3,f02e4,f03,f03_1,f03_2,f03_3, f03_4,f03e1, f04,f04_1,f04_2,f04_3,F04_4,F04e1,f04e2 | sim | V1, F04.3 | Tooltips que informam de forma clara e simples as informações |
+| H3 | f01,f02,f02e1,f02e2,f02e3,f02e4,f03,f03_1,f03_2,f03_3, f03_4,f03e1, f04,f04_1,f04_2,f04_3,F04_4,F04e1,f04e2 | não |  |  |
+| H4 | f01,f02,f02e1,f02e2,f02e3,f02e4,f03,f03_1,f03_2,f03_3, f03_4,f03e1, f04,f04_1,f04_2,f04_3,F04_4,F04e1,f04e2 | sim/não |  |  |
+| H5 | f01,f02,f02e1,f02e2,f02e3,f02e4,f03,f03_1,f03_2,f03_3, f03_4,f03e1, f04,f04_1,f04_2,f04_3,F04_4,F04e1,f04e2 | sim/não |  |  |
+| H6 | f01,f02,f02e1,f02e2,f02e3,f02e4,f03,f03_1,f03_2,f03_3, f03_4,f03e1, f04,f04_1,f04_2,f04_3,F04_4,F04e1,f04e2 | sim/não |  |  |
+| H7 | f01,f02,f02e1,f02e2,f02e3,f02e4,f03,f03_1,f03_2,f03_3, f03_4,f03e1, f04,f04_1,f04_2,f04_3,F04_4,F04e1,f04e2 | sim/não |  |  |
+| H8 | f01,f02,f02e1,f02e2,f02e3,f02e4,f03,f03_1,f03_2,f03_3, f03_4,f03e1, f04,f04_1,f04_2,f04_3,F04_4,F04e1,f04e2 | sim/não |  |  |
+| H9 | f01,f02,f02e1,f02e2,f02e3,f02e4,f03,f03_1,f03_2,f03_3, f03_4,f03e1, f04,f04_1,f04_2,f04_3,F04_4,F04e1,f04e2 | sim/não |  |  |
+| H10 | f01,f02,f02e1,f02e2,f02e3,f02e4,f03,f03_1,f03_2,f03_3, f03_4,f03e1, f04,f04_1,f04_2,f04_3,F04_4,F04e1,f04e2 | sim/não |  |  |
 
 
 ### 5. Declaração de violações
 
 | ID | Heurística | Tela/estado | Problema observado | Evidência | Severidade | Justificativa da severidade | Recomendação |
 |---|---|---|---|---|---:|---|---|
-| V01 | H1 | {{F02}} | {{o que ocorre, em que ação e qual consequência}} | ![print](../assets/13_heuristica/v01.svg) | 3 | {{frequência/impacto/persistência}} | {{correção específica}} |
+| V03 | H2 | ---- | Tooltips tem textos não tão familiares e que podem causar confusão | ![print](../assets/13_heuristica/v03.png) | 3 | {{frequência/impacto/persistência}}Acontece toda vez que o usuário acessa a tooltip em busca de informação; O usuário pode entender errado as informações, impactando em suas decisões sobre as métricas | Tornar os textos das tooltips mais claros e simples |
 
 **Qualidade do relato:** o problema deve ser observável e localizado. Evite “interface confusa” sem dizer **o que**, **onde**, **quando** e **para quem**.
 
