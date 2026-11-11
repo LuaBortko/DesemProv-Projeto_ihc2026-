@@ -235,6 +235,8 @@ Ligação entre caixas da o fluxo: pelo diagrama de obj vemos oq precisa faze p 
 ## 4. Esquema conceitual de signos
 <!--unico e alinhamento ebatido entre todos escolher , ipload,td input e output sao signos, se tem sinalizacao do sistem a eh sigo baseado so na parte de analise da tela é sobre obj ex analise de prova vai ter mtoo signos, dado exibidos e tem grupos de signos (grupo da prova, da área...  -->
 
+<!--Signos realmente são bem expecificos,ex: cada grafico ser o signo, cada tooltip tbm ser um signo-->
+
 Conforme alinhado em sala, na nossa aplicação de alto nível existem 3 telas no total (análise, ENEM, e sobre) porém as telas ENEM e sobre não fazem parte da analise conceitual pois não entram no escopo principal estudado na matéria de ihc, que é analisar a prova em diferentes cenários, objetivo esse relacionado a tela "análise", ou seja, agrega mais valor ao proj faze o da analise)
 
 Consolide as informações em **uma tabela única**.
