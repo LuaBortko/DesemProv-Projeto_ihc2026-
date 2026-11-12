@@ -242,23 +242,24 @@ H10: ajuda e documentacao: é necessario oferecer ajuda e documentacao de alta q
 
 | Heurística | Telas/fluxos examinados | Houve violação? | IDs dos achados | Exemplo de boa prática se não violada |
 |---|---|---|---|---|
-| H1 | {{...}} | sim/não | {{V01...}} | {{...}} |
-| H2 | {{...}} | sim/não |  |  |
-| H3 | {{...}} | sim/não |  |  |
-| H4 | {{...}} | sim/não |  |  |
-| H5 | {{...}} | sim/não |  |  |
-| H6 | {{...}} | sim/não |  |  |
-| H7 | {{...}} | sim/não |  |  |
-| H8 | {{...}} | sim/não |  |  |
-| H9 | {{...}} | sim/não |  |  |
-| H10 | {{...}} | sim/não |  |  |
+| H1 | f03, f03_1, f03_2, f03_3, f03_4, f03e1, f01,f02,f02e1,f02e2,f02e3,f03e4, f04, f04_1, f04_2, f04_3, f04_4, f04e1, f04e2 | não | | O feedback rápido dado ao usuário caso ele faça upload de um arquivo inválido para análise. |
+| H2 |  f03, f03_1, f03_2, f03_3, f03_4, f03e1, f01,f02,f02e1,f02e2,f02e3,f03e4, f04, f04_1, f04_2, f04_3, f04_4, f04e1, f04e2  | sim | F04_3 |  |
+| H3 |f03, f03_1, f03_2, f03_3, f03_4, f03e1, f01,f02,f02e1,f02e2,f02e3,f03e4, f04, f04_1, f04_2, f04_3, f04_4, f04e1, f04e2  | não |  | Durante o upload de um arquivo, caso ele seja inválido, o usuário pode remover o arquivo mandado da área de upload e fazer o reupload com outro arquivo |
+| H4 |f03, f03_1, f03_2, f03_3, f03_4, f03e1, f01,f02,f02e1,f02e2,f02e3,f03e4, f04, f04_1, f04_2, f04_3, f04_4, f04e1, f04e2  | não |  | Os termos de tópicos que são analisados são usados da mesma forma e com mesmo significado consistentemente pela aplicação completa.|
+| H5 |f03, f03_1, f03_2, f03_3, f03_4, f03e1, f01,f02,f02e1,f02e2,f02e3,f03e4, f04, f04_1, f04_2, f04_3, f04_4, f04e1, f04e2  | não |  | Instruções para ações que requerem participação do usuário são disponibilizadas ou em instruções default, ou através de tooltips no caso da inserção de dados da prova |
+| H6 |f03, f03_1, f03_2, f03_3, f03_4, f03e1, f01,f02,f02e1,f02e2,f02e3,f03e4, f04, f04_1, f04_2, f04_3, f04_4, f04e1, f04e2  | não |  | Na seção de inserção de dados, são dados informações opcionais que o usuário pode inserir caso queira uma análise mais completa.|
+| H7 |f03, f03_1, f03_2, f03_3, f03_4, f03e1, f01,f02,f02e1,f02e2,f02e3,f03e4, f04, f04_1, f04_2, f04_3, f04_4, f04e1, f04e2  | não |  | A seção de gráficos contém apenas os resultados das análises, legendas e breves explicações para contextualização de cálculos. |
+| H8 |f03, f03_1, f03_2, f03_3, f03_4, f03e1, f01,f02,f02e1,f02e2,f02e3,f03e4, f04, f04_1, f04_2, f04_3, f04_4, f04e1, f04e2  | sim | F02_E1,F02_E3, F03_E1 |  |
+| H9 |f03, f03_1, f03_2, f03_3, f03_4, f03e1, f01,f02,f02e1,f02e2,f02e3,f03e4, f04, f04_1, f04_2, f04_3, f04_4, f04e1, f04e2  | não |  | Durante o upload do arquivo, o usuário é notificado do exato erro que aconteceu, seja falta de questões encontradas ou arquivo inválido. |
+| H10 |f03, f03_1, f03_2, f03_3, f03_4, f03e1, f01,f02,f02e1,f02e2,f02e3,f03e4, f04, f04_1, f04_2, f04_3, f04_4, f04e1, f04e2 | não |  | São fornecidas informações e instruções de uso e explicações de resultados através de trechos de texto, legendas e tooltips presentes por volta da aplicação |
 
 
 ### 5. Declaração de violações
 
 | ID | Heurística | Tela/estado | Problema observado | Evidência | Severidade | Justificativa da severidade | Recomendação |
 |---|---|---|---|---|---:|---|---|
-| V01 | H1 | {{F02}} | {{o que ocorre, em que ação e qual consequência}} | ![print](../assets/13_heuristica/v01.svg) | 3 | {{frequência/impacto/persistência}} | {{correção específica}} |
+| V01 | H2 | F04_3 | Quando se olha o tooltip do filtro, é usada uma sigla não esclarecida anteriormente ao usuário, podendo alienar pessoas com menos experiência | ![print](../assets/13_heuristica/H2_exemplo.png) | 3 | O impacto desta violação é de um preocupação maior, já que, não conseguindo compreender tudo que está sendo mostrado a ele, pode ser comprometida a sua interpretação dos resultados apresentados | Definir siglas usadas antes do uso em fórmulas|
+| V01 | H8 | F03_1 | Quando vai além do limite de horas, ele mostra uma mensagem de erro para o usuário por ter ultrapassado o limite. | ![print](../assets/13_heuristica/H8_exemplo.png) | 1 | Tem baixo impacto por ainda impedir o usuário de progredir para a próxima etapa. | Impedir o usuário de fazer um input acima de 6 horas.|
 
 **Qualidade do relato:** o problema deve ser observável e localizado. Evite “interface confusa” sem dizer **o que**, **onde**, **quando** e **para quem**.
 
@@ -266,7 +267,15 @@ H10: ajuda e documentacao: é necessario oferecer ajuda e documentacao de alta q
 
 | Heurística sem violação | Exemplo no sistema | Evidência | Por que atende |
 |---|---|---|---|
-| {{H4}} | {{...}} | {{print}} | {{...}} |
+| H1 | F2E1 | ![print](../assets/13_heuristica/exemploErroUpload.png)  | O feedback aparece de forma rápida e com instruções claras para o usuário. |
+| H3 | F02E2 | ![print](../assets/13_heuristica/exemploErroPreparo.png)  | O feedback aparece com a opção de tentar novamente, podendo retirar o usuário de estado de erro|
+| H4 | F04 | ![print](../assets/13_heuristica/exemploTooltip.png)  | Tem explicações e esclarecimentos do significado de termos e ações, além de consistentemente utilizar o mesmo termo em múltiplas telas|
+| H5 | F01 | ![print](../assets/13_heuristica/exemploH5.png)  | São mostradas instruções das ações que o usuário deve fazer.|
+| H6 | F03 | ![print](../assets/13_heuristica/exemploH6.png)  | São dadas opções ao usuário que facilitam o seu uso da aplicação, dependendo do nível das informações que ele deseja colocar no sistema.|
+| H7 | F04 | ![print](../assets/13_heuristica/ExemploH7.png)  | São apresentadas ao usuário apenas informações que são relevantes ao objetivo do usuário, mostrando apenas instruções e contextualização onde necessário.|
+| H9 | F02_E3 | ![print](../assets/13_heuristica/exemploH9.png)  | Na ocorrência de um erro, é sempre mostrado ao usuário o erro exato e como mitigar.|
+| H10 | F03_1 | ![print](../assets/13_heuristica/exemploH10.png)  | Através dos tooltips, são mostradas informações como passos, objetivos, restrições e cálculos utilizados.|
+
 
 
 
