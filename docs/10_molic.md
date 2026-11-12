@@ -87,7 +87,7 @@ Modele também rupturas plausíveis: entrada inválida, falha de processamento, 
 
 ### Diagrama
 
-![MoLIC M01](../assets/10_molic/molic_m01.svg)
+![MoLIC M01](../assets/10_molic/molic_01.png)
 
 **Fonte editável:** [link editável](https://canva.link/tbgn4mxijuochce)
 
@@ -158,7 +158,7 @@ Como todos os dados digitados foram validados e permanecem preservados na tela, 
 
 **Autor(a):** Beatriz Manaia Lourenço Berto <br>
 **Cenário de interação de origem:** CI01  <br>
-**Objetivo(s):** O01  <br>
+**Objetivo(s):** O04  <br>
 **Tarefa(s) relacionada(s):** T01 - Analisar a prova  <br>
 **Signos relevantes:** Prova, Área tracejada (dropzone), ícone de upload (seta), Texto instrucional, Texto de restrição, Botão "Escolher arquivo", Informações do arquivo (nome e tamanho), Botão "cancelar". 
 

@@ -174,7 +174,6 @@ H10: ajuda e documentacao: é necessario oferecer ajuda e documentacao de alta q
 ## Avaliador A02 — Luana Bortko Rodrigues
 
 ### 4. Matriz de cobertura das 10 heurísticas
-
 <!--
 H1: visibilidade do estado d osistema: o sistema deve sempre manter os usuários informados sobre o que está acontecendo atraves de feedback (respsota às ações do usuário) adequado e no tempo certo
 
@@ -201,23 +200,25 @@ H10: ajuda e documentacao: é necessario oferecer ajuda e documentacao de alta q
 
 | Heurística | Telas/fluxos examinados | Houve violação? | IDs dos achados | Exemplo de boa prática se não violada |
 |---|---|---|---|---|
-| H1 | f01,f02,f02e1,f02e2,f02e3,f02e4,f03,f03_1,f03_2,f03_3, f03_4,f03e1, f04,f04_1,f04_2,f04_3,F04_4,F04e1,f04e2 | não | --- | O sistema tem alertas visiveis e que informam o erro e oque fazer quando ele acontece; Sistema avisa na tela dos inputs quando é possivel iniciar a analise (estado do botão) |
-| H2 | f01,f02,f02e1,f02e2,f02e3,f02e4,f03,f03_1,f03_2,f03_3, f03_4,f03e1, f04,f04_1,f04_2,f04_3,F04_4,F04e1,f04e2 | sim | V1, F04.3 | Tooltips que informam de forma clara e simples as informações |
-| H3 | f01,f02,f02e1,f02e2,f02e3,f02e4,f03,f03_1,f03_2,f03_3, f03_4,f03e1, f04,f04_1,f04_2,f04_3,F04_4,F04e1,f04e2 | não |  |  |
-| H4 | f01,f02,f02e1,f02e2,f02e3,f02e4,f03,f03_1,f03_2,f03_3, f03_4,f03e1, f04,f04_1,f04_2,f04_3,F04_4,F04e1,f04e2 | sim/não |  |  |
-| H5 | f01,f02,f02e1,f02e2,f02e3,f02e4,f03,f03_1,f03_2,f03_3, f03_4,f03e1, f04,f04_1,f04_2,f04_3,F04_4,F04e1,f04e2 | sim/não |  |  |
-| H6 | f01,f02,f02e1,f02e2,f02e3,f02e4,f03,f03_1,f03_2,f03_3, f03_4,f03e1, f04,f04_1,f04_2,f04_3,F04_4,F04e1,f04e2 | sim/não |  |  |
-| H7 | f01,f02,f02e1,f02e2,f02e3,f02e4,f03,f03_1,f03_2,f03_3, f03_4,f03e1, f04,f04_1,f04_2,f04_3,F04_4,F04e1,f04e2 | sim/não |  |  |
-| H8 | f01,f02,f02e1,f02e2,f02e3,f02e4,f03,f03_1,f03_2,f03_3, f03_4,f03e1, f04,f04_1,f04_2,f04_3,F04_4,F04e1,f04e2 | sim/não |  |  |
-| H9 | f01,f02,f02e1,f02e2,f02e3,f02e4,f03,f03_1,f03_2,f03_3, f03_4,f03e1, f04,f04_1,f04_2,f04_3,F04_4,F04e1,f04e2 | sim/não |  |  |
-| H10 | f01,f02,f02e1,f02e2,f02e3,f02e4,f03,f03_1,f03_2,f03_3, f03_4,f03e1, f04,f04_1,f04_2,f04_3,F04_4,F04e1,f04e2 | sim/não |  |  |
+| H1 | f01,f02,f02e1,f02e2,f02e3,f02e4,f03,f03_1,f03_2,f03_3, f03_4,f03e1, f04,f04_1,f04_2,f04_3,F04_4,F04e1,f04e2 | não | f02e1, f02e2, f02e3, f02e4 f03e1, f03 | O sistema tem alertas visiveis e que informam o erro e oque fazer quando ele acontece; Sistema avisa na tela dos inputs quando é possivel iniciar a analise (estado do botão) |
+| H2 | f01,f02,f02e1,f02e2,f02e3,f02e4,f03,f03_1,f03_2,f03_3, f03_4,f03e1, f04,f04_1,f04_2,f04_3,F04_4,F04e1,f04e2 | sim | V1 | Tooltips que informam de forma clara e simples as informações |
+| H3 | f01,f02,f02e1,f02e2,f02e3,f02e4,f03,f03_1,f03_2,f03_3, f03_4,f03e1, f04,f04_1,f04_2,f04_3,F04_4,F04e1,f04e2 | não | f02e1, f02e2, f02e3, f02e4 | O usuário não fica preso no sistema, ele fornece a possibilidade do usuario refazer suas ações |
+| H4 | f01,f02,f02e1,f02e2,f02e3,f02e4,f03,f03_1,f03_2,f03_3, f03_4,f03e1, f04,f04_1,f04_2,f04_3,F04_4,F04e1,f04e2 | não | todas as telas | Há consistencia entre os componentes do sistema (padronização) |
+| H5 | f01,f02,f02e1,f02e2,f02e3,f02e4,f03,f03_1,f03_2,f03_3, f03_4,f03e1, f04,f04_1,f04_2,f04_3,F04_4,F04e1,f04e2 | não | todas as telas | Sempre é mostrado ao usuário oque ele deve/pode fazer, exemplo são as instruçoes nos inputs, com os i's de informação e as indicações como quantas questões faltam para preencher a dificuldade de todas as questões |
+| H6 | f01,f02,f02e1,f02e2,f02e3,f02e4,f03,f03_1,f03_2,f03_3, f03_4,f03e1, f04,f04_1,f04_2,f04_3,F04_4,F04e1,f04e2 | não | todas as telas | Damos bastante flexibidade para o usuário, como por exemplo poder escrever ou ir pelas setas em campos numéricos, a possibilidade de navegar com a tecla tab  |
+| H7 | f01,f02,f02e1,f02e2,f02e3,f02e4,f03,f03_1,f03_2,f03_3, f03_4,f03e1, f04,f04_1,f04_2,f04_3,F04_4,F04e1,f04e2 | não | todas as telas | Só mostramos na tela informações realmente relevantes/necessarias |
+| H8 | f01,f02,f02e1,f02e2,f02e3,f02e4,f03,f03_1,f03_2,f03_3, f03_4,f03e1, f04,f04_1,f04_2,f04_3,F04_4,F04e1,f04e2 | sim | V04 | O sistema tem varias funcionalidades que impedem colocar valores invalidos nos inputs |
+| H9 | f01,f02,f02e1,f02e2,f02e3,f02e4,f03,f03_1,f03_2,f03_3, f03_4,f03e1, f04,f04_1,f04_2,f04_3,F04_4,F04e1,f04e2 | não | f02e1, f02e2, f02e3, f02e4, f03e1, f04e1 | Todos os erros do sistema explicam ao usuario de forma clara e simples qual o erro e como voltar ao fluxo normal |
+| H10 | f01,f02,f02e1,f02e2,f02e3,f02e4,f03,f03_1,f03_2,f03_3, f03_4,f03e1, f04,f04_1,f04_2,f04_3,F04_4,F04e1,f04e2 | não | todas as telas | O sistema tras escrito informações que são mais dificeis do usuário saber, um exemplo é a informação na tela de inputs, onde temos no tooltip (i) a explicação de onde tiramos a métrica de 1100 caracteres/minuto |
 
 
 ### 5. Declaração de violações
 
 | ID | Heurística | Tela/estado | Problema observado | Evidência | Severidade | Justificativa da severidade | Recomendação |
 |---|---|---|---|---|---:|---|---|
-| V03 | H2 | ---- | Tooltips tem textos não tão familiares e que podem causar confusão | ![print](../assets/13_heuristica/v03.png) | 3 | {{frequência/impacto/persistência}}Acontece toda vez que o usuário acessa a tooltip em busca de informação; O usuário pode entender errado as informações, impactando em suas decisões sobre as métricas | Tornar os textos das tooltips mais claros e simples |
+| V03 | H2 | F04.3 | Tooltips tem textos não tão familiares e que podem causar confusão | ![print](../assets/13_heuristica/v03.png) | 3 | <!--{{frequência/impacto/persistência}}-->Acontece toda vez que o usuário acessa a tooltip em busca de informação; O usuário pode entender errado as informações, impactando em suas decisões sobre as métricas | Tornar os textos das tooltips mais claros e simples |
+| V04 | H8 | F03.e1 | No campo para colocar a duração da prova é possivel colocar um valor maior que o limite | ![print](../assets/13_heuristica/v04.png) | 1 | Acontece toda vez que o usuário coloca um valor acima do permitido pelo sistema; Apenas faz o usuário perder um tempo com a possibilidade de colocar um tempo maior que o permitido | Tornar impossivel colocar um valor maior que 6h |
+
 
 **Qualidade do relato:** o problema deve ser observável e localizado. Evite “interface confusa” sem dizer **o que**, **onde**, **quando** e **para quem**.
 
@@ -225,7 +226,14 @@ H10: ajuda e documentacao: é necessario oferecer ajuda e documentacao de alta q
 
 | Heurística sem violação | Exemplo no sistema | Evidência | Por que atende |
 |---|---|---|---|
-| {{H4}} | {{...}} | {{print}} | {{...}} |
+| H1 | Erro de arquivo no formato errado no upload | ![print](../assets/13_heuristica/ex_h1.png) | Se um arquivo que não esta no formato correto for colocado no sistema ele avisa sobre o erro  |
+| H3 | {{...}} | ![print](../assets/13_heuristica/ex_h3.png) | {{...}} |
+| H4 | {{...}} | ![print](../assets/13_heuristica/ex_h4.png) | {{...}} |
+| H5 | {{...}} | ![print](../assets/13_heuristica/ex_h5.png) | {{...}} |
+| H6 | {{...}} | ![print](../assets/13_heuristica/ex_h6.png) | {{...}} |
+| H7 | {{...}} | ![print](../assets/13_heuristica/ex_h7.png) | {{...}} |
+| H9 | {{...}} | ![print](../assets/13_heuristica/ex_h8.png) | {{...}} |
+| H10 | {{...}} | ![print](../assets/13_heuristica/ex_h9.png) | {{...}} |
 
 
 ## Avaliador A03 — Nuno Martins Guilhermino da Silva

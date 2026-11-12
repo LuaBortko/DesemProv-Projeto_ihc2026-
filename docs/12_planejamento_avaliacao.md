@@ -1,7 +1,7 @@
 # Entrega 12 — Planejamento da avaliação de usabilidade (DECIDE)
 
 **Data:** 08/11/2026<br> 
-**Status:** 🟨 Em andamento<br> 
+**Status:** 🟩 Concluída<br> 
 **Responsabilidade:** 1 solução por equipe<br> 
 
 <!--Entrega eh p entender tecnicas de planejamento, qnd fa zplanejamento resp perg e sabe se vai faze teste de avaliaco heuristica, ou comunicabilidade ou observacao do usuario, ensina a planejar -->
@@ -66,13 +66,13 @@ axcho que tambem caberia fazer o de inspecao: Inspecao nos avlaiadores usamos in
 | QA05 | Quais barreiras o usuário encontra para atingir seus objetivos? | heurística,observação | Quantidade e tipo de dificuldades, erros, dúvidas, interrupções e violações heurísticas identificadas | Os  usuários conseguem superar as dificuldades sem comprometer a conclusão das tarefas com média inferior a um erro por usuário (MU04) |
 | QA06 | A tecnologia disponível pode oferecer maneiras mais interessantes ou eficientes de os usuários atingirem seus objetivo? | observação | Sugestões dos usuários, dificuldades recorrentes e oportunidades de melhoria identificadas durante o uso | São identificadas oportunidades de melhoria que tornem a interação mais simples, eficiente e adequada às necessidades dos professores |
 | QA07 | O usuário consegue operar o sistema com quanta eficiência? Em quanto tempo? Após cometer quantos erros?  | heurística, observação | Tempo de execução, taxa de sucesso, quantidade de erros e solicitações de ajuda por tarefa| Tempo mediano de execução de até 15 minutos (MU03) e média inferior a um erro por uusário (MU04) |
-| QA08 | Que parte da interface e da interação o deixa insatisfeito? | heurística, observação | Relátos de insatisfação, dificuldades percebidas e violações heurísticas identifciadas | Atingir pelo menos 75% de satisfação na avaliação pós-tarefa (MU05) |
-| QA09 | Quais são os pontos fortes e fracos do sistema, na opinião dos usuários? | observação | Comentários positivos de negativos, sugestões e aspectos destacados pelos participantes | Identificar os principais pontos positivos e aspectos que precisam de melhorias, considerando a meta de satisfaçã de pelo menos 75% (MU05) |
-| QA10 | Que parte da interface o desmotiva a explorar novas funcionalidades? | heurística, observação | Funcionalidades não exploradas, desist6encias, dúvidas e relatoa de desmotivação | A interface apresenta funcionalidades acessíveis e compreensíveis, incentivando a exploração sem gerar insegurança ou confusão |
+| QA08 | Que parte da interface e da interação o deixa insatisfeito? | heurística, observação | Relatos de insatisfação, dificuldades percebidas e violações heurísticas identificadas | Atingir pelo menos 75% de satisfação na avaliação pós-tarefa (MU05) |
+| QA09 | Quais são os pontos fortes e fracos do sistema, na opinião dos usuários? | observação | Comentários positivos e negativos, sugestões e aspectos destacados pelos participantes | Identificar os principais pontos positivos e aspectos que precisam de melhorias, considerando a meta de satisfação de pelo menos 75% (MU05) |
+| QA10 | Que parte da interface o desmotiva a explorar novas funcionalidades? | heurística, observação | Funcionalidades não exploradas, desistencias, dúvidas e relatos de desmotivação | A interface apresenta funcionalidades acessíveis e compreensíveis, incentivando a exploração sem gerar insegurança ou confusão |
 | QA11 | Ele entende o que significa e para que serve cada elemento da interface?  | heurística, observação | Interpretação dos rótulos, ícones, indicadores e funcionalidades, dúvidas e interpretações incorretas | Os elementos da interface possuem identificação clara e seus significados e funções são compreendidos pelos usuários |
-| QA12 | Ele vai entender o que deve fazer em seguida? | heurística | Hesitações, solicitaçÕes de ajuda, erros de navegação e violações relacionadas ã orientação e conssitência| a interface fornece indicações claras sobre a sproóximas ações, permitindo a continuidade da interação sem dúvidas |
+| QA12 | Ele vai entender o que deve fazer em seguida? | heurística | Hesitações, solicitações de ajuda, erros de navegação e violações relacionadas a orientação e consitência| a interface fornece indicações claras sobre a sproóximas ações, permitindo a continuidade da interação sem dúvidas |
 | QA13 | Ele tem acesso a todas as informações oferecidas pelo sistema? | observação | Informações não localizadas, elementos inacessíveis, dificuldades de navegação e violações identificadas. | Os usuários conseguem localizar e acessar as informações necessárias para realizar suas tarefas |
-| QA14 | O que é possível modificar no sistema interativo para adequá-lo melhor ao ambiente de trabalho? | observação | Necessidades relatadas, sugestões de adaptação e incompatibilidade entre interface e o contexto de trabalho | São identificadas adaptaçÕes que aproximem a interface das necessidades e práticas de trabalho dos professores |
+| QA14 | O que é possível modificar no sistema interativo para adequá-lo melhor ao ambiente de trabalho? | observação | Necessidades relatadas, sugestões de adaptação e incompatibilidade entre interface e o contexto de trabalho | São identificadas adaptações que aproximem a interface das necessidades e práticas de trabalho dos professores |
 | QA15 | Há problemas de feedback? | heurística, observação | Ausência ou inadequação de mensagens, respostas às ações, indicadores de carregamento e confirmações de operações | O sistema fornece feedback claro e oportuno, permitindo que o usuário compreenda o resultado de suas ações e o estado da interação. |
 
 <!--## C. Escopo e participantes
@@ -192,5 +192,5 @@ Os dados consolidados serão comparados com os critérios esperados definidos na
 - [X] Tarefas vêm de objetivos/cenários relevantes.
 - [X] Critérios de sucesso foram definidos antes da coleta.
 - [X] Questões práticas e éticas estão resolvidas.
-- [ ] Instrumentos estão prontos antes da Entrega 13/14.
+- [X] Instrumentos estão prontos antes da Entrega 13/14.
 - [X] Plano diz como dados serão analisados e apresentados.
