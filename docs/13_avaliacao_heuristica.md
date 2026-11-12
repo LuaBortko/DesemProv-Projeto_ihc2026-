@@ -152,7 +152,7 @@ H10: ajuda e documentacao: é necessario oferecer ajuda e documentacao de alta q
 
 | ID | Heurística | Tela/estado | Problema observado | Evidência | Severidade | Justificativa da severidade | Recomendação |
 |---|---|---|---|---|---:|---|---|
-| V01 | H2 | f04_3, f03_1, f04_2, f4 | algumas palavras e expressões não apresentam explicações claras sobre o que representam, podendo gerar dúvidas ou interpretações equivocadas por parte dos usuários. Por exemplo, não há uma definição do que é considerado um “texto introdutório”. Além disso, alguns tooltips utilizam siglas pouco conhecidas, como “IQR”, sem apresentar seus significados, o que pode dificultar a compreensão das informações. | ![print1](../assets/13_heuristica/V01_1.jpeg),![print2](../assets/13_heuristica/V01_2.jpeg) | 3 | ocorre sempre que as análises são carregadas, podendo dificultar um pouco na interpretsção correto das analises por parte do usuárioe influenciar negativamente sua compreensão. | adicinar na toolti uma explicação mais explicita do que são esses cocneitos (IQR e texto introdutório) que ficaram um pouco vagos |
+| V01 | H2 | f04_3, f03_1, f04_2, f4 | algumas palavras e expressões não apresentam explicações claras sobre o que representam, podendo gerar dúvidas ou interpretações equivocadas por parte dos usuários. Por exemplo, não há uma definição do que é considerado um “texto introdutório”. Além disso, alguns tooltips utilizam siglas pouco conhecidas, como “IQR”, sem apresentar seus significados, o que pode dificultar a compreensão das informações. | ![print1](../assets/13_heuristica/V01_1.jpeg),![print2](../assets/13_heuristica/V01_2.jpeg) | 3 | ocorre sempre que as análises são carregadas, podendo dificultar um pouco na interpretação correto das analises por parte do usuário e influenciar negativamente sua compreensão. | adicionar na tooltip uma explicação mais explicita do que são esses conceitos (IQR e texto introdutório) que ficaram um pouco vagos |
 | V02 | H4 | f02e1, f02e2, f02e3, f02e4 | nas telas de erro há uma incosist6encia entre a recuperação, em algumas oferecemos o botão "entendido" enquanto em outras aparece o botão "tentar novamente" | ![print1](../assets/13_heuristica/v02_1.png),![print2](../assets/13_heuristica/V02_2.png),![print3](../assets/13_heuristica/V02_3.png),![print4](../assets/13_heuristica/V02_4.png) | 2 | Ocorre sempre que da algum dos 4 erros mencionados, a inconsistência está na comparação deles, impacto baixo pois usuário consegue arrumar o erro apesar disso | padronizar todos os botões de erro para "Tentar novamente" |
 
 **Qualidade do relato:** o problema deve ser observável e localizado. Evite “interface confusa” sem dizer **o que**, **onde**, **quando** e **para quem**.
@@ -216,7 +216,7 @@ H10: ajuda e documentacao: é necessario oferecer ajuda e documentacao de alta q
 
 | ID | Heurística | Tela/estado | Problema observado | Evidência | Severidade | Justificativa da severidade | Recomendação |
 |---|---|---|---|---|---:|---|---|
-| V03 | H2 | F04.3 | Tooltips tem textos não tão familiares e que podem causar confusão | ![print](../assets/13_heuristica/v03.png) | 3 | <!--{{frequência/impacto/persistência}}-->Acontece toda vez que o usuário acessa a tooltip em busca de informação; O usuário pode entender errado as informações, impactando em suas decisões sobre as métricas | Tornar os textos das tooltips mais claros e simples |
+| V03 | H2 | F04.3 | Tooltips tem textos não tão familiares e que podem causar confusão, por exemplo os Qx que te ----- | ![print](../assets/13_heuristica/v03.png) | 3 | <!--{{frequência/impacto/persistência}}-->Acontece toda vez que o usuário acessa a tooltip em busca de informação; O usuário pode entender errado as informações, impactando em suas decisões sobre as métricas | Tornar os textos das tooltips mais claros e simples |
 | V04 | H8 | F03.e1 | No campo para colocar a duração da prova é possivel colocar um valor maior que o limite | ![print](../assets/13_heuristica/v04.png) | 1 | Acontece toda vez que o usuário coloca um valor acima do permitido pelo sistema; Apenas faz o usuário perder um tempo com a possibilidade de colocar um tempo maior que o permitido | Tornar impossivel colocar um valor maior que 6h |
 
 
@@ -276,35 +276,38 @@ H10: ajuda e documentacao: é necessario oferecer ajuda e documentacao de alta q
 | H9 | F02_E3 | ![print](../assets/13_heuristica/exemploH9.png)  | Na ocorrência de um erro, é sempre mostrado ao usuário o erro exato e como mitigar.|
 | H10 | F03_1 | ![print](../assets/13_heuristica/exemploH10.png)  | Através dos tooltips, são mostradas informações como passos, objetivos, restrições e cálculos utilizados.|
 
-
-
-
 > Repita a seção para A02, A03... um avaliador por integrante.
 
-## 7. Consolidação da equipe <!-- FAZER -->
+## 7. Consolidação da equipe 
 
 Problemas iguais ou muito semelhantes encontrados por avaliadores diferentes devem ser consolidados, preservando quem os encontrou.
 
 | ID consolidado | Achados individuais | Heurística | Problema | Severidade final | Prioridade | Responsável pela correção |
 |---|---|---|---|---:|---|---|
-| HC01 | V01(A01), V04(A02) | H1 | {{...}} | {{...}} | alta | {{...}} |
+| HC01 | V03(A02), V05(A03) | H2 | O detalhamento da tooltip dos filtros de outline trás uma ambiguidade ao utilizar siglas como Q1,Q2 ao inves de "quartis", podendo levar o usuário a confundir "quarties" com questoes da prova | 3 | alta | Beatriz |
+| HC02 | V02(A01)| H4 | nas telas de erro há uma incosist6encia entre a recuperação, em algumas oferecemos o botão "entendido" enquanto em outras aparece o botão "tentar novamente" | 2 | média | Nuno |
+| HC03 | V04(A02), V06(A03) | H8 | No campo para colocar a duração da prova é possivel colocar um valor maior que o limite | 1 | baixa | Luana |
 
-## 8. Síntese e plano de melhoria <!-- FAZER -->
+## 8. Síntese e plano de melhoria 
 
+<!--
 - Quantidade de problemas por heurística e severidade.
 - Problemas críticos/graves que bloqueiam teste ou release.
 - Padrões recorrentes entre telas.
-- Correções que serão feitas antes/para a avaliação com usuários.
+- Correções que serão feitas antes/para a avaliação com usuários. -->
 
-## Checklist <!-- FAZER -->
+Foram identificados problemas apenas nas heurísticas H2, H4 e H8, sendo encontrado um problema em cada uma delas, com severidade máxima de 3 (decrescente a partir daí). Nenhum problema é classificado como crítico ou grave, ou seja, nenhum bloqueia a realização de testes ou o release. Como padrões recorrentes entre as telas, observou-se que os gráficos seguem um padrão consistente de cores, acompanhados de campos descritivos e tooltips informativas, o que facilita a compreensão e interpretação pelo usuário. Além disso, os inputs de dados são bem descritivos e utilizam placeholders, facilitando a obtenção das informações de maneira simples. As devidas correções já foram aplicadas com base nessas diretrizes.
 
-- [ ] Cada integrante fez uma inspeção completa e identificada.
-- [ ] Todas as telas/estados relevantes foram examinados.
-- [ ] Estados administrativos, filtros, relatórios, históricos, processamento e erros foram incluídos quando existentes.
-- [ ] A inspeção avaliou a interface/protótipo, não o mérito técnico do algoritmo/modelo.
-- [ ] H1–H10 aparecem na matriz de cobertura de cada avaliador.
-- [ ] Parte de violações contém apenas violações, sem “forçar” exemplos.
-- [ ] Todo problema tem print/localização e contexto.
-- [ ] Severidade possui justificativa, não apenas número.
-- [ ] Recomendação resolve a causa ou reduz o impacto.
-- [ ] Achados duplicados foram consolidados ao final.
+
+## Checklist 
+
+- [X] Cada integrante fez uma inspeção completa e identificada.
+- [X] Todas as telas/estados relevantes foram examinados.
+- [x] Estados administrativos, filtros, relatórios, históricos, processamento e erros foram incluídos quando existentes.
+- [X] A inspeção avaliou a interface/protótipo, não o mérito técnico do algoritmo/modelo.
+- [X] H1–H10 aparecem na matriz de cobertura de cada avaliador.
+- [X] Parte de violações contém apenas violações, sem “forçar” exemplos.
+- [X] Todo problema tem print/localização e contexto.
+- [X] Severidade possui justificativa, não apenas número.
+- [X] Recomendação resolve a causa ou reduz o impacto.
+- [X] Achados duplicados foram consolidados ao final.
