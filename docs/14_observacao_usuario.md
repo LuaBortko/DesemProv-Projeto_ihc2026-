@@ -49,7 +49,7 @@ Tarefas podem envolver, por exemplo, interpretar um dashboard, configurar uma an
 
 | ID | Perfil | Critérios que justificam participação | Integrante responsável |
 |---|---|---|---|
-| U01 | P01 | Professor que atua na docência e possui conhecimentos de Interação Humano-Computador (IHC). Representa o público-alvo do sistema, por possuir familiaridade com o contexto educacional e experiência para avaliar aspectos de usabilidade da interface. | {{...}} |
+| U01 | P01 | Professor que atua na docência, representa o público-alvo do sistema, por possuir familiaridade com o contexto educacional. | {{...}} |
 | U02 | P02 | Colega de turma que já cursou a disciplina de IHC, mas não participou do desenvolvimento do projeto. Possui conhecimentos básicos sobre usabilidade, permitindo avaliar a interface sem influência das decisões tomadas pela equipe durante o desenvolvimento. | {{...}} |
 | U03 | P03 | Amigo ou familiar que não conhece o projeto e não possui conhecimentos específicos de IHC. Representa um usuário sem familiaridade prévia com o sistema, permitindo observar dificuldades de compreensão, navegação e realização das tarefas. | {{...}} |
 
@@ -93,27 +93,35 @@ Tarefas podem envolver, por exemplo, interpretar um dashboard, configurar uma an
 | Tarefa | Grau de sucesso | Erros | Tipos de erro/dificuldade | Ajudas | Tempo | Satisfação | Evidência/observação |
 |---|---|---:|---|---:|---|---|---|
 | UT01 | total/parcial/falha | {{n}} | {{...}} | {{n}} | {{mm:ss}} | {{escala}} | {{fala/comportamento}} |
+| UT02 | total/parcial/falha | {{n}} | {{...}} | {{n}} | {{mm:ss}} | {{escala}} | {{fala/comportamento}} |
+| UT03 | total/parcial/falha | {{n}} | {{...}} | {{n}} | {{mm:ss}} | {{escala}} | {{fala/comportamento}} |
 
-**Link da gravação (se autorizado):** {{...}}  
-**Resposta pós-teste:** {{...}}
+**Resposta pré-teste:** {(../instrumentos/questionario_preU01.md)
+**Link da gravação (se autorizado):** {{...}}  <!--POSTA NO YT NAO LISTADO SE DEIXAR -->  
+**Resposta pós-teste:** (../instrumentos/questionario_posU01.md)
+
+### U03 — {{perfil resumido}}
+
+| Tarefa | Grau de sucesso | Erros | Tipos de erro/dificuldade | Ajudas | Tempo | Satisfação | Evidência/observação |
+| UT01 | total/parcial/falha | {{n}} | {{...}} | {{n}} | {{mm:ss}} | {{escala}} | {{fala/comportamento}} |
+| UT02 | total/parcial/falha | {{n}} | {{...}} | {{n}} | {{mm:ss}} | {{escala}} | {{fala/comportamento}} |
+| UT03 | total/parcial/falha | {{n}} | {{...}} | {{n}} | {{mm:ss}} | {{escala}} | {{fala/comportamento}} |
+
+**Resposta pré-teste:** {(../instrumentos/questionario_preU02.md)
+**Link da gravação (se autorizado):** {{...}}  <!--POSTA NO YT NAO LISTADO SE DEIXAR -->  
+**Resposta pós-teste:** {(../instrumentos/questionario_posU02.md)
 
 ### U03 — {{perfil resumido}}
 
 | Tarefa | Grau de sucesso | Erros | Tipos de erro/dificuldade | Ajudas | Tempo | Satisfação | Evidência/observação |
 |---|---|---:|---|---:|---|---|---|
 | UT01 | total/parcial/falha | {{n}} | {{...}} | {{n}} | {{mm:ss}} | {{escala}} | {{fala/comportamento}} |
+| UT02 | total/parcial/falha | {{n}} | {{...}} | {{n}} | {{mm:ss}} | {{escala}} | {{fala/comportamento}} |
+| UT03 | total/parcial/falha | {{n}} | {{...}} | {{n}} | {{mm:ss}} | {{escala}} | {{fala/comportamento}} |
 
-**Link da gravação (se autorizado):** {{...}}  
-**Resposta pós-teste:** {{...}}
-
-### U03 — {{perfil resumido}}
-
-| Tarefa | Grau de sucesso | Erros | Tipos de erro/dificuldade | Ajudas | Tempo | Satisfação | Evidência/observação |
-|---|---|---:|---|---:|---|---|---|
-| UT01 | total/parcial/falha | {{n}} | {{...}} | {{n}} | {{mm:ss}} | {{escala}} | {{fala/comportamento}} |
-
-**Link da gravação (se autorizado):** {{...}}  
-**Resposta pós-teste:** {{...}}
+**Resposta pré-teste:** {(../instrumentos/questionario_preU3.md)
+**Link da gravação (se autorizado):** {{...}}<!--POSTA NO YT NAO LISTADO SE DEIXAR -->  
+**Resposta pós-teste:** (../instrumentos/questionario_posU03.md)
 
 > Repita para U02, U03...
 
