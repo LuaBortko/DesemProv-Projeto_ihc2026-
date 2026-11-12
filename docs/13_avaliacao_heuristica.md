@@ -227,13 +227,13 @@ H10: ajuda e documentacao: é necessario oferecer ajuda e documentacao de alta q
 | Heurística sem violação | Exemplo no sistema | Evidência | Por que atende |
 |---|---|---|---|
 | H1 | Erro de arquivo no formato errado no upload | ![print](../assets/13_heuristica/ex_h1.png) | Se um arquivo que não esta no formato correto for colocado no sistema ele avisa sobre o erro  |
-| H3 | {{...}} | ![print](../assets/13_heuristica/ex_h3.png) | {{...}} |
-| H4 | {{...}} | ![print](../assets/13_heuristica/ex_h4.png) | {{...}} |
-| H5 | {{...}} | ![print](../assets/13_heuristica/ex_h5.png) | {{...}} |
-| H6 | {{...}} | ![print](../assets/13_heuristica/ex_h6.png) | {{...}} |
-| H7 | {{...}} | ![print](../assets/13_heuristica/ex_h7.png) | {{...}} |
-| H9 | {{...}} | ![print](../assets/13_heuristica/ex_h8.png) | {{...}} |
-| H10 | {{...}} | ![print](../assets/13_heuristica/ex_h9.png) | {{...}} |
+| H3 | Ao dar upload em uma prova e o sistema não detectar nenhuma questão, o sistema mostra uma caixa de erro e um botão de tentar novamente para o sistema tentar dnv detectar quetões, como tambem, na mesma cena é possivel tirar o envio para trocar o arquivo que sera avaliado | ![print](../assets/13_heuristica/ex_h3.png) | Ele atende pois ao dar um erro o sistema da alternativas para restaurar o sistema para o estado anterior, como tambem ao fazer a analise existe um botão para voltar para a página de upload |
+| H4 | Os erros do sistema | ![print](../assets/13_heuristica/ex_h4_1.png), ![print](../assets/13_heuristica/ex_h4_2.png) | Pois todos os erros tem botões com a mesma linguagem quando a ideia para consertar o  erro é a mesma |
+| H5 | Nossa tela de input | ![print](../assets/13_heuristica/ex_h5.png) | Os botões e campos preenchiveis são bem visiveis e explicativos, e quando não é, há uma explicação em i informativos |
+| H6 | A possibilidade de ou digitar ou usar setas nos campos numericos dos inputs | ![print](../assets/13_heuristica/ex_h5.png) | Pois tras mais flexibilidade no uso do sistema, dando varias maneiras de fazer uma mesma ação |
+| H7 | Nos inputs, apenas perguntamos oque é realmente necessario | ![print](../assets/13_heuristica/ex_h5.png) | Pois tudo é necessario e nada é excessivo |
+| H9 | Nossa tela de erro de formato no upload | ![print](../assets/13_heuristica/ex_h1.png) | Pois nela temos a possibilidade de voltar para o fluxo normal apertando o botão |
+| H10 | Nosso i de informação no tempo de leitura | ![print](../assets/13_heuristica/ex_h10.png) | Pois documenta de forma clara e informativa pra que serve e porque usamos essa métrica padrão |
 
 
 ## Avaliador A03 — Nuno Martins Guilhermino da Silva
