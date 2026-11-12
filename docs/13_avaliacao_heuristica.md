@@ -243,13 +243,13 @@ H10: ajuda e documentacao: é necessario oferecer ajuda e documentacao de alta q
 | Heurística | Telas/fluxos examinados | Houve violação? | IDs dos achados | Exemplo de boa prática se não violada |
 |---|---|---|---|---|
 | H1 | f03, f03_1, f03_2, f03_3, f03_4, f03e1, f01,f02,f02e1,f02e2,f02e3,f03e4, f04, f04_1, f04_2, f04_3, f04_4, f04e1, f04e2 | não | | O feedback rápido dado ao usuário caso ele faça upload de um arquivo inválido para análise. |
-| H2 |  f03, f03_1, f03_2, f03_3, f03_4, f03e1, f01,f02,f02e1,f02e2,f02e3,f03e4, f04, f04_1, f04_2, f04_3, f04_4, f04e1, f04e2  | sim | F04_3 |  |
+| H2 |  f03, f03_1, f03_2, f03_3, f03_4, f03e1, f01,f02,f02e1,f02e2,f02e3,f03e4, f04, f04_1, f04_2, f04_3, f04_4, f04e1, f04e2  | sim | V05 |  |
 | H3 |f03, f03_1, f03_2, f03_3, f03_4, f03e1, f01,f02,f02e1,f02e2,f02e3,f03e4, f04, f04_1, f04_2, f04_3, f04_4, f04e1, f04e2  | não |  | Durante o upload de um arquivo, caso ele seja inválido, o usuário pode remover o arquivo mandado da área de upload e fazer o reupload com outro arquivo |
 | H4 |f03, f03_1, f03_2, f03_3, f03_4, f03e1, f01,f02,f02e1,f02e2,f02e3,f03e4, f04, f04_1, f04_2, f04_3, f04_4, f04e1, f04e2  | não |  | Os termos de tópicos que são analisados são usados da mesma forma e com mesmo significado consistentemente pela aplicação completa.|
 | H5 |f03, f03_1, f03_2, f03_3, f03_4, f03e1, f01,f02,f02e1,f02e2,f02e3,f03e4, f04, f04_1, f04_2, f04_3, f04_4, f04e1, f04e2  | não |  | Instruções para ações que requerem participação do usuário são disponibilizadas ou em instruções default, ou através de tooltips no caso da inserção de dados da prova |
 | H6 |f03, f03_1, f03_2, f03_3, f03_4, f03e1, f01,f02,f02e1,f02e2,f02e3,f03e4, f04, f04_1, f04_2, f04_3, f04_4, f04e1, f04e2  | não |  | Na seção de inserção de dados, são dados informações opcionais que o usuário pode inserir caso queira uma análise mais completa.|
 | H7 |f03, f03_1, f03_2, f03_3, f03_4, f03e1, f01,f02,f02e1,f02e2,f02e3,f03e4, f04, f04_1, f04_2, f04_3, f04_4, f04e1, f04e2  | não |  | A seção de gráficos contém apenas os resultados das análises, legendas e breves explicações para contextualização de cálculos. |
-| H8 |f03, f03_1, f03_2, f03_3, f03_4, f03e1, f01,f02,f02e1,f02e2,f02e3,f03e4, f04, f04_1, f04_2, f04_3, f04_4, f04e1, f04e2  | sim | F02_E1,F02_E3, F03_E1 |  |
+| H8 |f03, f03_1, f03_2, f03_3, f03_4, f03e1, f01,f02,f02e1,f02e2,f02e3,f03e4, f04, f04_1, f04_2, f04_3, f04_4, f04e1, f04e2  | sim | V06 |  |
 | H9 |f03, f03_1, f03_2, f03_3, f03_4, f03e1, f01,f02,f02e1,f02e2,f02e3,f03e4, f04, f04_1, f04_2, f04_3, f04_4, f04e1, f04e2  | não |  | Durante o upload do arquivo, o usuário é notificado do exato erro que aconteceu, seja falta de questões encontradas ou arquivo inválido. |
 | H10 |f03, f03_1, f03_2, f03_3, f03_4, f03e1, f01,f02,f02e1,f02e2,f02e3,f03e4, f04, f04_1, f04_2, f04_3, f04_4, f04e1, f04e2 | não |  | São fornecidas informações e instruções de uso e explicações de resultados através de trechos de texto, legendas e tooltips presentes por volta da aplicação |
 
