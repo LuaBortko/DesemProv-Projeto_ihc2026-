@@ -258,8 +258,8 @@ H10: ajuda e documentacao: é necessario oferecer ajuda e documentacao de alta q
 
 | ID | Heurística | Tela/estado | Problema observado | Evidência | Severidade | Justificativa da severidade | Recomendação |
 |---|---|---|---|---|---:|---|---|
-| V01 | H2 | F04_3 | Quando se olha o tooltip do filtro, é usada uma sigla não esclarecida anteriormente ao usuário, podendo alienar pessoas com menos experiência | ![print](../assets/13_heuristica/H2_exemplo.png) | 3 | O impacto desta violação é de um preocupação maior, já que, não conseguindo compreender tudo que está sendo mostrado a ele, pode ser comprometida a sua interpretação dos resultados apresentados | Definir siglas usadas antes do uso em fórmulas|
-| V01 | H8 | F03_1 | Quando vai além do limite de horas, ele mostra uma mensagem de erro para o usuário por ter ultrapassado o limite. | ![print](../assets/13_heuristica/H8_exemplo.png) | 1 | Tem baixo impacto por ainda impedir o usuário de progredir para a próxima etapa. | Impedir o usuário de fazer um input acima de 6 horas.|
+| V05 | H2 | F04_3 | Quando se olha o tooltip do filtro, é usada uma sigla não esclarecida anteriormente ao usuário, podendo alienar pessoas com menos experiência | ![print](../assets/13_heuristica/H2_exemplo.png) | 3 | O impacto desta violação é de um preocupação maior, já que, não conseguindo compreender tudo que está sendo mostrado a ele, pode ser comprometida a sua interpretação dos resultados apresentados | Definir siglas usadas antes do uso em fórmulas|
+| V06 | H8 | F03_1 | Quando vai além do limite de horas, ele mostra uma mensagem de erro para o usuário por ter ultrapassado o limite. | ![print](../assets/13_heuristica/H8_exemplo.png) | 1 | Tem baixo impacto por ainda impedir o usuário de progredir para a próxima etapa. | Impedir o usuário de fazer um input acima de 6 horas.|
 
 **Qualidade do relato:** o problema deve ser observável e localizado. Evite “interface confusa” sem dizer **o que**, **onde**, **quando** e **para quem**.
 
