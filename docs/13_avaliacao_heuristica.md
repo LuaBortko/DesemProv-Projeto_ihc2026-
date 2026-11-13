@@ -216,7 +216,7 @@ H10: ajuda e documentacao: é necessario oferecer ajuda e documentacao de alta q
 
 | ID | Heurística | Tela/estado | Problema observado | Evidência | Severidade | Justificativa da severidade | Recomendação |
 |---|---|---|---|---|---:|---|---|
-| V03 | H2 | F04.3 | Tooltips tem textos não tão familiares e que podem causar confusão, por exemplo os Qx que te ----- | ![print](../assets/13_heuristica/v03.png) | 3 | <!--{{frequência/impacto/persistência}}-->Acontece toda vez que o usuário acessa a tooltip em busca de informação; O usuário pode entender errado as informações, impactando em suas decisões sobre as métricas | Tornar os textos das tooltips mais claros e simples |
+| V03 | H2 | F04.3 | Tooltip com texto que pode gerar uma ambiguidade, como tambem uma confusão pelo uso do simbolo Qx para falar de quartis, sendo que mostramos nossas questões tambem com a simbologia Qx | ![print](../assets/13_heuristica/v03.png) | 3 | <!--{{frequência/impacto/persistência}}-->Acontece toda vez que o usuário acessa a tooltip em busca de informação; O usuário pode entender errado as informações, impactando em suas decisões sobre as métricas | Tornar os textos das tooltips mais claros e simples |
 | V04 | H8 | F03.e1 | No campo para colocar a duração da prova é possivel colocar um valor maior que o limite | ![print](../assets/13_heuristica/v04.png) | 1 | Acontece toda vez que o usuário coloca um valor acima do permitido pelo sistema; Apenas faz o usuário perder um tempo com a possibilidade de colocar um tempo maior que o permitido | Tornar impossivel colocar um valor maior que 6h |
 
 
