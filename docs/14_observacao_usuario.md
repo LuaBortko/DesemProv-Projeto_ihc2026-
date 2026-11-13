@@ -50,7 +50,7 @@ Tarefas podem envolver, por exemplo, interpretar um dashboard, configurar uma an
 | ID | Perfil | Critérios que justificam participação | Integrante responsável |
 |---|---|---|---|
 | U01 | P01 | Professor que atua na docência, representa o público-alvo do sistema, por possuir familiaridade com o contexto educacional. | {{...}} |
-| U02 | P02 | Colega de turma que já cursou a disciplina de IHC, mas não participou do desenvolvimento do projeto. Possui conhecimentos básicos sobre usabilidade, permitindo avaliar a interface sem influência das decisões tomadas pela equipe durante o desenvolvimento. | {{...}} |
+| U02 | P02 | Colega de turma que já cursou a disciplina de IHC, mas não participou do desenvolvimento do projeto. Possui conhecimentos básicos sobre usabilidade, permitindo avaliar a interface sem influência das decisões tomadas pela equipe durante o desenvolvimento. | Beatriz |
 | U03 | P03 | Amigo ou familiar que não conhece o projeto e não possui conhecimentos específicos de IHC. Representa um usuário sem familiaridade prévia com o sistema, permitindo observar dificuldades de compreensão, navegação e realização das tarefas. | {{...}} |
 
 ### Passo 3 — Consentimento e privacidade 
@@ -72,7 +72,6 @@ Tarefas podem envolver, por exemplo, interpretar um dashboard, configurar uma an
 |---|---|---|---|---|
 | UT01 | Você é um professor e precisa analisar uma prova para compreender características de sua estrutura e identificar aspectos que possam influenciar o desempenho dos alunos. Utilize o sistema para enviar o arquivo da prova, preencher os parâmetros solicitados e realizar a análise. Ao final, explore os resultados apresentados e explique o que conseguiu compreender a partir das métricas disponíveis. | O participante consegue enviar o PDF aceito, preencher os par6ametros necessários, iniciar a análise e acessar os resultados. Além disso, consegue identificar e explicar o significado das principais métricas apresentadas, sem auxilio do moderador | taxa de sucesso, tempo de execução, quantidade de erros, taxa de recuperação, pedidos de ajudas, satisfação  pós tarefa| T01/M01/M02/M03/f01,f02,f02e1,f02e2,f02e3,f02e4,f03,f03_1,f03_2,f03_3, f03_4,f03e1, f04,f04_1,f04_2,f04_3,F04_4,F04e1,f04e2 |
 | UT02 | Você é um professor e já aplicou uma prova, mas percebeu que o desempenho dos alunos ficou diferente do esperado. Você deseja investigar se características relacionadas ao formato da avaliação podem ajudar a compreender esse resultado. Utilize o sistema para enviar a prova já aplicada, preencher as informações solicitadas e gerar a análise. | O participante consegue enviar o PDF, preencher as informações necessárias e gerar a análise da prova sem auxílio do moderador. | Taxa de sucesso, tempo de execução, quantidade de erros, taxa de recuperação e pedidos de ajuda. | T01/M01/M02/M03/f01,f02,f02e1,f02e2,f02e3,f02e4,f03,f03_1,f03_2,f03_3, f03_4,f03e1, f04,f04_1,f04_2,f04_3,F04_4,F04e1,f04e2  |
-| UT03 | Após realizar a análise de uma prova, você deseja compreender melhor os resultados obtidos para identificar possíveis aspectos que poderiam ser melhorados na elaboração de avaliações futuras. Explore as métricas e os gráficos disponibilizados pelo sistema e explique quais informações considera relevantes para essa análise. | O participante consegue localizar as principais métricas e gráficos, interpretar as informações apresentadas e identificar possíveis aspectos do formato da prova que merecem atenção, explicando sua interpretação. | Taxa de sucesso, tempo de execução, erros de interpretação, pedidos de ajuda e satisfação pós-tarefa. | T01/M01/M02/M03/f01,f02,f02e1,f02e2,f02e3,f02e4,f03,f03_1,f03_2,f03_3, f03_4,f03e1, f04,f04_1,f04_2,f04_3,F04_4,F04e1,f04e2  |
 
 ### Passo 6 — Protocolo do moderador <!--fazer -->
 
@@ -94,22 +93,22 @@ Tarefas podem envolver, por exemplo, interpretar um dashboard, configurar uma an
 |---|---|---:|---|---:|---|---|---|
 | UT01 | total/parcial/falha | {{n}} | {{...}} | {{n}} | {{mm:ss}} | {{escala}} | {{fala/comportamento}} |
 | UT02 | total/parcial/falha | {{n}} | {{...}} | {{n}} | {{mm:ss}} | {{escala}} | {{fala/comportamento}} |
-| UT03 | total/parcial/falha | {{n}} | {{...}} | {{n}} | {{mm:ss}} | {{escala}} | {{fala/comportamento}} |
+
 
 **Resposta pré-teste:** {(../instrumentos/questionario_preU01.md)
 **Link da gravação (se autorizado):** {{...}}  <!--POSTA NO YT NAO LISTADO SE DEIXAR -->  
 **Resposta pós-teste:** (../instrumentos/questionario_posU01.md)
 
-### U03 — {{perfil resumido}}
+### U02 — {{perfil resumido}}
 
 | Tarefa | Grau de sucesso | Erros | Tipos de erro/dificuldade | Ajudas | Tempo | Satisfação | Evidência/observação |
-| UT01 | total/parcial/falha | {{n}} | {{...}} | {{n}} | {{mm:ss}} | {{escala}} | {{fala/comportamento}} |
-| UT02 | total/parcial/falha | {{n}} | {{...}} | {{n}} | {{mm:ss}} | {{escala}} | {{fala/comportamento}} |
-| UT03 | total/parcial/falha | {{n}} | {{...}} | {{n}} | {{mm:ss}} | {{escala}} | {{fala/comportamento}} |
+| UT01 | tota | Apenas a compreensão errado do cenário, que logo foi corrigida pela desenvolvedora para não compometer o fluxo desejado de teste | Buscar informação da difucldade das questões, foi o ponto em que a usuária mais demonstrou lentidão | relembramos o fluxo/tarefa inicial para que fossem preenchidos os dados corretamente | 08:21 (completo), 05:36 (apenas teste da aplicação) | 100% | comportamentos e falas muito positivos que demonstram compreensão plena das atividades a serem realizadas, dos gráficos e do objetivo da aplicação |
+| UT02 | parcial | Não conseguiu interpretar claramente um dos gráficos (correlação) e ao seguir a primeira tarefa entendeu errado | Análise de um dos gráficos foi realizada levando em consideração apenas um dos 3 fatores, precisamos deixar mais claro no texto para que esse erro não ocorra de novo | Após informar as tarefas/situações para os testes, a primeira tarefa não foi compreendida plenamente, o que quase gerou o primeiro treste falho (a usuária quase informou dados a mais), foi necessário intervir para relembrar a tarefa específica e garantir o fluxo correto de uso. Além disso, percebi que a compreensão do gráfico de correlação foi parcialmente prejudicada, provavelmente devido a nao leitura completa a descrição ou da má escolha, por parte dos devs, em posicionar as informações descritivas | 8:82 (completo), 08:92 (apenas teste da aplicação) | 90% | A usuário acredita que os textos descritivos poderiam ser resumidos, quase nunca utilizou os tooltips de informação (apenas para entender o que seriam textos introdutórios, utilizando o ícone ao lado da frase "textos introdutórios" o que fez com que nós devs ajustassemos o código para manter essa informação apenas nessa tooltip, além disso teve a dificuldade em analisar o gráfico de correlação, estamos trabalhando no ajuste para o erro nao ocorrer novamente, as falas foram em suma muito positivas, mostrando bastante compreensão da plataforma, de seus fluxos e objetivos, conseguiu utilizá-la bem seguindo o propósito) |
 
-**Resposta pré-teste:** {(../instrumentos/questionario_preU02.md)
-**Link da gravação (se autorizado):** {{...}}  <!--POSTA NO YT NAO LISTADO SE DEIXAR -->  
-**Resposta pós-teste:** {(../instrumentos/questionario_posU02.md)
+
+**Resposta pré-teste:** [pré-teste respondido](../instrumentos/questionario_preU02.md)
+**Link da gravação (se autorizado):** [víde não listado youtube U02 ](https://youtu.be/KgpqN43J2uQ) 
+**Resposta pós-teste:** [pós-teste respondido](../instrumentos/questionario_posU02.md)
 
 ### U03 — {{perfil resumido}}
 
@@ -117,9 +116,9 @@ Tarefas podem envolver, por exemplo, interpretar um dashboard, configurar uma an
 |---|---|---:|---|---:|---|---|---|
 | UT01 | total/parcial/falha | {{n}} | {{...}} | {{n}} | {{mm:ss}} | {{escala}} | {{fala/comportamento}} |
 | UT02 | total/parcial/falha | {{n}} | {{...}} | {{n}} | {{mm:ss}} | {{escala}} | {{fala/comportamento}} |
-| UT03 | total/parcial/falha | {{n}} | {{...}} | {{n}} | {{mm:ss}} | {{escala}} | {{fala/comportamento}} |
 
-**Resposta pré-teste:** {(../instrumentos/questionario_preU3.md)
+
+**Resposta pré-teste:** (../instrumentos/questionario_preU3.md)
 **Link da gravação (se autorizado):** {{...}}<!--POSTA NO YT NAO LISTADO SE DEIXAR -->  
 **Resposta pós-teste:** (../instrumentos/questionario_posU03.md)
 
@@ -130,14 +129,15 @@ Tarefas podem envolver, por exemplo, interpretar um dashboard, configurar uma an
 | Tarefa | Taxa de sucesso | Tempo típico | Erros recorrentes | Satisfação | Meta atendida? | Problemas prioritários |
 |---|---:|---|---|---|---|---|
 | UT01 | {{...}} | {{...}} | {{...}} | {{...}} | sim/não | {{...}} |
-| UT02 | {{...}} | {{...}} | {{...}} | {{...}} | sim/não | {{...}} |
-| UT03 | {{...}} | {{...}} | {{...}} | {{...}} | sim/não | {{...}} |
+| UT02 |  | XXXXXXX (média entre tempo total de cada participante) | Compreensão um pouco equivocada do gráfico de dispersão |  | sim/não | Ajustar o texto de descrição do gráfico de correlação, deixando mais evidente o que precisa analisar e remover o conteúdo que informa sobre texto introdutório na tooltip geral do gráfico, deixando apenas ao lado do texto específico, |
 
-## E. Achados e recomendações <!--fazer -->
+## E. Achados e recomendações <!--fazer  NAO ENTENDI DIREITO OQ EH SERIA PONTO DE DIFICULDADE DO PARTICIPANTE? VER COM PLINIO--> 
 
 | ID | Achado | Evidência (quant. + qual.) | Impacto | Recomendação | Artefatos a revisar |
 |---|---|---|---|---|---|
 | AU01 | {{...}} | {{2/4 falharam + fala U03...}} | {{...}} | {{...}} | {{MoLIC/Figma/signos...}} |
+| AU02 | {{...}} | {{2/4 falharam + fala U03...}} | {{...}} | {{...}} | {{MoLIC/Figma/signos...}} |
+| AU03 | {{...}} | {{2/4 falharam + fala U03...}} | {{...}} | {{...}} | {{MoLIC/Figma/signos...}} |
 
 ## F. Comparação com a avaliação heurística <!--fazer -->
 

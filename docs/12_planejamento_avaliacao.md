@@ -105,7 +105,6 @@ axcho que tambem caberia fazer o de inspecao: Inspecao nos avlaiadores usamos in
 |---|---|---|---|---|
 | UT01 | "Você acabou de criar uma prova de alguma matéria que leciona e quer saber métricas sobre o formato da sua prova como: relação dos distraotres das alternativas, se o tempo para fazer as questÕes é suficiente." | T01/O01 | Concluir upload, preencher as informações da prova e gerar a análise | 5 minutos |
 | UT02 | "Você quer avaliar uma prova já aplicada que teve um desempenho fora do esperado, para isso deseja analisar as caracteristicas de formato da sua avaliação" | T01/O02 | Concluir upload, preencher as informações da prova e gerar a análise | 5 minutos |
-| UT03 | "Analisando os resultados/métricas geradas pelo sistema, identifique informações úteis para você, como elaborador de prova" | T01/O01/O02 | Localizar as informações e analisar as métricas e gráficos disponibiloizados | 10 minutos |
 
 > Uma boa instrução descreve o objetivo do participante sem dizer **onde clicar** ou usar o rótulo exato do controle que está sendo testado.
 
