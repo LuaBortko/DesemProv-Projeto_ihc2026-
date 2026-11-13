@@ -283,6 +283,8 @@ Consolide as informações em **uma tabela única**.
 | Navegação | Menu de navegação | Convencional | Permite acessar as seções Análise, ENEM e Sobre no cabeçalho da aplicação. | Links de navegação | Destinos devem estar disponíveis | Análise | Identificar a seção atualmente ativa | Permitir retornar à seção anterior a qualquer momento |
 | Navegação | Botão "Iniciar Análise" | Aplicação | Comando de ação principal que valida os parâmetros e dispara o processamento da análise pelos modelos do sistema. | Botão de ação | Exige o preenchimento válido de todos os parâmetros obrigatórios da tela | "Iniciar Análise" | Impedir a submissão com dados inconsistentes através de validações em tempo real | Em caso de falha de sistema (Erro 6), permite clicar em "Tentar novamente" sem perder os dados preenchidos |
 | Análise | Nenhum filtro escolhido | Aplicação | Comunica que o usuário não escolheu nenhum filtro na visualização das métricas | Pop-up/modal de alerta com texto explicativo | Disparado quando o usuário aplica um filtro no qual ele não escolheu nenhum filtro| Nenhum | Nenhum | Selecionar filtros |
+| Análise | Botão "Exportar" | Aplicação | Botão para abrir opções de exportação | Botão de ação | Disparado apenas quando o usuário clica o botão, abrindo as opções de exportação.| Desativado | Nenhum | Nenhum |
+| Análise | Opções de exportação | Aplicação | Botões para exportar resultados em formato escolhido pelo usuário(PDF, Word ou Excel)| Botão de ação | Disparado apenas quando o usuário clica o botão, iniciando o processo de exportação.| Desativado | Nenhum | Exibir mensagem falando que a exportação falhou.|
 
 ### Regras para os signos
 
