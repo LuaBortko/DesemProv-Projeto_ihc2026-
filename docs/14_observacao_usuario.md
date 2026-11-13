@@ -1,7 +1,7 @@
 # Entrega 14 — Avaliação de usabilidade por observação de usuários
 
-**Data:** 08/11/2026
-**Status:**  🟨 Em andamento
+**Data:** 08/11/2026<br>
+**Status:**  🟨 Em andamento<br>
 **Responsabilidade:** solução consolidada por equipe. O número de participantes finais observados deve ser igual ao número de integrantes, conforme o modelo da disciplina; recomenda-se que cada integrante seja responsável por conduzir/analisar ao menos um participante.
 <!--
 anotacao topico 12 e 14....
@@ -102,6 +102,7 @@ Tarefas podem envolver, por exemplo, interpretar um dashboard, configurar uma an
 ### U02 — {{perfil resumido}}
 
 | Tarefa | Grau de sucesso | Erros | Tipos de erro/dificuldade | Ajudas | Tempo | Satisfação | Evidência/observação |
+|---|---|---:|---|---:|---|---|---|
 | UT01 | tota | Apenas a compreensão errado do cenário, que logo foi corrigida pela desenvolvedora para não compometer o fluxo desejado de teste | Buscar informação da difucldade das questões, foi o ponto em que a usuária mais demonstrou lentidão | relembramos o fluxo/tarefa inicial para que fossem preenchidos os dados corretamente | 08:21 (completo), 05:36 (apenas teste da aplicação) | 100% | comportamentos e falas muito positivos que demonstram compreensão plena das atividades a serem realizadas, dos gráficos e do objetivo da aplicação "ficou bem legal os botões de seleção do tipo de análise", "iterativa a mudança de página","ficou claro de analisar o dado de tempo de leitura e média disponível por questão"|
 | UT02 | parcial | Não conseguiu interpretar claramente um dos gráficos (correlação) e ao seguir a primeira tarefa entendeu errado | Análise de um dos gráficos foi realizada levando em consideração apenas um dos 3 fatores, precisamos deixar mais claro no texto para que esse erro não ocorra de novo | Após informar as tarefas/situações para os testes, a primeira tarefa não foi compreendida plenamente, o que quase gerou o primeiro treste falho (a usuária quase informou dados a mais), foi necessário intervir para relembrar a tarefa específica e garantir o fluxo correto de uso. Além disso, percebi que a compreensão do gráfico de correlação foi parcialmente prejudicada, provavelmente devido a nao leitura completa a descrição ou da má escolha, por parte dos devs, em posicionar as informações descritivas | 8:82 (completo), 08:92 (apenas teste da aplicação) | 90% | A usuária acredita que os textos descritivos poderiam ser resumidos, quase nunca utilizou os tooltips de informação (apenas para entender o que seriam textos introdutórios, utilizando o ícone ao lado da frase "textos introdutórios" o que fez com que nós devs ajustassemos o código para manter essa informação apenas nessa tooltip, além disso teve a dificuldade em analisar o gráfico de correlação ("não sei se entendi o gráfico de correlação"), porém após ler a descrição compreendeu melhor, estamos trabalhando no ajuste para o erro nao ocorrer novamente, as falas foram em suma muito positivas como, "achei bem iterativo e bem legal o gráfico de dispersão e sua visualização", "gráficos bem visíveis", mostrando bastante compreensão da plataforma, de seus fluxos e objetivos, conseguiu utilizá-la bem seguindo o propósito)|
 
