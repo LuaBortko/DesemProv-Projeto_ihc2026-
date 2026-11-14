@@ -49,9 +49,9 @@ Tarefas podem envolver, por exemplo, interpretar um dashboard, configurar uma an
 
 | ID | Perfil | Critérios que justificam participação | Integrante responsável |
 |---|---|---|---|
-| U01 | P01 | Professor que atua na docência, representa o público-alvo do sistema, por possuir familiaridade com o contexto educacional. | {{...}} |
+| U01 | P01 | Professor que atua na docência, representa o público-alvo do sistema, por possuir familiaridade com o contexto educacional. | Luana |
 | U02 | P02 | Colega de turma que já cursou a disciplina de IHC, mas não participou do desenvolvimento do projeto. Possui conhecimentos básicos sobre usabilidade, permitindo avaliar a interface sem influência das decisões tomadas pela equipe durante o desenvolvimento. | Beatriz |
-| U03 | P03 | Amigo ou familiar que não conhece o projeto e não possui conhecimentos específicos de IHC. Representa um usuário sem familiaridade prévia com o sistema, permitindo observar dificuldades de compreensão, navegação e realização das tarefas. | {{...}} |
+| U03 | P03 | Professor que atua na docência, representa o público-alvo do sistema, por possuir familiaridade com o contexto educacional. | Nuno |
 
 ### Passo 3 — Consentimento e privacidade 
 
@@ -95,16 +95,16 @@ Tarefas podem envolver, por exemplo, interpretar um dashboard, configurar uma an
 | UT02 | total/parcial/falha | {{n}} | {{...}} | {{n}} | {{mm:ss}} | {{escala}} | {{fala/comportamento}} |
 
 
-**Resposta pré-teste:** {(../instrumentos/questionario_preU01.md)
-**Link da gravação (se autorizado):** {{...}}  <!--POSTA NO YT NAO LISTADO SE DEIXAR -->  
-**Resposta pós-teste:** (../instrumentos/questionario_posU01.md)
+**Resposta pré-teste:** [pré-teste respondido](../instrumentos/questionario_preU01.md)
+**Link da gravação (se autorizado):** [víde não listado youtube U01 ](https://youtu.be/o_e_1TrHtNs)
+**Resposta pós-teste:** [pós-teste respondido](../instrumentos/questionario_posU01.md)
 
 ### U02 — {{perfil resumido}}
 
 | Tarefa | Grau de sucesso | Erros | Tipos de erro/dificuldade | Ajudas | Tempo | Satisfação | Evidência/observação |
 |---|---|---:|---|---:|---|---|---|
 | UT01 | tota | Apenas a compreensão errado do cenário, que logo foi corrigida pela desenvolvedora para não compometer o fluxo desejado de teste | Buscar informação da difucldade das questões, foi o ponto em que a usuária mais demonstrou lentidão | relembramos o fluxo/tarefa inicial para que fossem preenchidos os dados corretamente | 08:21 (completo), 05:36 (apenas teste da aplicação) | 100% | comportamentos e falas muito positivos que demonstram compreensão plena das atividades a serem realizadas, dos gráficos e do objetivo da aplicação "ficou bem legal os botões de seleção do tipo de análise", "iterativa a mudança de página","ficou claro de analisar o dado de tempo de leitura e média disponível por questão"|
-| UT02 | parcial | Não conseguiu interpretar claramente um dos gráficos (correlação) e ao seguir a primeira tarefa entendeu errado | Análise de um dos gráficos foi realizada levando em consideração apenas um dos 3 fatores, precisamos deixar mais claro no texto para que esse erro não ocorra de novo | Após informar as tarefas/situações para os testes, a primeira tarefa não foi compreendida plenamente, o que quase gerou o primeiro treste falho (a usuária quase informou dados a mais), foi necessário intervir para relembrar a tarefa específica e garantir o fluxo correto de uso. Além disso, percebi que a compreensão do gráfico de correlação foi parcialmente prejudicada, provavelmente devido a nao leitura completa a descrição ou da má escolha, por parte dos devs, em posicionar as informações descritivas | 8:82 (completo), 08:92 (apenas teste da aplicação) | 90% | A usuária acredita que os textos descritivos poderiam ser resumidos, quase nunca utilizou os tooltips de informação (apenas para entender o que seriam textos introdutórios, utilizando o ícone ao lado da frase "textos introdutórios" o que fez com que nós devs ajustassemos o código para manter essa informação apenas nessa tooltip, além disso teve a dificuldade em analisar o gráfico de correlação ("não sei se entendi o gráfico de correlação"), porém após ler a descrição compreendeu melhor, estamos trabalhando no ajuste para o erro nao ocorrer novamente, as falas foram em suma muito positivas como, "achei bem iterativo e bem legal o gráfico de dispersão e sua visualização", "gráficos bem visíveis", mostrando bastante compreensão da plataforma, de seus fluxos e objetivos, conseguiu utilizá-la bem seguindo o propósito)|
+| UT02 | parcial | Não conseguiu interpretar claramente um dos gráficos (correlação) e ao seguir a primeira tarefa entendeu errado | Análise de um dos gráficos foi realizada levando em consideração apenas um dos 3 fatores, precisamos deixar mais claro no texto para que esse erro não ocorra de novo | Após informar as tarefas/situações para os testes, a primeira tarefa não foi compreendida plenamente, o que quase gerou o primeiro treste falho (a usuária quase informou dados a mais), foi necessário intervir para relembrar a tarefa específica e garantir o fluxo correto de uso. Além disso, percebi que a compreensão do gráfico de correlação foi parcialmente prejudicada, provavelmente devido a nao leitura completa a descrição ou da má escolha, por parte dos devs, em posicionar as informações descritivas | 8:92 (completo), 08:87 (apenas teste da aplicação) | 90% | A usuária acredita que os textos descritivos poderiam ser resumidos, quase nunca utilizou os tooltips de informação (apenas para entender o que seriam textos introdutórios, utilizando o ícone ao lado da frase "textos introdutórios" o que fez com que nós devs ajustassemos o código para manter essa informação apenas nessa tooltip, além disso teve a dificuldade em analisar o gráfico de correlação ("não sei se entendi o gráfico de correlação"), porém após ler a descrição compreendeu melhor, estamos trabalhando no ajuste para o erro nao ocorrer novamente, as falas foram em suma muito positivas como, "achei bem iterativo e bem legal o gráfico de dispersão e sua visualização", "gráficos bem visíveis", mostrando bastante compreensão da plataforma, de seus fluxos e objetivos, conseguiu utilizá-la bem seguindo o propósito)|
 
 
 **Resposta pré-teste:** [pré-teste respondido](../instrumentos/questionario_preU02.md)
