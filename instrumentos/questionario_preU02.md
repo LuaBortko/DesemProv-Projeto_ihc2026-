@@ -7,7 +7,7 @@
 
 ### Código do Participante: P[ 01 ] (ex: P01, P02...)
 *Data:* 12/11/2026  
-*Horário:* 20:11  
+*Horário:* 19:11  
 *Departamento:* Ciência da computação  
 
 
