@@ -167,34 +167,27 @@ Como alinhado em aula, devido ao projeto de IHC ser do nosso TCC e já termos a 
 **Signos principais:** formalismo, similaridade de distratores, quantidade de palavras, distribuição do tempo de prova e o tempo estimado de leitura, resultados por questão, filtros, quantidade de questões, dificuldade das questões, prova, métricas estruturais, correlação com desempenho |<br> 
 **Origem no MoLIC:** M03/cena de Consultar métricas da prova <br>
 
-### F04.1 - Não foi preenchida número de acertos
+### F04.1 - Escolha de filtros das informações gerais
 ![F03](../assets/11_figma/f04_1.png)
-
-**Objetivo do usuário:** Ver correlações utilizando os acertos dos alunos <br> 
-**Signos principais:** correlação com desempenho |<br> 
-**Origem no MoLIC:** M03/cena de Consultar métricas da prova <br>
-
-### F04.2 - Escolha de filtros das informações gerais
-![F03](../assets/11_figma/f04_2.png)
 **Objetivo do usuário:** Filtrar informações da prova <br> 
 **Signos principais:** filtros |<br> 
 **Origem no MoLIC:** M03/cena de Filtrar dados <br>
 
-### F04.3 - Usuário quer olhar informações extras
-![F03](../assets/11_figma/f04_3.png)
+### F04.2 - Usuário quer olhar informações extras
+![F03](../assets/11_figma/f04_2.png)
 **Objetivo do usuário:** Ver informações sobre os cálculos feitos na análise <br> 
 **Signos principais:** balão de ajuda contextual |<br> 
 **Origem no MoLIC:** M03/cena de Consultar métricas da prova <br>
 
-### F04.4 - Usuário quer exportar o relatório da prova
-![F03](../assets/11_figma/f04_4.png)
+### F04.3 - Usuário quer exportar o relatório da prova
+![F03](../assets/11_figma/f04_3.png)
 **Objetivo do usuário:** Exportar os gráficos apresentados na página de resultados <br> 
 **Signos principais:** Botão "Exportar", Opções de exportação |<br> 
 **Origem no MoLIC:** M03/cena de Consultar métricas da prova<br>
 
 
-### F04.5 - Usuário quer explorar resultados e foi preenchido número de acertos
-![F03](../assets/11_figma/f04_5.png)
+### F04.4 - Usuário quer explorar resultados e foi preenchido número de acertos
+![F03](../assets/11_figma/f04_4.png)
 **Objetivo do usuário:** Verificar resultados com métricas dos alunos <br> 
 **Signos principais:** Gráficos |<br> 
 **Origem no MoLIC:** M03/cena de Consultar métricas da prova<br>
@@ -212,6 +205,12 @@ Como alinhado em aula, devido ao projeto de IHC ser do nosso TCC e já termos a 
 **Signos principais:** Erro: Falha ao carregar RoBERTa|<br> 
 **Origem no MoLIC:** M03/cena de Consultar métricas da prova<br>
 
+### F04E3 - Não foi preenchida número de acertos
+![F03](../assets/11_figma/f04e3.png)
+
+**Objetivo do usuário:** Ver correlações utilizando os acertos dos alunos <br> 
+**Signos principais:** correlação com desempenho |<br> 
+**Origem no MoLIC:** M03/cena de Consultar métricas da prova <br>
 
 
 ## Sistema visual e consistência
