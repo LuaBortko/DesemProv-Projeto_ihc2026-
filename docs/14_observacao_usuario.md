@@ -60,18 +60,18 @@ Tarefas podem envolver, por exemplo, interpretar um dashboard, configurar uma an
 - Forma de anonimização:  Os participantes serão identificados exclusivamente por códigos, como ⁠ U01 ⁠, ⁠ U02 ⁠ e ⁠ U03 ⁠, sem utilização de nomes ou outras informações pessoais nos registros e na apresentação dos resultados.<br>
 - Local e período de armazenamento: Os registros da avaliação serão armazenados em pasta digital de acesso restrito à equipe, durante o período de realização e análise da atividade. Após a consolidação dos resultados e a conclusão da avaliação, os arquivos contendo gravações serão excluídos. <br>
 
-### Passo 4 — Teste piloto <!-- LU E NUNO FAZEREM TESTE PILOTO NA QUARTA-->
+### Passo 4 — Teste piloto
 
-**Data:** 
-**O que foi validado:** roteiro, duração, entendimento das instruções, protótipo, gravação.  
-**Mudanças após piloto:** {{...}}
+**Data:** 11/11
+**O que foi validado:** roteiro da apresentação, duração, entendimento das instruções, protótipo, gravação.
+**Mudanças após piloto:** Nada
 
 ### Passo 5 — Tarefas 
 
 | ID | Cenário/instrução apresentada | Critério de sucesso | Métricas | Ligação com modelo |
 |---|---|---|---|---|
-| UT01 | Você é um professor e precisa analisar uma prova para compreender características de sua estrutura e identificar aspectos que possam influenciar o desempenho dos alunos. Utilize o sistema para enviar o arquivo da prova, preencher os parâmetros solicitados e realizar a análise. Ao final, explore os resultados apresentados e explique o que conseguiu compreender a partir das métricas disponíveis. | O participante consegue enviar o PDF aceito, preencher os par6ametros necessários, iniciar a análise e acessar os resultados. Além disso, consegue identificar e explicar o significado das principais métricas apresentadas, sem auxilio do moderador | taxa de sucesso, tempo de execução, quantidade de erros, taxa de recuperação, pedidos de ajudas, satisfação  pós tarefa| T01/M01/M02/M03/f01,f02,f02e1,f02e2,f02e3,f02e4,f03,f03_1,f03_2,f03_3, f03_4,f03e1, f04,f04_1,f04_2,f04_3,F04_4,F04e1,f04e2 |
-| UT02 | Você é um professor e já aplicou uma prova, mas percebeu que o desempenho dos alunos ficou diferente do esperado. Você deseja investigar se características relacionadas ao formato da avaliação podem ajudar a compreender esse resultado. Utilize o sistema para enviar a prova já aplicada, preencher as informações solicitadas e gerar a análise. | O participante consegue enviar o PDF, preencher as informações necessárias e gerar a análise da prova sem auxílio do moderador. | Taxa de sucesso, tempo de execução, quantidade de erros, taxa de recuperação e pedidos de ajuda. | T01/M01/M02/M03/f01,f02,f02e1,f02e2,f02e3,f02e4,f03,f03_1,f03_2,f03_3, f03_4,f03e1, f04,f04_1,f04_2,f04_3,F04_4,F04e1,f04e2  |
+| UT01 | Você é um professor e precisa analisar uma prova para compreender características de sua estrutura e identificar aspectos que possam influenciar o desempenho dos alunos. Utilize o sistema para enviar o arquivo da prova, preencher os parâmetros solicitados e realizar a análise. Ao final, explore os resultados apresentados e explique o que conseguiu compreender a partir das métricas disponíveis. | O participante consegue enviar o PDF aceito, preencher os parametros necessários, iniciar a análise e acessar os resultados. Além disso, consegue identificar e explicar o significado das principais métricas apresentadas, sem auxilio do moderador | taxa de sucesso, tempo de execução, quantidade de erros, taxa de recuperação, pedidos de ajudas, satisfação  pós tarefa| T01/M01/M02/M03/f01,f02,f02e1,f02e2,f02e3,f02e4,f03,f03_1,f03_2,f03_3, f03_4,f03e1, f04,f04_1,f04_2,f04_3,F04_4,F04e1,f04e2 |
+| UT02 | Você é um professor e já aplicou uma prova, mas percebeu que o desempenho dos alunos ficou diferente do esperado. Você deseja investigar se características relacionadas ao formato da avaliação podem ajudar a compreender esse resultado. Utilize o sistema para enviar a prova já aplicada, preencher as informações solicitadas e gerar a análise. | O participante consegue enviar o PDF, preencher as informações necessárias e gerar a análise da prova sem auxílio do moderador. | Taxa de sucesso, tempo de execução, quantidade de erros, taxa de recuperação e pedidos de ajuda. | T01/M01/M02/M03/f01,f02,f02e1,f02e2,f02e3,f02e4,f03,f03_1,f03_2,f03_3, f03_4,f03e1, f04,f04_1,f04_2,f04_3,F04_4,F04e1,f04e2 |
 
 ### Passo 6 — Protocolo do moderador <!--fazer -->
 
@@ -91,12 +91,12 @@ Tarefas podem envolver, por exemplo, interpretar um dashboard, configurar uma an
 
 | Tarefa | Grau de sucesso | Erros | Tipos de erro/dificuldade | Ajudas | Tempo | Satisfação | Evidência/observação |
 |---|---|---:|---|---:|---|---|---|
-| UT01 | total/parcial/falha | {{n}} | {{...}} | {{n}} | {{mm:ss}} | {{escala}} | {{fala/comportamento}} |
-| UT02 | total/parcial/falha | {{n}} | {{...}} | {{n}} | {{mm:ss}} | {{escala}} | {{fala/comportamento}} |
+| UT01 | parcial | {{n}} | 1.No grafico de tempo de leitura e média disponivel por questão não ficou explicito oque eram os numeros na direita 2. 2. No grafico da correlação entre tamanho da questao e percentual de acertos por dificuldade faltou o aviso que não tem esse grafico pela falta do input | {{n}} | tempo de inicio: 3:47 fim: (apenas teste da aplicação) | {{escala}} | {{fala/comportamento}} |
+| UT02 | parcial | {{n}} | {{...}} | {{n}} | inicio: fim: (apenas teste da aplicação) | {{escala}} | {{fala/comportamento}} |
 
 
-**Resposta pré-teste:** [pré-teste respondido](../instrumentos/questionario_preU01.md)
-**Link da gravação (se autorizado):** [víde não listado youtube U01 ](https://youtu.be/o_e_1TrHtNs)
+**Resposta pré-teste:** [pré-teste respondido](../instrumentos/questionario_preU01.md)<br>
+**Link da gravação (se autorizado):** [víde não listado youtube U01 ](https://youtu.be/o_e_1TrHtNs)<br>
 **Resposta pós-teste:** [pós-teste respondido](../instrumentos/questionario_posU01.md)
 
 ### U02 — {{perfil resumido}}
@@ -106,9 +106,8 @@ Tarefas podem envolver, por exemplo, interpretar um dashboard, configurar uma an
 | UT01 | tota | 1 |  Apenas a compreensão errado do cenário, que logo foi corrigida pela desenvolvedora para não compometer o fluxo desejado de teste. Buscar informação da difucldade das questões, foi o ponto em que a usuária mais demonstrou lentidão | relembramos o fluxo/tarefa inicial para que fossem preenchidos os dados corretamente | 08:21 (completo), 05:36 (apenas teste da aplicação) | 100% | comportamentos e falas muito positivos que demonstram compreensão plena das atividades a serem realizadas, dos gráficos e do objetivo da aplicação "ficou bem legal os botões de seleção do tipo de análise", "iterativa a mudança de página","ficou claro de analisar o dado de tempo de leitura e média disponível por questão"|
 | UT02 | parcial | 2 | Não conseguiu interpretar claramente um dos gráficos (correlação) e ao seguir a primeira tarefa entendeu errado. Análise de um dos gráficos foi realizada levando em consideração apenas um dos 3 fatores, precisamos deixar mais claro no texto para que esse erro não ocorra de novo | Após informar as tarefas/situações para os testes, a primeira tarefa não foi compreendida plenamente, o que quase gerou o primeiro treste falho (a usuária quase informou dados a mais), foi necessário intervir para relembrar a tarefa específica e garantir o fluxo correto de uso. Além disso, percebi que a compreensão do gráfico de correlação foi parcialmente prejudicada, provavelmente devido a nao leitura completa a descrição ou da má escolha, por parte dos devs, em posicionar as informações descritivas | 8:92 (completo), 08:87 (apenas teste da aplicação) | 90% | A usuária acredita que os textos descritivos poderiam ser resumidos, quase nunca utilizou os tooltips de informação (apenas para entender o que seriam textos introdutórios, utilizando o ícone ao lado da frase "textos introdutórios" o que fez com que nós devs ajustassemos o código para manter essa informação apenas nessa tooltip, além disso teve a dificuldade em analisar o gráfico de correlação ("não sei se entendi o gráfico de correlação"), porém após ler a descrição compreendeu melhor, estamos trabalhando no ajuste para o erro nao ocorrer novamente, as falas foram em suma muito positivas como, "achei bem iterativo e bem legal o gráfico de dispersão e sua visualização", "gráficos bem visíveis", mostrando bastante compreensão da plataforma, de seus fluxos e objetivos, conseguiu utilizá-la bem seguindo o propósito)|
 
-
-**Resposta pré-teste:** [pré-teste respondido](../instrumentos/questionario_preU02.md)
-**Link da gravação (se autorizado):** [víde não listado youtube U02 ](https://youtu.be/KgpqN43J2uQ) 
+**Resposta pré-teste:** [pré-teste respondido](../instrumentos/questionario_preU02.md)<br>
+**Link da gravação (se autorizado):** [víde não listado youtube U02 ](https://youtu.be/KgpqN43J2uQ)<br>
 **Resposta pós-teste:** [pós-teste respondido](../instrumentos/questionario_posU02.md)
 
 ### U03 — {{perfil resumido}}
@@ -119,8 +118,8 @@ Tarefas podem envolver, por exemplo, interpretar um dashboard, configurar uma an
 | UT02 | total | 1 | Não compreendeu inicialmente que a seção de métricas reais exigia o preenchimento manual do número de acertos por questão, acreditando que os resultados seriam carregados automaticamente pelo sistema. | 1 - Ajuda para explicar o significado da seção de registrar número de acertos. | 14:20(completo), 6:05(Apenas uso da aplicação) | 100% | O participante apresentou maior facilidade na navegação em comparação à UT01, demonstrando melhor compreensão do funcionamento da aplicação. Conseguiu interpretar os gráficos e identificar divergências entre a dificuldade atribuída às questões e os resultados dos alunos. Sugeriu melhorias na diferenciação visual de resultados positivos e negativos, na legibilidade dos gráficos, na disponibilização de explicações adicionais e na navegação por páginas, considerando professores com menor familiaridade tecnológica. |
 
 
-**Resposta pré-teste:** (../instrumentos/questionario_preU3.md)
-**Link da gravação (se autorizado):**  
+**Resposta pré-teste:** (../instrumentos/questionario_preU3.md)<br>
+**Link da gravação (se autorizado):**<br>
 **Resposta pós-teste:** (../instrumentos/questionario_posU03.md)
 
 > Repita para U02, U03...
