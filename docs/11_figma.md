@@ -93,7 +93,7 @@ Como alinhado em aula, devido ao projeto de IHC ser do nosso TCC e já termos a 
 
 ### F02E3 — Tamanho do arquivo excede limite 
 
-![F02E3](../assets/11_figma/f02e3.jpeg)
+![F02E3](../assets/11_figma/f02e3.png)
 
 **Objetivo do usuário:** Enviar um arquivo dentro das limitações específicas para seguir o fluxo feliz de analisar sua avaliação <br> 
 **Signos principais:** Erro3: Arquivo excede tamanho <br> 
