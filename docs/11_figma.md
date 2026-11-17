@@ -187,13 +187,13 @@ Como alinhado em aula, devido ao projeto de IHC ser do nosso TCC e já termos a 
 
 
 ### F04.4 - Usuário quer explorar resultados e foi preenchido número de acertos
-![F03](../assets/11_figma/f04_4.png)
+![F03](../assets/11_figma/F04_4.png)
 **Objetivo do usuário:** Verificar resultados com métricas dos alunos <br> 
 **Signos principais:** Gráficos |<br> 
 **Origem no MoLIC:** M03/cena de Consultar métricas da prova<br>
 
 ### F04E1 - Modelo BERT não conseguiu conectar(interação simulada)
-![F03](../assets/11_figma/f04e1.png)
+![F03](../assets/11_figma/F04e1.png)
 **Objetivo do usuário:** Iniciar a análise da prova <br> 
 **Signos principais:** Erro: Falha ao carregar BERT|<br> 
 **Origem no MoLIC:** M03/cena de Consultar métricas da prova<br>
