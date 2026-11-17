@@ -53,7 +53,7 @@ Como alinhado em aula, devido ao projeto de IHC ser do nosso TCC e já termos a 
 |---|---|---|---|---|
 | M01 | O01, O02, O03, O05 | `F03, F03.1, F03.2, F03.3, F03.4` | `F03E1` | Luana Bortko Rodrigues |
 | M02 | O01, O02, O03, O04 | `F01 → F02` | `F02E1, F02E2, F02E3, F02E4` | Beatriz Manaia Lourenço Berto |
-| M03 | O01, O02, O03 | `F04` | `F04_` | Nuno Martins Guilhermino da Silva |
+| M03 | O01, O02, O03 | `F04, F04.1, F04.2, F04.3, F04.4` | `F04E1, F04E2, F04E3` | Nuno Martins Guilhermino da Silva |
 
 ## Catálogo de telas/estados
 
